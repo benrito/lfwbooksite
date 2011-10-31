@@ -94,6 +94,19 @@ header img {
 div[role="main"] {
     background: #71ade9;
 }
+.bookbox {
+	width: 325px; 
+	height: 500px; 
+	position: absolute;
+	right: 10px;
+	top: 75px;
+	background-color:white;
+	-moz-box-shadow: 5px 5px 5px #878787;
+	-webkit-box-shadow: 5px 5px 5px #878787;
+	box-shadow: 5px 5px 5px #878787;
+	-moz-border-radius: 15px;
+	border-radius: 5px;
+}
 .info ol {
     list-style-type: none;
     padding-left: 0;

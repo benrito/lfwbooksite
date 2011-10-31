@@ -44,6 +44,18 @@ header img {
 .info .n3 {
     background-position: 24px -280px, 46% -417px;
 }
+.line-separator{
+	width: 275px;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	margin: 0px auto;
+}
+.line-separator2{
+	font-size: 14px;
+	margin-top: 5px; 
+	width: 275px;
+	margin: 0px auto;
+}
 .cta {
     padding-bottom: 0.4em;
 }

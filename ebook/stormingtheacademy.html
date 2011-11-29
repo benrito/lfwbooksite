@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags.
+These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation.
+Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation
+will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.
+You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link.
+These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular
+part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would
+change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br>
+</dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+
+<!--  Webcraft - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Start A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+<!-- Learning X Freedom -->
+
+<a name="lfw_4"><br></a>
+<p class="article-header">LEARNING x FREEDOM</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">Learning happens naturally when individuals pursue their passions among peers and guides. Restrictions on learning—red tape, time, place, cost, or others—should be minimized so more people around the world are free to join together to face hard problems and learn new things in new ways.</p>
+
+<br>
+
+<p class="article-lead-para"> “Virtually every feature of traditional formal education was created between 1850 and 1919 to support the Industrial Age. The whole basis of assessment is the standard deviation, the invention of Francis Galton! A eugenicist who believed the English poor should be sterilized! We’re stuck with Henry Ford’s assembly line from kindergarten through grad school! But our world has changed! With the Internet we don’t need the same kind of hierarchical structures.”<br><span class="author">—Cathy Davidson, Festival Keynote</span></p>
+
+<br>
+<br>
+
+<!-- Storming The Academy -->
+
+<a name="lfw_5"><br></a>
+<p class="article-header">Storming the Academy</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">“Joyful insurgency” tactics for creating open, tech-aware learning inside the academy.</p>
+
+<br>
+
+<p class="body-copy">What role will traditional educational institutions play in the future of learning? As we call for change, it’s easy to dwell on their limitations, or to brush past them altogether in the eagerness to hack shiny, new alternatives.</p>
+
+<p class="body-copy">This would be a fatal error. As we swing out over uncharted territory, learners continue to need institutions, just as institutions need learners.</p>
+
+<p class="body-copy">At the very least, traditional institutions convene communities of people who love learning—and sign many of their paychecks. The existing schooling infrastructure from kindergarten to state university is a crucial public asset to leverage toward the future of open learning. For a thousand years, at least some learning has taken place inside formal institutions, and it might benefit the future of learning to figure out how free and open learning might emerge from that history. Plus, the best institutions maintain an anarchic and decentralized structure that allows for all kinds of research and innovation to take place—like the early stages of the Internet, for one. Why not take advantage of them to innovate learning itself?</p>
+
+<a id="single_image" title="HASTAC. Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/stormingtheacademy.png"><img src="images/stormingtheacademy-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<p class="body-copy"><a href="http://multimedia.journalism.berkeley.edu/people/LauraHilliger"target="_blank"><span class="link">Laura Hilliger</span></a> of the Knight Digital Media Center wrote in response to a draft of this work:</p>
+
+<p class="pull-quote">Although our universities, colleges and traditionally run schools are outdated and in desperate need of change, they are still institutions of learning, innovation and stimulation. We, the educators and web nerds who make up &ldquo;Learning, Freedom and the Web,&rdquo; aren’t looking to destroy the infrastructure we have in place, we’re looking to change how that infrastructure is used. I’m thinking about the innovation that comes from the FREE and OPEN learning within these institutions, like Marie Curie having access to a lab, or, to use an example which both pisses me off and also changed the world, Mark Zuckerberg being inspired by his social surroundings to come up with Facebook. We are going to need that space for our learning revolution.</p>
+
+<p class="body-copy">Making that space is the work, in part, of Cathy Davidson and her network of edge-seeking scholars.</p>
+
+<p class="pull-quote">In 2002, I was at a national meeting of directors of humanities institutes around the country and one after another said that the humanities and social sciences were “antithetical to the Information Age,” Davidson explains. “What? The greatest revolution in how humans create and share knowledge, how they read and write, how they communicate and interact in all human history—and there&rsquo;s no space there for the human and social sciences?”</p>
+
+<p class="pull-quote">One other person in the room, David Theo Goldberg, who directs the the system-wide University of California Humanities Research Institute, agreed. We stepped out of the meeting and created HASTAC.<br>- from <a href="http://www.hastac.org"target="_blank"><span class="link">www.hastac.org</span></a></p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">HASTAC</span> [Humanities, Arts, Science and Technology Advanced Collaboratory). Pronounced “haystack”: it is an international network of educators and digital visionaries committed to the creative development and critical understanding of new technologies in life, learning, and society]</p>
+
+<p class="body-copy">Davidson is famous—sometimes notorious—for her experiments in both pedagogy and research, many of which have the effect of dethroning herself as a teacher that presides at the front of a classroom. For example, she uses “contract grading,” by which students commit to a certain level of work in a class and are also responsible for evaluating peers’ work.</p>
+
+<p class="body-copy">Davidson and members of FutureClass, her “collaborative independent study,” including seven students from Duke University and one from University of North Carolina at Chapel Hill, held court in a tent on the square at the Festival, running it as cross between a graduate seminar and a dorm-room bull session. With sessions such as “Storming the Gradebook” and “Storming the Syllabus,” her team brought a sense of what she likes to call Joyful Insurgency into the hallowed traditions of the academy.</p>
+
+<!-- Session Notes Storming The Cloud/Crowd -->
+
+<br>
+<br>
+
+<p class="article-subheader-b">Session Notes:</p>
+<p class="article-subheader-a">Storming the Cloud/Crowd</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">
+One recurring concern for future learners is how to remake the traditional classroom into a more participatory, lively place. One “Storming the Academy” conversation focused on this topic:</p>
+<p class="article-lead-para">An interactive, collaborative performance and tag cloud activity designed to explore the ethics of the crowd, cross-disciplinary collaboration, and minority expression.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Activity Leader:</span> Anne Balsamo, University of Southern California</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Tools:</span> index cards, pens, large sheets of paper, a couple of helpers, a crowd.</p>
+
+<p class="body-copy">Technology is about the way cultures are made. Cultures of the moment, cultures of the future, tinkering (&ldquo;ways of the hand&rdquo;). Each member of the audience selects three words that best describe their experience with collaboration. They then pair with someone they don&rsquo;t know, share their three words, and together pick ONE word that describes a quality of collaboration across difference they feel is important. The sociality reality check!</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Words from the crowd:</span> Serendipity, discomfort, introduction, open, confusion, engagement, empathy, and respect.</p>
+
+<p class="body-copy">Imagine an app where what is privileged is the minority voice, not the loud, crowd voice. What about the inverse, or privileging the fringe voice?
+
+<p class="body-copy">The open web isn&rsquo;t always a level playing field. There are hierarchies and assumptions encoded in the technology (i.e. in a tag cloud). Curation and collection can reiterate dominant opinion.</p>
+
+<p class="notes">Balsamo and some FutureClass participants are working on developing tech tools to run better class discussions, like the Classroom Attention Barometer, to allow for real time feedback.</p>
+
+<br>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/crowd.png"><img src="images/crowd-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-subheader-b">Session Notes:</p>
+<p class="article-subheader-a">21st Century Literacies</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">If our ideal future state is to help our students be the best possible participants in the free and open web, then what literacies are most important for reaching that goal? What resources are best for understanding and mastering each literacy? What methods are best for teaching/learning?</p>
+
+<br>
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">Attention:</span> What are the new ways that we pay attention in a digital era? How do we need to change our concepts and practices of attention for a new era? How do we learn and practice new forms of attention in a digital age?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Participation: </span>Participation: How do we encourage meaningful interaction and participation? What is its purpose on a cultural, social, or civic level?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Collaboration: </span>Collaboration can simply reconfirm consensus, acting more as peer pressure than a lever to truly original thinking. HASTAC has cultivated the methodology of “collaboration by difference” to inspire meaningful ways of working together.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Network awareness:</span> How we both thrive as creative individuals and understand our contribution within a network of others? How do you gain a sense of what that extended network is and what it can do?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Global Consciousness:</span> How does the World Wide Web change our responsibilities in and to the world we live in?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Civic Responsibility:</span> How can we be good citizens of the Internet when we are off line, working towards real goals in our communities and using the community practices of sharing, customizing, and contributing online towards responsible civic action off line?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Design:</span> How is information conveyed differently, effectively, and beautifully in diverse digital forms? How do we understand and practice the elements of good design as part of our communication and interactive practices?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Narrative, Storytelling:</span> How do narrative elements shape the information we wish to convey, helping it to have force in a world of competing information?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Procedural Literacy:</span> What are the new tactics and strategies of interactive games, where the multimedia narrative forms changes because of our success or failure?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Critical consumption of information:</span> Without a filter (editors, experts, and professionals), much information on the Internet can be inaccurate, deceptive, or inadequate. How do we learn to be critical? What are the standards of credibility?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Digital Divides, Digital Participation:</span> What divisions still remain in digital culture? Who is included and who excluded? How do basic aspects of economics and culture dictate not only who participates in the digital age but how we participate?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Ethics: </span>What are the new moral imperatives of our interconnected age?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Advocacy: </span>How do we turn collaborative, procedural thinking on line into activism in the real world?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Preservation:</span> What are the requirements for preserving the digital world we are creating? Paper lasts. Platforms change.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Sustainability:</span> What are the metrics for sustainability in a world where we live on more kilowatts than ever before? How do we protect the environment in a plugged-in era?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Learning, Unlearning, and Relearning:</span>Alvin Toffler has said that, in the rapidly changing world of the 21st century, the most important skill anyone can have is the ability to stop in one’s tracks, see what isn’t working, and then find ways to unlearn old patterns and relearn how to learn.</p>
+<br>
+<br>
+<p class="article-lead-para">We’re going from an industrial age to a digital one/ These ages are nothing compared to how long people have lived/ It’s a flicker/ What really has changed in the grand scheme of things?/ It looks to me more like we’re returning to what has been cultivated as human faculties for millions of years before the industrial revolution/ tribal communicative/ collaborative even if not cooperative/ we can’t help but learn peer to peer it’s automatic and to say that’s not happening is a huge fallacy/ I question that we’re seeing anything new/ we might be seeing something extremely old/ We’re disconnected partly because the Ethnosphere is deterioriating/ Things that are deep down inside of us might be coming out again/ they are terrifying but have always been there.</p>
+
+<p class="author">-Comment from the crowd-photo caption</p>
+
+<br>
+<br>
+
+
+<a name="lfw_6"><br></a>
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Cathy Davidson<a id="single_image" title="Cathy Davidson. Photo from Samuel Huron's Flickrstream, Aug. 20, 2011." href="images/cathydavidson.jpg"><img src="images/cathydavidson-icon.png" alt="Cathy Davidson. Photo from Samuel Huron's Flickrstream, Aug. 20, 2011."/ style="float: right" "margin-right: 15px"></p></a>
+
+    <br>
+    <br>
+
+<p class="article-lead-para">No one at the Festival could have missed Cathy Davidson and her FutureClass students, holding a heady nonstop seminar in the white tent next to the Hackbus on the square. Davidson, the founder of HASTAC (The Humanities, Arts, Science, and Technology Advanced Collaborative), nominated to Obama’s National Council on the Humanities, and author of the forthcoming book “Now You See It: How the Brain Science of Attention Will Transform the Way We Live, Work, and Learn.” Davidson has been called “one of the most famous, prolific, and hated academics in the world.”</p>
+
+<br>
+<br>
+
+<p class="profile-question">What is your background and why are you interested in the free sharing and reuse of knowledge?</p>
+
+<p class="profile-answer">As a kid, I was math all the way. I assumed I&rsquo;d go into artificial intelligence and was very excited by computational philology. But there were no women at all in that field and I wanted to support myself so I began to indulge my love of writing and veered into English. But I&rsquo;ve always written about information technologies and how they change our interactions.</p>
+
+<p class="profile-question">What would you say is your main motivation for working on free and open education?</p>
+
+<p class="profile-answer">We&rsquo;re only beginning to imagine what structures we need to educate students for the 21st century. There are many lessons from open web development that need to be transferred to traditional education.</p>
+
+<p class="profile-question">How does HASTAC work? How many people are participating? What kinds of projects are they working on? What are the goals?</p>
+
+<p class="profile-answer">HASTAC is a network of networks. We&rsquo;re about 4,800 strong now, including nearly 200 undergraduate and graduate students (HASTAC Scholars) from over 70 institutions. We are dedicated to three interconnected goals: creative development of new media and new tools; thinking critically about the role of technology in society, education, and social life; and participatory forms of learning.</p>
+
+<p class="profile-question">What do you think is the relationship between free software and open education? Why is it that so many people who are interested in one, are working on building the other?</p>
+
+<p class="profile-answer">If you believe that the best way to develop software is for free, collaboratively, and led by community interests, then you have to question a form of industrial education that is based almost entirely on credentialing, on certifying, on one person granting a degree of excellence to another, rather than in the ways we, collaboratively, demonstrate excellence by performing well.</p>
+
+<p class="profile-question">What are the main obstacles standing in the way of an entirely affordable, accessible, high-quality, and open world of higher education? Are they technological, social, matters of government policy or the conduct and structure of institutions?</p>
+
+<p class="profile-answer">Tradition dies hard. Once you establish a hierarchy of what counts as the pinnacle of excellence (with Oxford and Cambridge in England, Harvard in the U.S., Tokyo University in Japan) it is hard for those who have profited within that system of hierarchy to admit that reputation is not always equal to excellence, that esteem does not necessarily lead to innovation. So institutional resistance, deeply nestled within the class system and reward systems, would top the list. There are also billions of dollars resting in the current system, so there is much resistance to major change.</p>
+
+<p class="profile-question">Do you think institutions (like Duke, for example) will largely adapt to the new reality or will educational innovators have to find workarounds?</p>
+
+<p class="profile-answer">Every educational innovator strives for major change while also figuring out the workarounds.</p>
+
+<p class="profile-question">Why did you bring eight students to Mozilla Drumbeat Festival?</p>
+
+<p class="profile-answer">For HASTAC to have a tent at Drumbeat underscores how many of us in the academy are looking for a new way. We want to be able to show that “thinking" is an activity and that “interaction&rdquo; can occur with notecards and markers as well as on a computer. We want to be inspired by open universities and open sources of knowledge to push the transformations in higher education and we know there are lessons in excellence to learn from the highest forms of collaborative research and work.</p>
+
+<p class="profile-question">Anything else you&rsquo;d like to say about the future of education? What will education look like in 2020?</p>
+
+<p class="profile-answer">If we do not take stock of the systems of education, K-12 and 12-20, we will not be able to prepare for the future. We need to rethink how we test, how we measure ability and disability, the different ways we can combine talents and collaborate.</p>
+
+<p class="profile-answer">I believe that we will have very different forms of testing by 2020, that disciplines will be more merged, that school will be more project-based and more integrated into communities, with less separation of town and gown, of the theoretical and the practical.</p>
+
+<br>
+
+<!-- Profile Jade Davis - Not In Nav But Could Be -->
+
+<p class="body-copy">One of Davidson’s FutureClass students came away with her own ideas and questions. Jade Davis is a doctoral student in Communication Studies at UNC Chapel Hill. Her research areas of interest focus primarily on issue of identity and how identity is performed and engaged by diasporic populations in digitally mediated spaces. Currently, her focus is on global black populations.</p>
+
+<div class="blog-header"><a href="http://jadedid.com/drumbeat/" target="_blank">Jade Davis: Learning, Freedom and the Web
+<br><span class="blog-meta">Jade Davis | November 8, 2010</span></div></a>
+
+<p class="blog-para">I arrived with one question: How do you imagine the involvement of traditional forms of higher education in the future of Freedom, Learning and the Web? I actually had responses from everyone I spoke with other than “but how are we going to credential” which is not something that has happened yet in academic settings.</p>
+
+<p class="blog-para">Most people there were in agreement that the approach to learning and spaces of learning needs to be more holistic. However, people were still unwilling to completely let go of some of the ideals of industrialized education. They are just re-imagining them and making them more flexible. I would have to do more reflecting and exploring to determine if I think that is a good thing or a bad thing.</p>
+
+<br>
+
+<!-- Cathy Davidson's Reflection -->
+
+<p class="body-copy">After the fest, Cathy Davidson reflected:</p>
+
+<div class="blog-header"><a href="http://hastac.org/blogs/cathy-davidson/learn-intellectual-property-doing-it" target="_blank">Intellectural Property By Doing It
+<br><span class="blog-meta">Cathy Davidson | November 10, 2010</span></div></a>
+
+<p class="blog-para">The Mozilla mode of learning is doing.  Have a problem managing attention?  Work on an app for it. Trying to wrangle a 200-person classroom into small affinity groups?  Create a tool that facilitates it.  Want to authenticate who is writing a productive or a trollish comment or contribute great code but with bad spyware embedded in it? Create a badge system that credentializes not by your degree but by what and how you have contributed to the open web in the past.  Want to make all video machine readable, able to grab supplementary material, instantly subtitled into any language you wish?  There&rsquo;s an app for that, too. What about us, here at FutureClass, the collaborative independent study tutorial I&rsquo;m guiding at Duke, and newly returned from an exhilarating and eye-opening Learning, Freedom and the Web Festival in Barcelona?  We&rsquo;ve been set the challenge to complete some work on the prototype of a classroom attention device that everyone talked about, that one student firestarted with a stunningly subtle idea, and that another, working with a friend not in the class, actually developed independently into an app. Now the Mozilla developers have pledged to help us bring this to full fruition.</p>
+
+<p class="blog-para">That&rsquo;s a fabulous learning experience by any estimation, but the HASTAC way is to not just create new technologies but to think critically about those technologies—what they mean, how they apply to society or to individual rights and aspirations. It is also important to transform creating and critiquing into pedagogical practice. So I would say that the &ldquo;development phase&rdquo; we are in now, post the exhilarations of the Festival, is the truly humbling part of this program.</p>
+
+<br>
+<br>
+
+<!-- How-to Method For Contract Grading -->
+
+<div class="how-to-bg"><a name="lfw_7"><br></a>
+<div class="section-flag">HOW TO</div><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="how-to-header">Contract grading<img src="images/lxf-howto.png" style="float: right"></p>
+
+<br>
+<br>
+
+<p class="how-to-lead-para">A method of grading that allows students to determine their own learning goals, while incorporating peer learning and peer assessment, and removing the teacher as the sole point of authority.</p>
+
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Difficulty:</span> Medium.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Time: </span>3 months.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Who:</span> Many learners; 1 facilitator.</p>
+
+<br>
+
+<p class="how-to-body-copy"><span class="yellow-left-justified">Steps:</span></p>
+
+<br>
+
+<p class="how-to-body-copy">1. Lay out all the requirements of a course: assignments, class participation, blogging, etc.</p>
+<br>
+<p class="how-to-body-copy">2. Successful completion of all course requirements is an automatic A. Students who have other obligations during the term and don&rsquo;t need an A can choose to do less work to earn a B or C grade.</p>
+<br>
+<p class="how-to-body-copy">3. Have students sign contracts committing to a particular grade, with consequences spelled out. No matter what level of grade contracted for, missing assignments or unsatisfactory completion lead to automatic grade penalties.</p>
+<br>
+<p class="how-to-body-copy">4. Each week, have two student leaders make specific reading and production (writing or multimedia) assignments, read assignments, and assess the students’ contributions, setting (and discussing) what constitutes satisfactory work and also working to improve contributions if they are not satisfactory.</p>
+<br>
+<p class="how-to-body-copy">5. The next week, those two student leaders are back in the class, producing work that the next two student leaders read, assess, give feedback on.</p></div>
+
+<!-- Profile : David Humphrey -->
+
+<br>
+<br>
+<br>
+
+<a name="lfw_8"><br></a>
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">David Humphrey<a id="single_image" title="David Humphrey. Photo from Gen Kanai's Flickrstream, Aug. 20, 2011." href="images/davidhumphrey.jpg"><img src="images/davidhumphrey-icon.png" alt="David Humphrey. Photo from Gen Kanai's Flickrstream, Aug. 20, 2011." style="float: right" "margin-right: 15px"></a></p>
+
+<br>
+<br>
+
+<p class="article-lead-para">As a professor at Seneca College in Toronto and an “educational liason” for Mozilla, David Humphrey helps beginning programming students learn by participating in Mozilla and their open-source software development. This means he’s living the complexities of learning, freedom, and the web like few others. “It&rsquo;s not that my students are the smartest in the world; it&rsquo;s that I believe they can do great things. I put them in an environment where they can see others doing it, and they do,” he says. At the Festival, he spent most of his time up on the third floor, sequestered in the Video Lab, making one of the most productive collaborations at the fest happen.</p>
+
+<br>
+<br>
+
+<p class="profile-question">What is your background and why are you interested in open education, free sharing and reuse of knowledge?</p>
+
+<p class="profile-answer">I am a professor specializing in software development, and in particular Mozilla and the open web. I&rsquo;m interested in open education and the free sharing of knowledge from a philosophical point of view.</p>
+
+<p class="profile-question">Can you describe Seneca&rsquo;s work with Mozilla Foundation? What kinds of projects are they working on? What are the goals?</p>
+
+<p class="profile-answer">I have been an active contributor to the Mozilla project for six years, and have brought hundreds of students with me into Mozilla. I teach students how to work on something as large and complicated as Firefox, and also how to cope in a community like Mozilla. My students work on everything Mozilla does. I try to let students work on (and discover) their passions through Mozilla versus having them all work in one area.</p>
+
+<p class="profile-question">How do you assess work within a collaborative setting such as building open source software? How do you ready students to work independently on real-world projects and to seek help?</p>
+
+<p class="profile-answer">I grade things like blog posts, bugzilla involvement, IRC [chat room] involvement, etc. And instead of just marking the finished product, I grade the process as much or more. In open source, the code evolves little bit by little bit, and if you&rsquo;re willing to mark that slow evolution on a regular basis, it&rsquo;s pretty easy to do assessments.</p>
+
+<p class="profile-answer">I throw students into a real project before they are ready, then teach them the skills they need as they need them. If I just taught them the theory of open source, they would never have the need for much of it. But by having them engage early, they are hungry for knowledge, introductions to people, etc.</p>
+
+<p class="profile-answer">Also, I use my personal connections at Mozilla to find mentors and get people to help my students. The reason this works in an ongoing way is that I also get my students to help these people. It has to be two-way or the open source community will tire quickly.</p>
+
+<p class="profile-question">What do you think is the relationship between free, and/or open-source software and open education? Why is it that so many people who are interested in one, are working on building the other?</p>
+
+<p class="profile-answer">Open source is built on community, and in particular, on communities of people who help each other. They teach each other, help each other fix things, extend each other&rsquo;s work. Every one of us working on a project like Mozilla is dependent on others to help us understand things in the code that we don&rsquo;t know. The free exchange of knowledge is how open source works, and how the Internet works. It&rsquo;s natural that people who do this all day long will become interested in teaching and education, since much of their work is about engaging new contributors and helping existing ones. The key to succeeding here is to make your students look like new contributors—then the open source community knows what to do with them.</p>
+
+<p class="profile-question">What would you tell other colleges that are interested in incorporating programs like those at Seneca?</p>
+
+<p class="profile-answer">You have to become an active member in an open source community for this to work. Unless you have connections and knowledge yourself, you can&rsquo;t do this.</p>
+
+<p class="profile-question">What are the main obstacles standing in the way of an entirely free and open world of education? Are they technological, social, matters of government policy or the conduct and structure of institutions?</p>
+
+<p class="profile-answer">The institutional approach to education is dehumanizing in its desire to deal with grades versus people. I am heavily influenced by the ideas of Ivan Illich here, and believe that open source in the classroom is one way to step outside (literally) the institution and into a world of real people and real collaboration.</p>
+
+<p class="profile-answer">When all our work for students is canned, and when everything is rated in terms of grades, we miss so much of the richness of real learning, which relies on failure, trial and error, getting to know people, and reaching for things you didn&rsquo;t think were possible.</p>
+
+<p class="profile-question">Do you think institutions will adapt to the new reality or will educational innovators have to find workarounds/build new kinds of institutions?</p>
+
+<p class="profile-answer">I think the school as such will fade. As a professor working on and with Mozilla, I could do my work from anywhere in the world, and I could be teaching students from anywhere. I&rsquo;ve helped students in Spain, France, Japan, Australia, all over the U.S. and Canada, England, India, and a dozen other countries. It didn&rsquo;t matter that we were in different locations, or at different schools. Projects like Mozilla cut across educational institutional boundaries.</p>
+
+<p class="profile-question">Anything else you&rsquo;d like to say about the future of education? What will education look like in 2020?</p>
+
+<p class="profile-answer">I hope that the approach I&rsquo;ve adopted will become less of a novelty and more the way many people work. I also hope to be engaged with more students outside my own institution. I’d like to teach from my basement by 2020. :)</p>
+
+<br>
+
+<!-- Profile : Ismael Pena Lopez -->
+
+<br>
+<br>
+<br>
+
+<a name="lfw_9"><br></a>
+
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Ismael Peña-López<a id="single_image" title="Ismael Peña-López. Photo from TEDxUIMP website, Aug. 20, 2011." href="images/ismael-pena-lopez.png"><img src="images/ismaelpenalopez-icon.png" alt="Ismael Peña-López. Photo from TEDxUIMP website, Aug. 20, 2011." style="float: right" "margin-right: 15px"></a></p>
+
+<br>
+<br>
+
+<p class="article-lead-para">Ismael Peña-López teaches at the Open University of Catalonia, a virtual university based in the region surrounding Barcelona, and maintains an insightful and incredibly lucid blog about the “de-institutional-ization of education” at ictology.net. He has a solemn, sleepy demeanor that breaks easily into laughter.
+
+<br>
+<br>
+
+“Digital technologies in knowledge-intensive areas (such as teaching and learning) have cut down to the minimum the cost of building, testing, trying, simulating, of being wrong.”<br><span class="author">—Ismael Peña-López</span></p>
+
+<br>
+<br>
+
+<p class="profile-question">Tell me about the Open University of Catalonia.</p>
+
+<p class="profile-answer">We started in 1994. It’s like the U.K.’s Open University, fully virtual. The founding president didn’t want to have all the binds and structures of a traditional university. So what he created is a tiny core of people. In our case it’s 200 professors for 50,000 students—these are coordinators of subjects. We create the syllabus, teaching materials, design what’s going to happen in the four months of the semester. And then there are 2,000 to 2,500 teaching assistants—these are online mentors who enter the classroom. If we have something synchronous or in-person, it’s not compulsory and it’s mandatory that an abstract or a video is put online. On our Microweb you can find all the books as HTML PDFs. Now that people are getting more DSL we have video, audio, multimedia.</p>
+
+<p class="profile-question">So how is this model doing?</p>
+
+<p class="profile-answer">It’s growing, popular—but people are threatened by the popularity of e-learning.  The president of the university was a visionary man: he began from scratch. No faculties—no people trying to get small kingdoms for themselves. We created a cooperative so students could buy their own computers.At first, there was a lot of reluctance. It was understandable: We were very new, very different. 
+
+<p class="profile-answer">By 2000, e-learning had become more normalized and so we had some pressure to offer Spanish courses [rather than just Catalan, the regional language], which are now available.</p>
+
+<p class="profile-question">So how do the fees work out, and how about the actual costs?</p>
+
+<p class="profile-answer">It works out to 400 to 700 euros a semester for Catalan courses. For courses in Spanish, it’s three to four times more because the Catalan government won’t subsidize teaching in Spanish.</p>
+
+<p class="profile-answer">As far as the costs, we have a much lower payroll than a traditional institution. We charge the students the same, but the government subsidizes us at 40 to 50 percent. For a normal university they pay 75 to 80 percent.</p>
+
+<p class="profile-question">And who are the students?</p>
+
+<p class="profile-answer">For 15 years we had the profile of any other Open U—Netherlands, U.K. Dropouts, people who want to study for the sake of it, 98 percent are working, 70 percent have a partner and a kid. My former president used to say we were the most successful university in the world in having students working—because they already had the job when they came in!</p>
+
+<p class="profile-question">But that&rsquo;s changed?</p>
+
+<p class="profile-answer">Just now, in the last semester, 25 percent of new students came directly from high school. That’s really new. The average before was like one percent—people who wanted to study something like multimedia, which wasn’t being offered anywhere else. Our average age has dropped from 45 to 35.</p>
+
+<p class="profile-question">Wow! Why do you think that is?</p>
+
+<p class="profile-answer">One reason is this digital next generation. They have lives online so why not study online? It’s much cheaper. They don’t have to commute or rent a flat. They can study and work at the same time.</p>
+
+<p class="profile-question">Tell me about your interest in free software and open education.</p>
+
+<p class="profile-answer">Along with my students, I started an E-learning for Development nonprofit. We use free people (volunteers), free software (our learning platform), and free content—to teach either NGOs or people who are in developing countries like Morocco or post-conflict countries like Bosnia-Herzegovina. We have all kinds of courses like human development, economics, web development. We can do lots of things for free. We need lots of ways to circumvent the huge structure that’s normally very slow in adapting.</p>
+
+<p class="profile-answer">My research is also about the digital divide or e-empowerment, e-poverty. It’s a big thing that is interrelated. If you can change the transmission of knowledge, that’s one of the huge axes of development. ICTs (information and communication technologies) can empower people to get their own food, their own health, why not their own learning? ICT is about decentralization and bringing the knowledge back to the people.</p>
+
+<p class="profile-question">So it&rsquo;s really about justice for you. And it changes teaching and learning practice too, right?</p>
+
+<p class="profile-answer">Yes. The teacher becomes a mentor—engaging and monitoring, curating more than just concentrating the knowledge. We can transform education into learning instead of teaching. We have lots of possibilities—why stick to old ways of lecturing? The university has proved that a switch is possible but not a huge transformation of the whole system.</p>
+
+<p class="profile-answer">People normally think that face-to-face is rich because you can engage in a conversation with peers and your teacher/savior. You can talk, you can reflect. They are thinking about the Greeks and Aristotle and those disciples going around the cloister. This is only true for good learning, which happens .00001% of the time—maybe at a posh Harvard seminar for 12 graduate students. One of the things we did well in the industrial revolution was to democratize access to knowledge and education. But the tradeoff was about personalization and being able to monitor people very closely.</p>
+
+<p class="profile-answer">Online learning is doing very well in that. I have dialogue with my students. On chat boards they can contribute without having to raise their hand. There’s no time constraint—we’re not rushing off because class is finishing. With all the materials online, you can customize the experience to the max. The only thing that’s blocked in e-learning is this sense of humanity, where I get to look you in the eyes.</p>
+
+<p class="profile-question">So how do you overcome that?</p>
+
+<p class="profile-answer">I like the blended classroom where people work a lot at home with lots of access and interaction, a rich and intensive debate, and they just meet face-to-face once a week or once a day, to check that people are people and are able to access the social part of the learning. At the same time, we have such rich experiences online with streaming video conference and Twitter. It’s a tradeoff—if I have to spend two days to go to my campus to meet people, it means during these two days that I’m missing out on this ongoing conversation taking place online.</p>
+
+<p class="profile-answer">I’d rather have Wi-Fi without the conference than a conference without Wi-Fi. I’d rather have no human contact but rich contact with all the people online.</p>
+
+<p class="profile-question">Wow. That&rsquo;s a bold statement.</p>
+
+<p class="profile-answer">I’ve taught face-to-face and online. I like the adrenaline of teaching offline. I used to gig with a sax so I’m a stage animal. But I find that I get closer to the students online. I can stretch them and force them to think more.</p>
+
+<p class="profile-question">So what do you think will happen in European education, with all these budget pressures and things like the Bologna process? <font color= "#363c46">[Starting with the Bologna Declaration of 1999, the Bologna process is a broad reform effort to streamline and integrate the higher education systems of 29 EU countries.]</font></p>
+
+<p class="profile-answer">I think the Bologna process is a good step, even if it’s got a lot of opposition from the students. We’re ringing alarms about 24 percent of our students being 18. Why should they have to commute an hour to Barcelona to listen to a boring guy, go home, ask somebody for the notes, and end up looking it up on Wikipedia? Maybe this will push face-to-face, not to go online, but to have richer learning experiences.</p>
+
+<br>
+
+<div class="clear"></div>
+
+<a href="learningeverywhere.html"><div class="next-page-button"><div class="next-page-button-text">tap to continue</div><img src="images/next-page-button.png"/></div></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+          </div>
+    </article>
+  </body>
+</html>

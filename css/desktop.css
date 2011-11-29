@@ -45,15 +45,15 @@ header img {
     background-position: 24px -280px, 46% -417px;
 }
 .line-separator{
-	width: 275px;
+	width: 90%;
 	border-top:1px solid gray;
 	border-bottom:1px solid gray;
 	margin: 0px auto;
 }
 .line-separator2{
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 5px; 
-	width: 275px;
+	width: 90%;
 	margin: 0px auto;
 }
 .cta {

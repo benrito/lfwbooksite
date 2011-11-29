@@ -1,0 +1,1246 @@
+/* At the top here, we have our @font-face setup. For the fonts to work properly in all browsers, including the iPad, we had to link font files to each individual font style(i.e. "Kreon-Bold" had to be linked to url(fonts/Kreon-Bold.ttf). With this framework setup, we had to use specific font names within the CSS classes or ID's. Also, this meant that the "font-weight", "font-style",  would always be normal. Welcome to the world of better web-typography.*/
+
+@font-face {font-family:"Kreon-Bold"; src: url(fonts/Kreon-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Light"; src: url(fonts/Kreon-Light.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Regular"; src: url(fonts/Kreon-Regular.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Bold"; src: url(fonts/DroidSerif-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Bold Italic"; src: url(fonts/DroidSerif-BoldItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Italic"; src: url(fonts/DroidSerif-Italic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif"; src: url(fonts/DroidSerif.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Sans"; src: url(fonts/DroidSans.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Sans"; src: url(fonts/DroidSans-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Grace"; src: url(fonts/CoveredByYourGrace.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-LightItalic"; src: url(fonts/Lato-LightItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-Light"; src: url(fonts/Lato-Light.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-Italic"; src: url(fonts/Lato-Italic.ttf) format('truetype');}
+
+/*This is the start of the CSS that styles the structure of the book.*/
+
+body {
+background-color: #F3F3F3;
+height: auto;
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+
+a:link { 
+color: #363c46;
+text-decoration: none;
+}
+
+a:active {
+color: #d88f32;
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+color: #363c46;
+text-decoration: none;
+}
+
+p {
+margin: 10px 0;
+}
+
+dd {
+padding-bottom: 15px;
+text-decoration: none;
+}
+
+dd:active {
+font-color: #d88f32;
+text-decoration: none;
+}
+
+#top {
+margin-left: 42px;
+}
+
+#grey {
+float:left;
+position:fixed;
+background:#E6E6E6;
+background-image: url(images/nav-stripes.jpg);
+background-repeat:repeat-y;
+width:242px;
+top:0px;
+left:35px;
+height:100%;
+z-index:2;
+}
+
+#black {
+float:left;
+position:fixed;
+background-image: url(images/sidefold.png);
+background-repeat:repeat-y;
+width:35px;
+top:0px;
+left:0px;
+height:100%;
+z-index:1;
+}
+
+.mozilla-logo {
+width: 200px;
+height: 148px;
+padding-top: 100px;
+padding-bottom: 50px;
+padding-left: 80px;
+}
+
+#bg-canvas {
+position:fixed;
+background-image:url(images/index-bg.jpg);
+background-repeat: repeat-y;
+z-index: 1;
+top:0px;
+left:0px;
+width: 100%;
+height:100%;
+}
+
+#bg-canvas img {
+position:fixed;
+background-image:url(images/index-bg.jpg);
+background-repeat: repeat-y;
+z-index: 1;
+top:0px;
+left:0px;
+width: 100%;
+height:100%;
+}
+
+#bg {
+position:fixed;
+z-index: 5;
+top:0px;
+left:30%;
+margin: auto;
+width: auto;
+height: 100%;
+}
+
+#bg img {
+position:fixed;
+z-index: 5;
+top:0;
+left:0;
+right:30%;
+margin:auto;
+width:auto;
+height:100%;
+}
+
+/* This is the setup for the navigation. There are a lot of ID's here that define how elements are related and their behaviours. All of the 'dt' ID's are for the banners that slide up and down when you click on them. They have ID's for when a user click's on them as well. Anytime you see "active" in CSS, that means the stated of that element will change when it is clicked. As touch screen devices don't use hover states, active states and visited states are the only things a person can provide as feedback for the user. */
+
+#side {
+position:absolute;
+top: 0;
+left: -27px;
+bottom: 0;
+width:306px;
+z-index:3;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+#side dt{
+left:-200px;
+}
+
+#side dt a:link, #side dt a:visited {
+display: inline-block;
+height: 25px;
+text-decoration: none;
+background-image:url(images/orange_banner_medium.png);
+background-repeat:no-repeat;
+}
+
+#side dt a:link, #side dt a:hover {
+width: 255px;
+background-image:url(images/navy_banner_medium.png);
+display: inline-block;
+height: 25px;
+padding-top:17px;
+padding-bottom:25px;
+padding-left:23px;
+padding-right:80px;
+text-decoration: none;
+}
+
+#side dt.open a:link, #side dt.open a:hover {
+background-image:url(images/orange_banner_medium.png);
+}
+
+#side a {
+text-decoration:none;
+font-color: #F3F3F3;
+}
+
+#side a:active {
+font-color: #d88f32;
+}
+
+#side li{
+list-style:none;
+}
+
+#side li:active {
+font-color: #d88f32;
+}
+
+/* This class if for styling the Mozilla tab that is linked the Mozilla Foundation website. This tab comes standard on all Mozilla project pages. */
+
+.mozilla-tab {
+position: absolute;
+z-index: 4;
+padding-left: 40px;
+padding-bottom: 25px;
+}
+
+/* These block section ID's are for the broader sections of the book, Learning x Freedom, the Web x Learning, Freedom x Web, and Learning x Freedom x the Web. As these sections were important to the ethos of the book, we included them in the navigation but they're separated as broader themes for people to click to. They're the tertiary level of hierarchy. For example, one can understand the hierarchy of this book as Learning x Freedom -> Storming the Academy -> Profile : David Humphrey -> And within this profile are photos to be clicked on separately from the navigation. This is the drill-down style of hierarchy we developed. To get away from this, we added links to the bottom of each chapter to advance the user to the next article. Also, the 'featured how-to's' get away from a linear navigation. */
+
+#side block-section {
+display: block;
+text-align: left;
+width: 242px;
+height: 28px;
+padding-left: 37px;
+padding-top: 15px;
+}
+
+#side block-section-lfw {
+display: block;
+text-align: left;
+width: 242px;
+height: 28px;
+padding-left: 37px;
+padding-top: 15px;
+padding-bottom: 20px;
+}
+
+#side block-section-lfw:active {
+display: block;
+text-align: left;
+font-color: #d88f32;
+width: 242px;
+height: 28px;
+padding-left: 37px;
+padding-top: 15px;
+padding-bottom: 20px;
+}
+
+#side block-section:active {
+display: block;
+text-align: left;
+font-color: #d88f32;
+width: 242px;
+height: 28px;
+padding-left: 37px;
+padding-top: 15px;
+}
+
+span.sections {
+font-family: "Droid Sans";
+font-size: 19px;
+word-spacing: -3px;
+letter-spacing: -1px;
+color: #363c46;
+text-align: left;
+line-height: 18px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.sections:active {
+font-family: "Droid Sans";
+font-size: 19px;
+word-spacing: -3px;
+color: #d88f32;
+text-align: left;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.sidebar-bottom-tab {
+font-family: "Droid Sans";
+font-size:14px;
+}
+
+span.sidebar-chapters {
+font-family: "Droid Sans";
+font-size: 14px;
+color: #F3F3F3;
+text-shadow: 0px 1px 0px #363c46;
+}
+
+span.sidebar-chapters:active {
+font-family: "Droid Sans";
+font-size: 14px;
+color: #d88f32;
+text-shadow: 0px 1px 0px #363c46;
+}
+
+span.sidebar-chapters li {
+cell-padding:10px;
+}
+
+span.sidebar-menu-sections {
+font-family: "Droid Sans";
+font-size: 20px;
+color: #363C46;
+line-height: 35px;
+}
+
+/* This is the styling for the subsection names; for instance, "How-to: Contract Grading" under the siderbar-chapter of "Storming the Academy" */
+
+span.sidebar-subsection-names- {
+font-family: "Droid Sans";
+font-size: 14px;
+padding-right: 10px;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.sidebar-subsection-names-:active {
+font-family: "Droid Sans";
+font-size: 14px;
+padding-right: 10px;
+color: #d88f32;
+text-shadow: 0px 1px 0px #fff;
+}
+
+/* This footer is where you'll find the About, Contact, and Support links. Also in the footer are the social networking 'like', 'tweet', and 'follow' links. I also had to add buttons that show up on the iPad. The iPad doesn't support the social plugin's offered by Facebook and Twitter. It looks a bit redundant on a desktop browser and Android tablets but at least there's something there for iPad users to connect with Mozilla. */
+
+span.sidebar-footer- {
+font-family: "Droid Sans";
+font-weight: normal;
+font-size: 14px;
+color: #363c46;
+line-height: 40px;
+}
+
+span.sidebar-footer-:active {
+font-family: "Droid Sans";
+font-weight: normal;
+font-size: 14px;
+color: #d88f32;
+line-height: 40px;
+}
+
+span.sidebar-chapter-footer- {
+font-family: "Droid Sans";
+font-size: 18px;
+color: #363C46;
+line-height: 35px;
+}
+
+span.sidebar-about-captions {
+font-family: "Droid Serif";
+font-size: 18px;
+}
+
+.footer {
+width: 250px;
+font-family: "Droid Sans";
+font-weight: bold;
+font-style: normal;
+font-size: 16px;
+text-align: left;
+word-spacing: 3px;
+text-shadow: 0px 1px 0px #fff;
+padding-top: 25px;
+padding-left: 40px;
+}
+
+.social {
+display: block;
+width: 245px;
+height: 32px;
+float: left;
+padding-top: 15px;
+padding-left: 40px;
+}
+
+.twitter-follow {
+display: block;
+width: 220px;
+float: left;
+padding-top: 15px;
+padding-left: 40px;
+margin-bottom: 15px;
+}
+
+.twitter-tweet {
+display: block;
+width: 220px;
+float: left;
+padding-left: 40px;
+margin-bottom: 15px;
+}
+
+.facebook-ipad {
+display: block;
+width: 100px;
+height: 44px;
+float: left;
+background-image: url(images/facebook.png);
+background-repeat: no-repeat;
+margin-left: 40px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+.facebook-ipad:active{
+display: block;
+width: 100px;
+height: 44px;
+float: left;
+background-image: url(images/facebook-hover.png);
+background-repeat: no-repeat;
+margin-left: 40px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+.twitter-ipad {
+display: block;
+width: 100px;
+height: 44px;
+float: left;
+background-image: url(images/twitter.png);
+background-repeat: no-repeat;
+margin-left: 40px;
+margin-bottom: 5px;
+}
+
+.twitter-ipad:active  {
+display: block;
+width: 100px;
+height: 44px;
+float: left;
+background-image: url(images/twitter-hover.png);
+background-repeat: no-repeat;
+margin-left: 40px;
+margin-bottom: 5px;
+}
+
+.fb-root {
+display: block;
+width: 220px;
+height: auto;
+left: 50px;
+margin-bottom: 40px;
+}
+
+.twitter-how {
+display: block;
+width: 67px;
+float: left;
+}
+
+.fb-how {
+display: block;
+width: 67px;
+float: left;
+}
+
+/* The following classes are used to style the bottons that are at the bottom of each article or chapter. They only show up on the iPad for the time being. */
+
+.clear{
+clear: both;
+width: 100%;
+}
+
+.next-page-button {
+width: 100%;
+text-align: right;
+float: right;
+position: absolute;
+right: 0px;
+padding-top: 45px;
+padding-right: 10px;
+}
+
+.next-page-button img {
+float: right;
+text-align: right;
+padding-right: 10px;
+}
+
+.next-page-button-text {
+width: 100%;
+font-family: "Droid Sans";
+font-size: 11px;
+color: #d88f32;
+text-align: right;
+letter-spacing: 2px;
+line-height: 25px;
+}
+
+.next-page-button-text:active {
+color: #363C46;
+}
+
+.toc-next-page-button {
+position: fixed;
+z-index: 1;
+right: 15px;
+bottom: 15px;
+}
+
+.toc-next-page-button-text {
+font-family: "Droid Sans";
+font-size: 11px;
+color: #d88f32;
+text-align: center;
+letter-spacing: 2px;
+line-height: 25px;
+margin-left: -7px;
+}
+
+.toc-next-page-button-text:active {
+color: #363C46;
+}
+
+/* The following ID and class are for styling the newsletter form that can be found on the Contact Page. */
+
+#home-newsletter form {
+background: #C8E0E8 url(/images/home/newsletter-bg.jpg) 0 0 no-repeat;
+background-image: url(http://www-stage.mozilla.org/images/home/newsletter-bg.jpg);
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+background-attachment: initial;
+background-position-x: 0px;
+background-position-y: 0px;
+background-origin: initial;
+background-clip: initial;
+background-color: #C8E0E8;
+padding: 14px 14px 20px 14px;
+padding-top: 14px;
+padding-right: 14px;
+padding-bottom: 20px;
+padding-left: 14px;
+-moz-border-radius: 7px;
+}
+
+form {
+display: block;
+margin-top: 0em;
+}
+
+/* This marks the beginning of the ID's and classes that style the content within the articles. */
+
+/* This style creates the frame for the article on the righthand side of the screen */
+
+article#main {
+left: 293px;
+background-color: #F3F3F3;
+position:absolute;
+top: 0;
+bottom: 0;
+overflow-y: auto;
+padding-right: 15px;
+}
+
+/* I created these classes to create the break to signify the start of a Profile/Interview. The .section-flag style is floating above the lead-paragraph to the left and the .floating-header is straight across from the .section-flag. The span class details the orange/yellow text within the .floating-header class. */
+
+.section-flag {
+font-family: "Droid Serif";
+font-size: 9px;
+vertical-align: middle;
+color: #f3f3f3;
+display: inline;
+float: left;
+background-image:url(images/how-to-flag.png);
+background-repeat: no-repeat;
+width: 54px;
+height: 15px;
+padding-left: 3px;
+padding-top: 2px;
+margin-top: 2px;
+}
+
+.floating-header {
+display: inline;
+height: 15px;
+float: right;
+background: #E6E6E6;
+font-family: "Droid Serif";
+font-size: 10px;
+text-align: center;
+color: #363C46;
+padding: 4px 6px 0px 6px;
+}
+
+span.header-text-yellow {
+color: #d88f32;
+}
+
+/* These styles are for the How-to's within the articles that weren't developed as featured How-to's for the user to click into. The small flag with "HOW TO" inside it and the 'floating header, were first developed for these un-featured How-to's but then I realized the worked well to signify Profiles. */
+
+p.how-to-header {
+font-family: "Grace";
+font-size: 35px;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-banner {
+font-family: "Grace";
+font-size: 35px;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-banner :active {
+font-family: "Grace";
+font-size: 35px;
+text-align: left;
+color: #d88f32;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-lead-para {
+font-family: "Kreon-Regular";
+font-size: 19px;
+text-align: left;
+color: #363C46;
+line-height: 24px;
+}
+
+p.make-sure-to {
+font-family: "Droid Sans";
+font-size: 16px;
+text-align: left;
+color: #363C46;
+}
+
+p.how-to-details {
+font-family: "Droid Serif";
+font-size: 16px;
+text-align: left;
+color: #363C46;
+}
+
+p.how-to-body-copy {
+font-family: "Droid Serif";
+font-size: 16px;
+text-indent: -19px;
+text-align: left;
+color: #363C46;
+margin: 0 0 0 120px;
+}
+
+/* This <p class> was used to style one list in the webcraft.html file. */
+
+p.ts-points {
+font-family: "Droid Serif";
+font-size: 16px;
+text-indent: -19px;
+text-align: left;
+color: #363C46;
+margin: 0 0 0 60px;
+}
+
+span.yellow-left-justified-italic {
+font-family: "Droid Serif Bold Italic";
+color: #d88f32;
+}
+
+span.yellow-left-justified {
+font-family: "Droid Serif Bold";
+font-weight: normal;
+color: #d88f32;
+}
+
+span.detail-script {
+font-family: "Covered By Your Grace";
+font-size: 16px;
+color: #363C46;
+}
+
+/* Feature Button Styles. These styles are for the banner that signify's to users there is a developed 'Featured How-to' for them to see. You'll see below, there are a bunch of "feature-image" ID's for the different sketches produced by Amy Wang. These had to have separate ID's so that they would float at appropriate heights and distances from the right-hand margin according to each composition with title length. */
+
+.feature-box {
+display: block;
+width: auto;
+height: 103px;
+font-family: "Lato-Italic";
+font-size: 14px;
+text-align: left;
+color: #363C46;
+}
+
+.feature-title-box {
+display: block;
+width: auto;
+height: 35px;
+font-family: "Grace";
+font-size: 24px;
+text-align: left;
+line-height: 27px;
+color: #363C46;
+background-image:url(images/how-to-grid.png);
+margin-bottom: 5px;
+margin-top: 5px;
+padding-top: 10px;
+}
+
+.feature-bottom-bar {
+display:block;
+height: 2px;
+width: auto;
+background-color: #d88f32;
+}
+
+.feature-flag {
+display: block;
+float: left;
+background-image: url(images/button-flag.png);
+background-repeat: no-repeat;
+height: 27px;
+width: 81px;
+font-family: "Droid Sans";
+font-size: 14px;
+text-align: left;
+color: #f3f3f3;
+padding-left: 8px;
+}
+
+#drumbeat-feature-image {
+display: block;
+position: relative;
+float: right;
+bottom: 64px;
+right: 5px;
+}
+
+#butter-feature-image {
+display: block;
+position: relative;
+float: right;
+bottom: 110px;
+}
+
+#arduino-feature-image {
+display: inline;
+position: relative;
+float: right;
+bottom: 82px;
+right: 23px;
+}
+
+#badges-feature-image {
+display: block;
+position: relative;
+float: right;
+bottom: 55px;
+right: 15px;
+}
+
+#feature-icon {
+display: block;
+position: relative;
+bottom: 5px;
+float: right;
+}
+
+span.infographic-steps {
+font-family: "Grace";
+font-size: 17px;
+letter-spacing: 1.5px;
+}
+
+/* These are the classes and ID's for the non-featured How-to's within the articles. To keep the design of the ebook in relationship to the printed Learning, Freedom, and the Web, I made a grid pattern in Photoshop and placed it in a <div> behind the How-to text. This, along with tracing icons developed for the book, matching typefaces, and the header styling, really helped unify the printed and electronic publications. */
+
+.how-to-bg {
+display: block;
+height: 100%;
+width: 100%;
+padding: 15px 0px 15px 0px;
+background-image:url(images/how-to-grid.png);
+}
+
+#how-to-buttons {
+display: block;
+height: 100%;
+width: 100%;
+padding: 15px 0px 15px 0px;
+background-image:url(images/how-to-grid.png);
+}
+
+/* I created this link icon for all of the hyperlinks within the ebook. This proved to add visual clutter but I kept it at the bottom of the Featured How-to: Learn and play with Arduino. */
+
+.link-icon {
+display: block;
+float:right;
+height: 17px;
+width: 94px;
+background-image:url(images/link-icon.png);
+background-repeat: no-repeat;
+}
+
+span.link-icon {
+font-family: "Droid Sans";
+font-size: 11px;
+text-align: center;
+padding-top: 2px;
+color: #f3f3f3;
+letter-spacing: 2px;
+}
+
+span.link-icon:active {
+color: #363C46;
+}
+
+/* These are the headers for the start of each chapter and subsections within each file. The header was reserved for the actual chapter headings (i.e. Storming the Academy, Learning Everywhere, etc.) */
+
+p.article-subheader-intro {
+font-family: "Kreon-Bold";
+font-size: 26px;
+text-align: left;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+line-height: 37px;
+}
+
+p.article-header {
+font-family: "Kreon-Bold";
+font-size: 40px;
+text-align: left;
+color: #363c46;
+line-height: 36px;
+margin-bottom: 0px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.article-subheader {
+font-family: "Kreon-Bold";
+font-size: 26px;
+text-align: left;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.article-subheader-a {
+font-family: "Kreon-Bold";
+font-size: 30px;
+text-align: left;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.article-subheader-b {
+font-family: "Kreon-Bold";
+font-size: 19px;
+text-align: left;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+/* This marks the beginning of a long list of paragraph styles for the articles. */
+
+p.forward-header {
+font-family: "Kreon-Bold";
+font-size: 60px;
+text-align: left;
+color: #363c46;
+margin-top: 15px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.author {
+font-family: "Lato-Light";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+line-height: 28px;
+margin-left: 70px;
+}
+
+/* The author information that comes after most lead-paragraphs at the start of broad-sections, chapters, profiles, and subsections. */
+
+p.author {
+font-family: "Lato-Light";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+line-height: 18px;
+padding-left: 38px;
+}
+
+/* The lead-paragraph at the start of most articles, profiles, subsections, etc. */
+
+p.lead-para {
+font-family: "Lato-LightItalic";
+font-size: 19px;
+text-align: left;
+color: #363C46;
+}
+
+p.article-lead-para {
+font-family: "Lato-LightItalic";
+font-size: 21px;
+text-align: left;
+color: #363c46;
+line-height: 28px;
+}
+
+p.article-section-and-question {
+font-family: "Droid Serif";
+font-size: 16px;
+text-align: left;
+color: #353c46;
+}
+
+/* Later in the design process, we got proofs from Mozilla that indicated a style for the blog posts that are included in the book. I created these styles, took the icon of the laptop from Chris Appleton, and styled the meta-data as well to coincide with the print version. */
+
+p.blog-header {
+font-family: "Kreon-Bold";
+font-size: 19px;
+text-align: left;
+color: #363c46;
+margin-left: 38px;
+margin-top: 24px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.blog-meta {
+font-family: "Kreon-Bold";
+font-size: 15px;
+color: #d88f32;
+text-shadow: 0px 1px 0px #fff;
+}
+
+.blog-header {
+background-image: url(images/blog-icon.png);
+background-repeat: no-repeat;
+width: 380px;
+font-family: "Kreon-Bold";
+font-size: 19px;
+text-align: left;
+color: #363c46;
+margin-top: 24px;
+padding-left: 55px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.blog-para {
+font-family: "Droid Serif";
+font-size: 16px;
+line-height: 23px;
+margin-left: 55px;
+text-align: left;
+color: #363C46;
+}
+
+/* These styles indent the text and set it in italic to indicate longer pull-quotes. */
+
+p.pull-quote {
+font-family: "Droid Serif Italic";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+margin-left:35px;
+line-height: 23px;
+}
+
+p.pull-quote-hack {
+font-family: "Droid Serif Italic";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+margin-left:35px;
+margin-bottom: -20px;
+line-height: 20px;
+}
+
+p.comments-from-crowd {
+font-family: "Droid Serif Italic";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+margin-left:35px;
+line-height: 20px;
+}
+
+/* Styles for detail information provided in the text. */
+
+p.notes {
+font-family: "Droid Serif";
+font-size: 14px;
+text-align: left;
+color: #363c46;
+}
+
+p.v-note {
+font-family: "Droid Sans";
+font-size: 12px;
+text-align: left;
+color: #363c46;
+}
+
+p.definition {
+font-family: "Droid Serif";
+font-size: 16px;
+text-align: left;
+color: #363c46;
+margin-left: 35px;
+margin-bottom: 15px;
+}
+
+p.blue-hyperlink {
+font-family: "Droid Sans";
+font-size: 14px;
+text-align: left;
+color: #363c46;
+margin-bottom: 15px;
+}
+
+/* Styles for the toc.html page. */
+
+p.toc-title {
+font-family: "Droid Sans";
+font-size: 27px;
+text-align: left;
+color: #363c46;
+margin-top: 55%;
+margin-left: 25px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.toc-credits {
+font-family: "Lato-Light";
+font-size: 15px;
+text-align: left;
+color: #363C46;
+margin-left: 25px;
+margin-top: 30%;
+}
+
+p.toc-footer {
+font-family: "Lato-Light";
+font-size: 11px;
+text-align: left;
+color: #363C46;
+margin-left: 25px;
+margin-top: 30%;
+}
+
+p.about-page {
+font-family: "Lato-Light";
+font-size: 15px;
+text-align: left;
+color: #363C46;
+margin-left: 25px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+/* These styles are for links within the <p class> tags of the articles. They style the links with a dotted underline and a yellow/orange active state. */
+
+span.link {
+color: #363c46;
+border-bottom: 1px dotted;
+}
+
+span.link:active {
+color: #d88f32;
+border-bottom: 1px dotted;  
+}
+
+span.link:visited {
+color: #363c46;
+border-bottom: 1px dotted;  
+}
+span.y-link {
+color: #d88f32;
+border-bottom: 1px dotted;
+}
+
+span.y-link:active {
+color: #363c46;
+border-bottom: 1px dotted;  
+}
+
+span.y-link:visited {
+color: #d88f32;
+border-bottom: 1px dotted;  
+}
+
+span.fancy-pull-quote-words {
+font-family: "Grace";
+font-size: 14px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.session-notes{
+font-family: "Grace";
+font-size: 24px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.art-section-fancies {
+font-family: "Grace";
+font-size: 17px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.mark-surman-fancies {
+font-family: "Grace";
+font-size: 20px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.article-subhead {
+font-family: "Kreon-Bold";
+font-size: 21px;
+letter-spacing: 1.5px;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.session-header {
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.blue-note-links {
+font-family: "Droid Sans";
+font-size: 14px;
+color: #363c46;
+}
+
+span.body-copy-note {
+font-family: "Droid Sans";
+font-size: 14px;
+color: #363c46;
+}
+
+p.profile-header {
+font-family: "Kreon";
+font-size: 40px;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.profile-question {
+font-family: "Droid Serif";
+font-size: 16px;
+line-height: 23px;
+text-align: left;
+color: #d88f32;
+}
+
+p.body-copy {
+font-family: "Droid Serif";
+font-size: 16px;
+text-align: left;
+color: #363C46;
+line-height: 23px;
+}
+
+p.foreword-body-copy {
+font-family: "Droid Serif";
+font-size: 21px;
+text-align: left;
+color: #363C46;
+line-height: 33px;
+}
+
+p.profile-answer {
+font-family: "Droid Serif";
+font-size: 16px;
+line-height: 23px;
+margin-left: 38px;
+text-align: left;
+color: #363C46;
+}
+
+/* These classes are for the Lightbox which is used for the Featured How-to's. Allen Pike customized the CSS for this Lightbox so that when the How-to is loaded, the width of the iframe is automatically adjusted to be the same width as the HTML page that is being loaded. This was our way of bringing together the work of two separate teams later on in the design process. There could have been a more elegant way to integrate the featured How-to's but this was our solution to a dilemna. */
+
+#lightbox {
+position: absolute;
+z-index: 1000;
+background-color: rgba(0,0,0,0.3);
+padding: 0px;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+#lightbox #content {
+width: 720px;
+margin: 20px 0 0 -360px; /* half the width */
+position: absolute;
+left: 50%;
+height: 90%;
+background-color: #EEE;
+overflow: hidden;
+}
+
+#lightbox iframe {
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+#lightbox .close {
+position: absolute;
+top: -9px;
+right: 50%;
+margin-right: -392px;
+padding: 20px;
+z-index: 1001;
+cursor: pointer;
+}
+
+#side a.current:link span, #side a.current:visited span  {
+color: #d88f32;/* Currently selected section */
+}
+
+#side .scroller {
+overflow-x: hidden; /* Keep content from being left to right scrollable */
+}
+
+#fb-root iframe {
+border:none;
+overflow:hidden;
+width:195px;
+height:80px;
+margin-left: 40px;
+}
+
+/* This is the class for all of the images within the articles. All of the images were cropped to 471px before loading in the Fancybox plugin. After they have been opening in the Fancybox, they are all cropped to 536px wide. This width was chosen because many of the images were sourced from Flickrstreams. The default image aspect ration from Flickr is 640px wide. */
+  
+.article-image {
+width: auto;
+margin-top: 5px;
+margin-left: 30px;
+margin-bottom: 15px;
+float: right;
+}

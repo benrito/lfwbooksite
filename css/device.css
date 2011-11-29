@@ -5,6 +5,7 @@
 body {
     font-family: Georgia;
     font-size: 18px;
+    border-top: 2px solid #686868;
 }
 h1 {
     font-family: "MetaWebPro-Black";
@@ -33,10 +34,10 @@ b {
 a:focus,
 a:hover,
 a:active {
+    color: #grey;
 }
 .wrapper {
     margin: 0 10px;
-    overflow: hidden;
     zoom: 1;
     position: relative;
 }
@@ -71,7 +72,7 @@ header img {
 	border:1px solid #c7c3c7;
 	display:inline-block;
 	color:#777777;
-	width: 125px;
+	width: 50%;
 	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
@@ -95,17 +96,38 @@ div[role="main"] {
     background: #71ade9;
 }
 .bookbox {
-	width: 325px; 
-	height: 500px; 
+	width: 40%;
+	min-width: 350px;
+	float: right;
 	position: absolute;
-	right: 10px;
-	top: 75px;
+	right: 1px;
+	top: 15%;
 	background-color:white;
 	-moz-box-shadow: 5px 5px 5px #878787;
 	-webkit-box-shadow: 5px 5px 5px #878787;
 	box-shadow: 5px 5px 5px #878787;
 	-moz-border-radius: 15px;
 	border-radius: 5px;
+}
+.bookbox_inner {
+	align:right;
+	padding: 10px;
+	height: 160px;
+	text-align: center;
+}
+.mainlogo {
+	position: absolute;
+	top: -25px;
+	overflow: visible;
+	!important; 
+	height: 600px;
+}
+.description {
+	float: right;
+	position: absolute;
+	right: 10px;
+	width: 60%;
+	top: 65%;
 }
 .info ol {
     list-style-type: none;

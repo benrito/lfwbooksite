@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {font-family:"Kreon-Bold"; src: url(fonts/Kreon-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Light"; src: url(fonts/Kreon-Light.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Regular"; src: url(fonts/Kreon-Regular.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif"; src: url(fonts/DroidSerif-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Bold Italic"; src: url(fonts/DroidSerif-BoldItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Italic"; src: url(fonts/DroidSerif-Italic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif"; src: url(fonts/DroidSerif.ttf) format('truetype');}
+
+@font-face {font-family:"DroidSans"; src: url(fonts/DroidSans.ttf) format('truetype');}
+
+@font-face {font-family:"Droid-Sans-Bold"; src: url(fonts/DroidSans-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Grace"; src: url(fonts/CoveredByYourGrace.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-LightItalic"; src: url(fonts/Lato-LightItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-Light"; src: url(fonts/Lato-Light.ttf) format('truetype');}
+
+body {
+  background-color: #F3F3F3;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+a:link {
+  text-decoration: none;
+  font-color: #363c46;
+}
+
+a:active {
+  text-decoration: none;
+  font-color: #d88f32;
+}
+
+#bg-canvas {
+    position:fixed;
+  background-image:url(images/index-bg.jpg);
+  background-repeat: repeat-y;
+  z-index: 1;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;  
+}
+
+#bg-canvas img {
+    position:fixed;
+  background-image:url(images/index-bg.jpg);
+  background-repeat: repeat-y;
+  z-index: 1;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;  
+}
+
+#bg {
+        position:fixed;
+    z-index: 5;
+        top:0px;
+        left:30%;
+    margin: auto;
+    width: auto;
+    height: 100%;
+}
+#bg img {
+        position:fixed;
+    z-index: 5;
+        top:0;
+        left:0%;
+        right:0%;
+    margin:auto;
+        width:auto;
+        height:100%;
+}
+
+.moz-logo {
+        position:fixed;
+    z-index: 6;
+        bottom:40px;
+        right:40px;
+    width: auto;
+    height: 50px;
+}
+
+.moz-logo img {
+        position:fixed;
+    z-index: 6;
+        bottom:40px;
+        right:40px;
+    margin:auto;
+        width:auto;
+        height:50px
+}
+
+.click-box {
+      position:fixed;
+    font-family: "DroidSans";
+    font-size: 14px;
+    color: #363c46;
+    text-align: center;
+    z-index: 6;
+      bottom:70px;
+      right:40px;
+    margin:auto;
+      width:137px;
+      height:50px
+}
+
+.author-text {
+      position:fixed;
+    z-index: 5;
+    float: left;
+    font-family: "DroidSans";
+    font-size: 14px;
+    color: #363c46;
+    text-align: left;
+      bottom:66px;
+      left:40px;
+      width:260px;
+      height:20px
+}

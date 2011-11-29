@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags. These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation. Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link. These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David
+Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br></dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+
+<!--  Webcraft - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Start A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+
+<!-- Badges -->
+
+<a name="lfw_38"></a>
+
+<br>
+
+<p class="article-header">LEARNING x FREEDOM x THE WEB</span></p>
+
+<br>
+<br>
+
+<p class="article-lead-para">Learning gets more agile, more active, more participatory, more like the web. The web strengthens its public mission and its place in human history. Everyone gets to invent his or her own end to the story.</p>
+
+<br>
+<br>
+
+<!-- Profile Free Knowledge Institute -->
+
+<a name="lfw_39"><br>
+
+<div class="section-flag">PROFILE</div>
+</a>
+
+<div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM X THE WEB</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Free Knowledge<br>Institute</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">As befits members of a revolutionary European collective, the founders of the Free Knowledge Institute chose to complete their interview collectively, on a wiki. Wouter Tebbens founded the Barcelona-based free software company, xlocal.com. He also helps develop tech strategy for the Dutch government. David Jacovkis has worked as a systems engineer, ICT consultant and editor of educational materials. Nowadays he collaborates with Ismael Pena Lopez’s university, the UOC, as well as the Dutch government. Franco Iacomella studies at the University of Buenos Aires (UBA), in Argentina, FLACSO (Latin American School of Social Sciences,) and consults for the UOC.</p>
+
+<br>
+<br>
+
+<p class="profile-question">Can you tell me how the Free Knowledge Institute got started?</p>
+
+<p class="profile-answer">The FKI started as a spinoff of the Dutch chapter of the Internet Society [a non-profit founded in 1992...&ldquo;dedicated to ensuring the open development, evolution and use of the Internet for the benefit of people throughout the world”].</p>
+
+<p class="profile-question">Why are you interested in the free sharing and reuse of knowledge?</p>
+
+<p class="profile-answer">Our interest in sharing knowledge without restrictions is huge. We explore this from various angles:</p>
+
+<p class="profile-answer">On a personal level, we have all experienced the great excitement to create, use, and share knowledge. It’s amazing to be able to access this huge knowledge base that the Internet provides us, to contribute to a peer-produced movie, reuse course books from others, listen to free music, be able to create a book without anything else than your own time and that of your peers. And so much fun! The production of knowledge, affects, code, and images is also described as bio-political production, or peer production. Now that we start to understand these new forms of production, we can also appreciate why some of the strongest corporate powers feel so threatened ! Think of the entertainment industry, Big Pharma, Monsanto, Microsoft, and Apple.</p>
+
+<p class="profile-answer">We are working together with a growing multitude of people all around the world to stand up against these old &ldquo;aristocratic&rdquo; powers and establish the new forms of peer production of free knowledge within the old system of capitalism. We foresee that a new productive and organizational system is emerging from the ashes!</p>
+
+<p class="profile-question">What would you say is your main motivation for working on free and open education?</p>
+
+<p class="profile-answer">Equality and freedom are fundamental principles of democracy and are also basic preconditions for a true Knowledge Society. Information and communication technologies enable access to knowledge and higher levels of innovation and inclusivity, enriching the diversity of individuals and groups that are able to contribute and participate.</p>
+
+<p class="profile-question">How did the Free Technology Academy get going? How many people are participating? What are the characteristics of your students in terms of their demographics and preparation for study? What kinds of projects are they working on?</p>
+
+<p class="profile-answer">Although there is a growing interest in free technologies, there is still a limited number of ICT professionals, teachers, and decision makers with expertise in these fields. This is particularly problematic since these are crucial actors in promoting and implementing free technologies.</p>
+
+<p class="profile-answer">In order to tackle this problem, the <a href="http://ftacademy.org/programme/2011"target="_blank"><span class="link">Free Technology Academy</span></a> has been set up as a distance education program, a joint initiative from several educational institutes in various countries.</p>
+
+<p class="profile-question">What are the main obstacles standing in the way of an entirely free and open world of education? Are they technological, social, matters of government policy or the conduct and structure of institutions?</p>
+
+<p class="profile-answer">We could write a whole book about this topic. In a broad scale, we can say that the main obstacles are not technological, they arise from policies in governments and educational institutions. Some have to do with recognition and certification of formal learning, others with pedagogical models that have not evolved to adapt to the knowledge society, and others with copyright law and publishing practices that are not exclusive of education.</p>
+
+<p class="profile-question">Do you think institutions will adapt to the new reality or will educational innovators have to find workarounds?</p>
+
+<p class="profile-answer">“Education” as a concept itself is being redefined. The great challenge of our time is to save the world from inevitable collapse of the current global capitalist system through the construction of distributed, sustainable, egalitarian, and autonomous societies.</p>
+
+<p class="profile-question">There are concerns about participation in open education by traditionally disadvantaged student populations. What is the best way to reach these students?</p>
+
+<p class="profile-answer">Open education empowers traditionally disadvantaged student populations. The old Dutch saying, &ldquo;If you were born a dime, you can never become a quarter,&rdquo; is being put aside by, amongst others, open education. The success of open education depends on a well-structured outreach to these populations, together with facilitation and guidance. You’re not done by putting learning materials online along with a note, saying: &ldquo;You can download these, click here.” You need to initiate and mobilize the networks (start with your neighbor)—and you’ll find out these networks are intertwined and energized by each other.</p>
+<p class="profile-answer">Enable the students to have access to technology, whether that be work in developing and transitional countries, or by teaching your mother-in-law how to switch on a computer.</p>
+
+<p class="profile-question">Anything else you’d like to say about the future of education? What will education look like in 2020?</p>
+
+<p class="profile-answer">We hope it will be fun and engaging, and will allow learners of all ages to grow as autonomous individuals and participate in a global community.</p>
+
+<br>
+<br>
+<br>
+
+<a name="lfw_40"><br></a>
+<p class="article-header">Badges</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">Cracking assessment is the next major frontier of the open learning revolution. Badges = assessment for informal/authentic/peer-based/practical learning. By way of introduction to Badge Lab, Phillip Schmidt told the crowd: “We’ve been given an accreditation system that’s broken and we want to fix in the next two days.” What are badges and what do they have to do with learning, freedom, and the web?</p>
+
+<p class="article-lead-para">From the paper, “An Open Badge System Framework: A foundational piece on assessment and badges for open, informal and social learning environments.”</p>
+
+<p class="author">-Peer 2 Peer University and The Mozilla Foundation, in collaboration with The MacArthur Foundation.</p>
+
+<br>
+<br>
+
+<p class="article-subheader-b">An Open Badge System Framework:</p>
+
+<p class="pull-quote">Imagine... a world where your skills and competencies were captured more granularly across many different contexts, were collected and associated with your online identity and could be displayed to key stakeholders to demonstrate your capacities. In this ideal world, learning would not be limited to a formal classroom, but could come from open education courses, previous experience, discussion with peers, participation in a forum or that book you read...evidence of skills could be acquired automatically from your interactions with online content or peers, could be explicitly sought out through various assessments or could be based on nominations or endorsements from peers or colleagues. This would allow you to present a more complete picture of your skills and competencies to various audiences, from potential employers to yourself.</p>
+
+<p class="pull-quote">This world is not purely fictional, but instead is the direction that we are moving. The next step is to support and acknowledge this learning so that these skills and competencies are available and become part of the conversation in hiring decisions, school acceptances, mentoring opportunities, and even self-evaluations. This is where badges come in.</p>
+
+<p class="body-copy">Badges can refer to any system of recognition for informal learning or accomplishment. There are many examples in the real world from badges in Boy Scouts to black belts in Tae Kwon Do. There are also emerging examples in online communities, like Wikipedia barnstars.</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/badges.png"><img src="images/badges-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<a href="http://joshuagay.org/blog/?p=32" target="_blank"><div class="blog-header">Working Badge Systems
+<br><span class="blog-meta">by Joshua Gray</span></div></a>
+
+<p class="blog-para"><span class="yellow-left-justified">10. Slashdot.org.</span> This social news site awards badges for various kinds of achievements, such as The Tagger, Posted a Comment, The Contradictor, Days Read in a Row, Comedian, and Member of the {1,2,3,4,5} Digit UID Club. With a large community and a lots of data and functionality on the site, this minimal badge system has a great potential for growth.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">9. World of Warcraft. </span>100s of achievements you can earn that cover every facet of game-play. General gameplay achievements cover everything from the number of levels you have completed to getting a haircut. There are achievements for alliances, and player-verus-player achievements.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">8. <a href="http://edufire.com/badges" target="_blank"><span class="y-link">Edufire</span>.</a></span> This is a live video learning site. Badges in eduFire track your activities on the site, including: ‘I’ve Promoted Myself on Craigslist,’ ‘I’ve Left 20 Ratings,’ ‘My Idea was Implemented!.’ ‘1,000 Unread Inbox Messages,’ and ‘1000 Classes Taken.’</p>
+
+<p class="blog-para"><span class="yellow-left-justified">7. Professional Association of Diving Instructors (PADI).</span> The PADI Rescue Diver Badge PADI badges are earned by completing training courses with PADI certified instructors. Courses and badges range from fun and playful such as the underwater photography to serious and dangerous topics such as deep water diving.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">6. <a href="http://en.wikipedia.org/wiki/Wikipedia:Barnstars" target="_blank"><span class="y-link">Wikipedia Barnstars.</span></a> </span>“It is the custom to reward Wikipedia contributors for hard work and due diligence by awarding them a barnstar. To give the award to someone, just place the image on their talk page (or their awards page), and say why you have given it to them. If you are sure the barnstar is appropriate, don’t be shy!”</p>
+
+<p class="blog-para"><span class="yellow-left-justified">5. Peace Corps Merit Badges.</span> The Peace Corps Merit Badge project is run by a group of Peace Corps volunteers. The Web site contains a collection of badges, as well as the ability to suggest new badges or to design your own badge. What I find unique and interesting about the Peace Corps Merit Badge program is that each badge is associated with a life changing moment or a monumental triumph.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">4. Martial Arts Rhee Tae Kwon-Do 1st, 2nd, and 3rd Dan black belts.</span> The image to the left is above is an example of black belts of Rhee Tae Kwon-Do. Wikipedia informs us that this particular school has a rank system that works as follows. There are ten colored belt grades, or kup ranks, and nine black belt degrees, or dan ranks. Non-black belts, from white through to brown, denote the kup ranks. A specific dan rank is represented by the number of white bars embroidered on the black belt. </p>
+
+<p class="blog-para"><span class="yellow-left-justified">3. <a href="http://stackoverflow.com" target="_blank"><span class="y-link">StackOverflow.com</span></a>. </span>StackOverflow.com is a community driven Q&amp;A site. You earn badges along the way for everything from filling out your profile (“the autobiographer” badge), to providing great answers to people’s questions. Badges are organized into three categories: bronze, silver, and gold. Another component of the StackOverflow system is that you can earn “reputation” points by  posting, commenting, etc. Some uses of the site require a certain reputation level to be attained. For example, you can not rank up or down a given post unless you have attained a reputation of 125.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">2. The Scout Movement Merit badges. </span>It is typically the case that the national branch of the organization dictates what badges Scouts may attempt to go for as well as be the sole authority when it comes to granting badges (e.g., Scouts submit applications that are submitted in conjunction with a troop leader; if the student passes, the national organization mails them an embroidered cloth badge).</p>
+
+<p class="blog-para"><span class="yellow-left-justified">1. United States Military.</span> A lot of thought has been put into the dozens of awards and decorations awarded by the US Military. Despite the depth and breadth of the system, every detail of it has been described in exacting detail, down to the exact dimensions; where and how the decorations and various medals should be worn; and what combination of medals and ribbons is appropriate to wear on specific occasions.</p>
+
+<br>
+<br>
+
+<p class="body-copy">Learning/freedom/web people are getting excited about badges as a new kind of accreditation, one that can help motivate self-directed learners and gloss learner centered and peer-based learning with just enough formality and authentication to get it recognized by a wider community. The “audience” for badges could include employers, potential mentors, and professionals in a field, peers, and even yourself.</p>
+
+<p class="body-copy">Mozilla has a very specific use case for badges. They’re investing in a School of Webcraft badge pilot program to help create a Mozilla badging system. As Mitchell Baker suggested, they want to create “a viable alternative to Cisco and Microsoft certification so Mozilla participants can use it to find a career.”</p>
+
+<p class="body-copy">Developing more free, more web-like ways of recognizing learning is important for philosophical, not just practical, reasons. The power to grant accredited diplomas remains the key to the kingdom for traditional education. Economists and sociologists refer to the “signaling” power of diplomas and the “sheepskin effect” to make the point that possessing a degree—no matter the quality of the learning behind it—is the make or break for whether people will have access to a whole host of opportunities and a higher income bracket. Break that monopoly, and you have taken a huge step forward in opening up learning.</p>
+
+<br>
+
+<p class="body-copy">A Mozillian named Leslie Orchard <a href="http://decafbad.com/2010/07/badger-article/"target="_blank"><span class="link">first suggested the idea on his blog</span></a> this past summer:</p>
+
+<div class="blog-header">Why does Mozilla need Badges?
+<br><span class="blog-meta">Leslie Orchard | July 22, 2010</span></div>
+
+<p class="blog-para">What if Mozillians could give each other Merit Badges? It’s not an original idea, and there are lots of variations: badges for Scouts; medals for athletes; achievements for gamers—these are all tokens of recognition from a group to an individual.</p>
+
+<p class="blog-para">The thing I thought might work for Mozilla, though, was this: What if there were no central committee in charge of inventing awards and overseeing their distribution? What if, by way of the same Open Web technologies and philosophies we support, the community could be empowered to craft artifacts of gratitude and present them to each other?}</p>
+
+<br>
+
+<p class="body-copy"><a href="http://commonspace.wordpress.com/2010/08/12/badges-identity-and-you/"target="_blank"><span class="link">Mark Surman</span></a> later blogged about it:</p>
+
+<div class="blog-header">Experiment: Badges, identity, and you
+<br><span class="blog-meta">Mark Surman | August 12, 2010</span></div>
+
+<p class="blog-para">Historically, we’ve used degrees and certificates to show what we know. This breaks down online— partly because we have no good way to show these credentials and partly because so much of our learning is now informal that degrees aren’t really relevant. People like P2PU, Remix Learning, and others have come to the conclusion that we could use online badges to represent these things. Sites like Stack Overflow already use badges like this. We’re going to do the same for the Mozilla/P2PU School of Webcraft.</p>
+
+<br>
+
+<p class="article-subheader-b">In the words of Festival participants:</p>
+
+<p class="article-subheader-a">Why badges?</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">Dale Dougherty</span> (Make magazine and the Maker Faire):</p>
+
+<p class="pull-quote">I’m interested in self-taught informal learning. It’s less for me about badges and more about trying to make visible what’s happening in informal education. I think of it as a set of paths through various stops: How did you get to be a welder, how did you learn to do this? What’s unique in the DIY space is the eccentric paths that people take.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Anna Haas</span> (College Unbound/Big Picture Learning):</p>
+
+<p class="pull-quote">One of our biggest goals is to offer our students recognition for what they already know how to do new things they’re learning.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Alex Halavais</span> (Trinity College):</p>
+
+<p class="pull-quote">Diplomas and transcripts have a chokehold on the education process. I’m interested in making institutions and noninstitutions interoperable.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Rafi Santo</span> (Indiana University):</p>
+
+<p class="pull-quote">How do we validate informal learning when that’s where the best learning is happening? What happens when we attach validation because the minute we attach it, someone games the system?</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Philipp Schmidt</span> (P2PU): </p>
+<p class="pull-quote">Figuring out badges—making informal learning visible—is the key component that will let us change how education works today.</p>
+
+<br>
+
+<p class="article-section-and-question">Five data points needed to define a badge:</p>
+
+<p class="profile-answer"> • Identity of receiver</p>
+<p class="profile-answer"> • Identity of issuer </p>
+<p class="profile-answer"> • Rationale </p>
+<p class="profile-answer"> • Audience </p>
+<p class="profile-answer"> • Evidence</p>
+<br>
+
+<p class="body-copy">Simon Buckingham Shum, who works on human-centered computing, “sensemaking,” and content mapping at the Open University, a government-funded online university in the U.K., <a href="http://people.kmi.open.ac.uk/sbs/2010/11/badge-lab-at-mozilla-drumbeat/"target="_blank"><span class="link">wrote about his ideas on badges</a> after his experience at the Festival.</p>
+
+<div class="blog-header">Badge Lab @ Mozilla Drumbeat
+<br><span class="blog-meta">Simon Buckingham Shum | Nov. 8, 2010</span></div>
+
+<p class="blog-para">What does a radically flattened, net-enabled paradigm for accrediting learning look like? As I hinted in my interview for the Mozilla Festival last week in Barcelona (which was enjoyably activist/plot the revolution in vibe)—one of the really tough nuts to crack around open peer learning is accreditation.</p>
+
+<p class="blog-para">Like many educational institutions, Open U is now experimenting with the accreditation of students’ prior learning and experience in a variety of ways. But Badge Lab was pushing the model to the extreme, asking the question at the top.</p>
+
+<p class="blog-para">We came up with myriad use cases, categories of badge, worried about whether we were in danger of reinventing the lumbering institutions we’re trying to move away from, as well as recognizing, but not dwelling upon, the challenge:</p>
+
+<p class="blog-para"><span class="yellow-left-justified">A Badge infrastructure should be agnostic</span> about who is awarding, and what the criteria are. Simple is best. Follow the principles of net-neutrality that’s made the Internet so successful. How the badge came to be awarded should sit outside the system: All the badge infrastructure needs to know is that it was awarded, with some basic, uncontroversial metadata that will allow others to build cool apps on top to browse, search, visualize, etc.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">A Badge infrastructure is like Verisign:</span> It gives confidence that the claimed badge really was awarded via an authenticated, trustable infrastructure.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">A set of Badges is shorthand:</span> something to scan quickly, a conversation opener to find out 
+the Story Behind The Badge, just as you do when you see something on a CV, or a LinkedIn endorsement.</p>
+
+<p class="blog-para"><span class="yellow-left-justified">Many Badges will be Low Stakes:</span> they’re not worth gaming the system to obtain, because their authority derives entirely from the awarder’s reputation. Since much of the time the awarder will be unknown to a third party, a key attribute of a Badge is the link the owner provides to the story/evidence.</p>
+
+<br>
+<br>
+
+<p class="body-copy">There seems to be particular interest in <span class="yellow-left-justified">Badges for authentic, practical learning.</span> The point is that we already have existing systems in place for communicating and examining academic, abstract bodies of knowledge, but what’s missing is a way to document in one’s portfolio the authentic applications of one’s knowledge and skills, at an appropriate granularity. Moreover, since such displays of knowledge are by definition situated in unique contexts, the most authoritative sources of evidence will be real people who had direct contact with you.</p>
+
+<p class="body-copy">We could equate Badges with clearly codified, formally assessed qualifications: a university might indeed provide a badge that confers a degree, but here we’re simply providing a digital replica of the current system. Instead, let’s think about how we appropriate symbols to project our identity.</p>
+
+<p class="body-copy">Badges could—most likely will—be used for <span class="yellow-left-justified">personal expression</span>, like your clothes, homepage, blogroll, tweets, what’s on your bookshelf, or music playlist. I’m imagining not only community groups inventing badges to recognize talent and motivate their team, but groups of teenagers awarding each other badges, creating a local currency.</p>
+
+<br>
+<br>
+
+<p class="body-copy">Some questions asked and answered by the Badge Lab over 2 days:</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Who provides a badge?</span></p>
+
+<p class="profile-answer">• Mozilla</p>
+<p class="profile-answer">• Quest to Learn</p>
+<p class="profile-answer">• YouMedia </p>
+<p class="profile-answer">• NYCLN </p>
+<p class="profile-answer">• Current higher education institutions </p>
+<p class="profile-answer">• For-profit businesses (Kaplan, Pearson)</p>
+<p class="profile-answer">• Peers / community</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">What is it given for?</span></p>
+
+<p class="profile-answer">• Webcraft: Web developers, assessment handled by P2PU. Community drives the badge development, but frontload it. Webcraft community is developing the skills map-goals: motivation/engagement share information/skills across courses share information with the outer world.</p>
+
+<p class="profile-answer">• Accessibility: Best practices, an inclusive way of coding the website, beyond its visual appearance: Semantic HTML/CSS Explainer, Enabler, Developer (with CC-like easy explanations).</p>
+
+<p class="profile-answer">• Soft Skills: Things like question/answering, teamwork, being an active community member, communication, problem solving, critical thinking, and talking to normal people.</p>
+
+<p class="profile-answer">• Volunteer Skills: An organization (like Crisis Commons) can put the call out using the badge system to locate new volunteers—matching people who have the time and the capacity to volunteer could be notified via the badge system, so badge becomes a volunteer service tool in addition to individual recognition and potential for employers, too.</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">How is it validated?</span></p>
+
+<p class="profile-answer">• Linked to a student portfolio, validated by a community but be able to show the work and represent the outcome? </p>
+
+<p class="profile-answer">• We could tie it into a Firefox extension, or use a delic.io.us tag for nomination, to enable a bottom-up process.</p>
+
+<p class="profile-answer">• Keep metadata? (e.g. reference to actual technical artifact, source code, revision). And to the version of the standard you are 
+validating against, and the date? (e.g. CSS2/CSS3).</p>
+
+<p class="profile-answer">• Bugzilla parallel – allow community members to file a bug as in an open-source reporting system?</p>
+
+<p class="profile-answer">• Replicate Amazon metareview system: “Was this review helpful to you?”</p>
+
+<p class="profile-answer">• “Like” button that gives endorsements to both you and the endorsers?</p>
+
+<p class="profile-answer">• Person submits proof by describing what you have just done to local community, gathering their endorsements, submitting a video, having external people evaluate—all of that becomes the link behind the badge.</p>
+
+<p class="profile-answer">• Work with expert/professional/technical societies to create badges with demonstrable value. 
+
+<br>
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">How is it used?</p>
+
+<p class="profile-answer">• It validates!</p>
+<p class="profile-answer">• Smoothes the accreditation curve for informal, self-directed learning.</p>
+<p class="profile-answer">• Communicates clearly what you’ve done.</p>
+<p class="profile-answer">• Opportunity for others to learn from project.</p>
+<p class="profile-answer">• Hiring someone young or without a college degree that could use the badges.</p>
+<p class="profile-answer">• Not trying to replicate the grading system, where degrees are given by seat time.</p>
+
+<p class="profile-answer">• Badges: specific competencies, capture the subject mastery, capture the path.</p>
+
+<p class="profile-answer">• Membership in professional, techincal societies.</p>
+
+<p class="profile-answer">• Granularity can allow more specific expression of skills (not just “I am a doctor,” but “I am a doctor who is has a very specific expertise.”).</p>
+
+<p class="profile-answer">• To change higher education—transform from a system that weeds people out to a system that lifts people up--and create an alternate system. Who is it for?</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">Who is it for?</span></p>
+
+<p class="body-copy">Employers, clients, students, communities, target audiences (users on the website), readers, other Webcraft community members.</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">And finally, what’s wrong with badges?</span></p>
+
+<p class="profile-answer">• Are we recreating the factory system of education? Will people game the system? Are we substituting extrinsic motivation for intrinsic motivation?</p>
+
+<p class="profile-answer">• What happens if commercial interests get in the game? Can openness remain the standard? Can we make sure our badge system eats theirs? What if Bb [Blackboard, the commercial learning management system] gets into the game?</p>
+
+<p class="profile-answer">• What if the market gets saturated with low-quality badges?</p> 
+
+<p class="profile-answer">• How do we include marginalized communities?</p>
+
+<p class="profile-answer">• Renewal/validity: Anything based on technology will become obsolete so maybe badges expire, fade away, rust.</p>
+
+<p class="profile-answer">• For it to succeed, we have to seed well executed uses of that platform, and starting points for people that want to use it the point is, what does &ldquo;well&rdquo; or &ldquo;good&rdquo; mean? That they have accomplished something, there is some reason to have a badge?</p>
+
+<p class="profile-answer">• Are same hierarchies going to be replicated? We need a sense of <span class="art-section-fancies">playfulness</span>, instead of just reinforcing the existing divides. What we are talking about is fundamentally more democratic, because the credibility of the badge will depend on the authority of that issuer—an open structure which is easy to use provides some way of saying that you can trust this badge. Let’s not over-engineer it from the beginning.</p>
+
+<br>
+<br>
+
+<!-- Project : Badge Backpack -->
+
+<a name="lfw_41"><br></a>
+
+<p class="article-subheader">PROJECT:</p>
+<p class="article-header">Badge Backpack</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">At Drumbeat, a group produced a working prototype of the <a href="https://wiki.mozilla.org/Badges"target="_blank"><span class="link">Badge Backpack</span></a>, which has become an ongoing project.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Who:</span> Erin Knight, Brian Brennan, the School of Webcraft, and many, many others.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">What:</span> An open infrastructure that fuels the growth of badges as a new way to incent and recognize learning. A public spec, API for badge issuers, and &ldquo;Badge Backpack&rdquo; software that lets individual learners collect and share badges between websites, social networks and apps.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Why?</span> Revolutionize how we incent and recognize learning. Help learners open doors and get jobs.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">What’s next:</span> Since the Festival, a white paper outlining the badge and assessment model has been completed and circulated widely. A pilot version of the badge infrastructure is nearly complete, and a beta version will be ready for broader use as of January 2012.</p>
+
+<p class="body-copy">Follow along at: <a href="https://wiki.mozilla.org/Badges"target="_blank"><span class="link">https://wiki.mozilla.org/Badges</span></a></p>
+
+<br>
+
+<p class="body-copy">Paul Osman <a href="http://blog.eval.ca/2010/11/15/status-report-what-ive-been-up-to/"target="_blank"><span class="link">explained on his blog</span></a>:</p>
+
+<div class="blog-header">Status Report – What I’ve Been Up To
+<br><span class="blog-meta">Paul Osman | Nov. 15, 2010</span></div>
+
+<p class="blog-para">Badges can be issued by any site, stored in a “backpack” (which simply stores the badge data in localStorage) and consumer sites can show badges stored in the backpack with just a few lines of JavaScript.</p>
+
+<br>
+
+<p class="body-copy"><a href="http://blog.sandmill.org/"target="_blank"><span class="link">Dan Mills, who also worked on the backpack, elaborated:</span></a></p>
+
+<div class="blog-header">Don Mill's Blog
+<br><span class="blog-meta">Don Mills | Unknown Date</span></div>
+
+<p class="blog-para">Sites that want to either provide or use badges import a JavaScript library, which behind the scenes uses post messaging to communicate with an iframe. That frame in turn uses local storage, so that no server storage is necessary (though it can be added). Things like identity verification get pushed to the edges, when a site retrieves a badge it can then query the source to determine if the badge is real, and whether it belongs to you.</p>
+
+<br>
+<br>
+
+<!-- Phillip Schmidt -->
+
+<a name="lfw_42"><br>
+
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM X THE WEB</span> /
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Philipp Schmidt<a id="single_image" title="Philipp Schmidt. Photo from nosomoshormigas's Flickrstream, Aug. 20, 2011." href="images/philippschmidt.png"><img src="images/philippschmidt-icon.png" alt="Philipp Schmidt. Photo from nosomoshormigas's Flickrstream, Aug. 20, 2011." style="float: right" "margin-right: 15px"></p></a>
+
+<br>
+<br>
+
+<p class="article-lead-para">Philipp Schmidt is the Peer 2 Peer University (P2PU) co-founder and director and an open education activist/researcher. He runs several projects at the University of the Western Cape and is a board member of the OpenCourseWare Consortium. He’s also a tall, cool South African with a dry sense of humor. During the Festival he and another participant scouted a local shop with a giant boom box in the window that sold vintage and handmade sunglasses. Both started rocking black shades that looked like reimagined Wayfarers.</p>
+
+<br>
+<br>
+
+<p class="profile-question">Can you retell the story of how you got started with P2PU?</p>
+
+<p class="profile-answer">Neeru Paharia and I met at the iCommon summit at Brazil in 2006 and 2007 and first started speaking about these things. In August of 2009, we got more serious. There was an Open Ed conference in Utah where we ran a workshop. It was the moment where we felt either people think this is a good idea and they’re going to get engaged in it, or maybe we were wrong and should be spending our time on other things. So let’s just try it and see what happens.</p>
+
+<p class="profile-question">So what’s happening?</p>
+
+<p class="profile-answer">We’re about to launch the first set of pilot courses as an experiment. In the past we’ve held back because we need to answer questions like how we link to accreditation and how people assess each other. And what I’ve come away with is that  you don’t need to have all the answers. People who sign up are happy to be figuring out these things with you. So I’ve just had a chat with all the people last week and we decided to jump in the deep end and start running and see what happens.</p>
+
+<p class="profile-question">What kinds of courses are people signing up to do?</p>
+
+<p class="profile-answer">All kinds of things: creative nonfiction writing, behavioral economics, an “open education for educators” course, and Wikipedia visualization. These are all niche topics that appeal to a certain demographic group. It’s not your econ 101 or calculus tutoring or basic Spanish.</p>
+
+<p class="profile-question">Was that a conscious decision, to steer away from general ed courses?</p>
+
+<p class="profile-answer">We thought about that quite a lot. I’m not so sure how that open P2P model works for these basic education services being provided by mass market universities.</p>
+
+<p class="profile-answer">There’s some pretty broad shifts in the way people learn and how they engage with each other, so why not take advantage of the possibilities rather than try to build a slightly better University that just costs less. We might add more basic or general courses later, but for some time we’re more excited about these quirky topics.</p>
+
+<p class="profile-question">And it’s really up to your community what courses are featured, right?</p>
+
+<p class="profile-answer">Absolutely. The people who will join P2PU and who will be successful are really committed and willing to spend some time and energy to learn it. It’s people who would be going out and looking for the materials themselves who now can do in a community and get help from other people.</p>
+
+<p class="profile-question">So what do you think about the connection between learning, freedom, and the web? Why is it that so many people who are interested in one, are interested in the other?</p>
+
+<p class="profile-answer">A couple of reasons. One is, there’s that whole conversation about 21st century schooling, which I find very convincing. I think the basic skills of communicating, finding information and knowledge, and finding the people to get the info you need  is absolutely right. We need procedural skills of how to learn more than factual knowledge, since facts are changing more quickly now. It’s obvious that people need to evolve what they know throughout their lives much more than they used to.</p>
+
+<p class="profile-answer">Then, as people become more comfortable online and in these social networking applications, that has implications on how they engage with other people. It would be crazy if that didn’t influence how they look at education.</p>
+
+<p class="profile-question">Why are you interested in badges?</p>
+
+<p class="profile-answer">The idea that one monolithic institution will provide everything—teaching, testing, accreditation, research—that idea is already an idea of the past. It seems like the institutions themselves are the last people clinging to that concept and everyone else is already innovating around them.</p>
+<p class="profile-answer">To define the interfaces, the fault line between formal/informal education, that’s where my interest lies.</p>
+
+<p class="profile-question">People often hold up medicine as an example of a discipline where degrees will be used for a long time.</p>
+
+<p class="profile-answer">Certification will break out of the overall system in medicine, too. There’s no reason that universities should be accrediting doctors.</p>
+
+<p class="profile-question">So what does all this have to do with badges?</p>
+
+<p class="profile-answer">Something I’ve been thinking about quite a lot is assessment and accreditation. Those are the crucial areas where we don’t have good answers yet. If you look at the Internet and the way information is managed there are a number of ways used to assess what’s quality. And the concept of quality is much more individualized than it was before.</p>
+
+<p class="profile-answer">On the one hand you can aggregate opinions more than ever before, so very quickly that’s a way to assess quality within a particular definition. That’s one way to look at what a student or learner is producing and what the community thinks about it. Another way we’re going to see a bit more is these trust networks.</p>
+
+<p class="profile-question">Recommendation systems?</p>
+
+<p class="profile-answer">Right. Recently I’ve been speaking about these trust networks with a friend of mine who has written the code for Topsy, a Twitter real-time search engine. It’s like with LinkedIn, you can say: I think these are good people in that area. If you use that and place it as a filter on top of the web and look specifically at things people are doing as part of their learning, you can automate a quality assurance mechanism that’s incredibly complex, because we have all this computing power. People only have to say: I trust these three or four people, and you can come up with pretty accurate descriptions of learning quality, entirely taken out of the institutional space.</p>
+
+<p class="profile-answer">The second one is more, let’s say I assign a certain trust value to you: I know Anya is an expert on student debt. Even though I might not know anything about the subject in question, I can be fairly sure that there is quality there.</p>
+
+<p class="profile-question">So you replace trust in an institution’s authority, the name on the diploma, with trust in a reputation-based, peer-to-peer community?</p>
+
+<p class="profile-answer">Well, that’s future music. We do know that peer assessment works. There’s been a huge amount of research on students’ ability to assess each others’ work. If you explain it well, students can do this. There are ways to control for bias and error that can be reliable.</p>
+
+<br>
+
+<a name="lfw_43"><br></a>
+<br>
+
+<!-- How-to Create and Award Badges -->
+
+<br>
+                <a href="#" onclick="LFW.lightbox('howtobadges.html')">
+                <div class="feature-box">click or tap this bar for feature
+                  <div class="feature-title-box"><div class="feature-flag">HOW TO</div>Create &amp; award  a badge
+                    <div id="feature-icon"><img src="images/button-icon.png"><img></div>
+                    <div id="badges-feature-image"><img src="images/button-badges.png"><img></div>
+                    </div>
+                    <div class="feature-bottom-bar"></div>
+                  </div></a>
+
+
+<div class="clear"></div>
+
+<a href="thefuture.html"><div class="next-page-button"><div class="next-page-button-text">tap to continue</div><img src="images/next-page-button.png" /></div></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+          </div>
+    </article>
+  </body>
+</html>

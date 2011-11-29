@@ -1,0 +1,979 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+}
+
+@font-face {font-family:"Kreon-Bold"; src: url(fonts/Kreon-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Light"; src: url(fonts/Kreon-Light.ttf) format('truetype');}
+
+@font-face {font-family:"Kreon-Regular"; src: url(fonts/Kreon-Regular.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif"; src: url(fonts/DroidSerif-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Bold Italic"; src: url(fonts/DroidSerif-BoldItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif Italic"; src: url(fonts/DroidSerif-Italic.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Serif"; src: url(fonts/DroidSerif.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Sans"; src: url(fonts/DroidSans.ttf) format('truetype');}
+
+@font-face {font-family:"Droid Sans"; src: url(fonts/DroidSans-Bold.ttf) format('truetype');}
+
+@font-face {font-family:"Grace"; src: url(fonts/CoveredByYourGrace.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-LightItalic"; src: url(fonts/Lato-LightItalic.ttf) format('truetype');}
+
+@font-face {font-family:"Lato-Light"; src: url(fonts/Lato-Light.ttf) format('truetype');}
+
+html {
+background: #f3f3f3;
+}
+
+a:link {
+text-decoration: none;
+font-color: #363c46;
+}
+
+a:active {
+font-color: #d88f32;
+}
+
+/* Title */
+
+h1{
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 36px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363c46;
+}
+
+.how-to-flag {
+display: block;
+float: left;
+width: 99px;
+height: 34px;
+background-image: url(images/info-flag.png);
+background-repeat: no-repeat;
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+font-variant: normal;
+text-align: left;
+font-color: #fff;
+margin: 8px 0 0 -7px;
+padding: 6px 0 0 10px;
+}
+
+/* How-To */
+
+h2 {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+font-variant: normal;
+text-align: left;
+color: #d88f32;
+}
+
+.title-block {
+display: block;
+float: left;
+width: 550px;
+height: auto;
+background-color: #fff;
+padding: 0 0 0 15px;
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 36px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #fff;
+margin-top: 35px;
+}
+
+h13 {
+padding: 0 0 0 -1px;
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 32px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363c46;
+}
+
+.break-bar {
+display: block;
+float: left;
+width: 565px;
+height: 2px;
+background-color: #fff;
+margin: 5px -0.9px;
+}
+
+h3{
+font-family: "Droid Sans";
+font-size:12px;
+background-image: url(images/difficultybar.png);
+width:250px;
+line-height:65px;
+color:#F93;	
+}
+
+h4 {
+font-family: "Droid Sans";
+font-weight: bold;
+font-style: normal;
+font-size: 18px;
+text-decoration: none;
+font-variant: normal;
+text-align: right;
+color: #d88f32;
+}
+
+/* Time/Who/Material etc */
+
+h5{
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 13px;
+color: #363c46;
+}
+
+/* details of time/who etc */
+
+h6{
+font-family: "Droid Sans";
+font-size:11px;
+padding-bottom:20px;
+color:#000;
+font-style:italic;
+text-align:right;
+}
+
+/* details of time/who etc */
+
+h7{
+font-family:"Droid Sans";
+font-size:15px;
+padding-bottom:20px;
+color:#363c46;
+font-style:normal;
+text-align:right;
+}
+
+/* category heading */
+
+h8{
+font-family: "Droid Sans";
+font-size:18px;
+font-style:normal;
+color:#d88f32;
+padding-bottom:10px;
+text-align:right;
+}
+
+/* Share This */
+
+h9{
+font-family: "Kreon-Regular";
+font-size:18px;
+font-style:normal;
+color:#d88f32;
+padding-bottom:10px;
+text-align:right;
+}
+
+h10 { 
+font-family: "Kreon-Regular";
+font-size: 21px;
+text-align: left;
+color: #d88f32;
+line-height: 28px;
+}
+
+h11 {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 18px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #d88f32;
+}
+
+p.share-this {
+font-family: "Kreon-Regular";
+font-weight: normal;
+font-style: normal;
+font-size: 15px;
+font-variant: normal;
+text-align: center;
+line-height: 15px;
+color: #f8a143;
+padding: 5px 0 0 18px;
+}
+
+.link-icon {
+display: block;
+float:right;
+height: 17px;
+width: 94px;
+background-image:url(images/link-icon.png);
+background-repeat: no-repeat;
+}
+
+span.link-icon {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 11px;
+text-decoration: none;
+text-align: center;
+padding-top: 2px;
+color: #f3f3f3;
+letter-spacing: 2px;
+}
+
+span.link-icon:active {
+color: #363C46;
+}
+
+body{
+background-image: url(images/how-to-grid.png);
+background-repeat:repeat;
+}
+
+dl{
+width: 800px;
+}
+
+dt{
+font-family: "Droid Sans";
+font-size:16px;
+color:#FFF;	
+}
+
+dt a {
+background-image: url(images/greytab_710.png);
+line-height: 40px;
+width: 710px;
+display: block;
+text-indent: 40px;
+padding-top: 2px;
+margin-bottom: 25px;
+}
+
+dt a.b{
+background-image: url(images/orangetab_710.png);
+line-height: 40px;
+width: 710px;
+display: block;
+text-indent: 40px;
+padding-top: 2px;
+margin-bottom: 25px;
+}
+
+dd a {
+color:#000;
+font-size:18px;
+}
+
+li{
+list-style:none;
+font-family: "Droid Serif";
+color:#FFF;
+}
+
+dd ul{
+height: 300px;
+/*overflow-y:auto; scroll thing*/
+/*overflow-y:hidden;*/
+padding-left:30px;
+padding-right:10px;
+}
+
+/* For iScroll */
+
+#wrapper {
+position: absolute;
+top: 0;
+bottom: 0;
+padding-left: 50%;
+margin-left: -355px; /* 50% */
+width: 714px;
+background-color: #f3f3f3;
+background-position: 359px; /* margin */
+}
+
+#ipad {
+/* Main content section */
+}
+
+#ipadinside{
+background-image: url(images/how-to-grid.png);
+padding-left:75px;
+padding-right:67px;
+padding-top:49px;
+padding-bottom:30px;
+}
+
+#ipadleft{
+width:67px;
+height: 400px;
+float:left;
+padding-bottom:20px;
+text-align: right;
+}
+
+#ipadleft2{
+width:300px;
+float:left;
+padding-bottom:20px;
+padding-top:30px;
+text-align: right;
+}
+
+#ipadleft3{
+width:100px;
+float:left;
+padding-bottom:20px;
+padding-top:30px;
+text-align: right;
+}
+
+#ipadcenter{
+width:170px;
+float:left;
+position:relative;
+text-align: right;
+margin: 0 0 0 -20px;
+}
+
+#ipadright{
+width:280px;
+float:right;
+text-align: right;
+margin: 3px 19px 0 0;
+}
+
+#ipadright2{
+width:250px;
+float:right;
+padding-top:30px;
+}
+
+#ipadmaterial{
+width:450px;
+float:right;
+}
+
+#ipadpurpose{
+width:410px;
+float:left;
+}
+
+ul.columns li{
+float:left;
+padding-top:20px;	
+}
+
+ul.columns li p{	
+width:300px;
+padding-left:28px;
+color: #353c46;	
+}
+
+p.columns{	
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;
+float:left;
+width:300px;
+}
+
+p.text{ /* for oneliners */	
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;
+padding-top:100px;
+padding-bottom:100px;
+}
+
+p.text2{ /* for 3-4liners */	
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;
+padding-top:50px;
+padding-bottom:0px;
+}
+
+p.text3{ /* for 2-3liners */
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;	
+padding-top:70px;
+padding-bottom:100px;
+}
+
+p.text4{ /* for 5-6liners */	
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;
+padding-top:60px;
+padding-bottom:0px;
+}
+
+p.text5{ /* for 2-3liners */	
+font-family: "Droid Serif";
+font-color: #353c46;
+font-weight: normal;
+font-style: normal;
+padding-top:75px;
+padding-bottom:70px;	
+}
+
+.left{
+float: left;
+}
+
+.button{
+background-image:url(images/emptybutton.png);
+background-repeat: no-repeat;
+width:40px;
+height:40px;
+float:left;
+cursor:pointer;
+margin: 10px 15px 0 0;
+}
+
+.button.filled{
+background-image:url(images/filledbutton.png);
+background-repeat: no-repeat;
+}
+
+.clear{
+clear:both;
+}
+
+img.center {   
+display: block;   
+margin-left: auto;  
+margin-right: auto;
+padding-top: 10px;	
+}
+
+.align-right { 
+float:right; 
+/*margin: 0 0 15px 15px; 
+padding-right: 20px;*/
+}
+
+.text-left{
+height:280px;
+width: auto;
+flaot: left;
+}
+
+div.center {
+display: block;   
+margin-left: auto;  
+margin-right: auto;
+width:275px;
+padding-top: 10px;
+padding-bottom:20px;
+}
+
+li.hidden{
+display:none;
+}
+
+.mozilla-logo {
+padding-top: 20px;
+padding-left: 80px;
+}
+
+.mozilla-tab {
+position: absolute;
+z-index: 4;
+padding-left: 80px;
+padding-bottom: 25px;
+}
+
+p.pull-quote {
+font-family: "Droid Serif Italic";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-left:15px;
+line-height: 20px;
+}
+
+p.forward-header {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 40px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-top: 15px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.article-section-and-question {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #353c46;
+margin-left: 40px;
+}
+
+p.article-lead-para {
+font-family: "Lato-LightItalic";
+font-weight: normal;
+font-style: normal;
+font-size: 21px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+line-height: 28px;
+}
+
+p.article-subheader {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 26px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin: 0em;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.article-header {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 40px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+line-height: 36px;
+margin-bottom: 0px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.pump-quote-head {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 40px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.pump-quote {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 20px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin: 0em;
+line-height: 21px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.pump-quote-list {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 22px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin: 0em;
+line-height: 31px;
+letter-spacing: 2px;
+}
+
+p.comments-from-crowd {
+font-family: "Droid Serif Italic";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-left:85px;
+margin-right: 50px;
+line-height: 20px;
+}
+
+p.notes {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363c46;
+margin-left: 40px;
+}
+
+p.definition {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-left: 25px;
+margin-bottom: 15px;
+}
+
+p.blue-hyperlink {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+text-decoration: none;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-bottom: 15px;
+}
+
+p.toc-title {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 27px;
+text-decoration: none;
+text-indent: 0em;
+text-align: left;
+color: #363c46;
+margin-bottom: 15px;
+margin-left: 25px;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.infographic-steps {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 17px;
+letter-spacing: 1.5px;
+}
+
+span.fancy-pull-quote-words {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.art-section-fancies {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 17px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.mark-surman-fancies {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 20px;
+letter-spacing: 1.5px;
+color: #363c46;
+}
+
+span.article-subhead {
+font-family: "Kreon-Regular-Bold";
+font-weight: normal;
+font-style: normal;
+font-size: 21px;
+letter-spacing: 1.5px;
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.session-header {
+color: #363c46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+span.blue-note-links {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+color: #363c46;
+}
+
+span.body-copy-note {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 14px;
+font-variant: small-caps;
+color: #363c46;
+}
+
+/* new styles */
+p.profile-header {
+font-family: "Kreon-Regular";
+font-weight: normal;
+font-style: normal;
+font-size: 40px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.lead-para {
+font-family: "Lato-LightItalic";
+font-weight: normal;
+font-style: italic;
+font-size: 19px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+}
+
+p.toc-credits {
+font-family: "Lato-Light";
+font-weight: normal;
+font-style: normal;
+font-size: 15px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+margin-left: 25px;
+}
+
+p.profile-question {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 15px;
+line-height: 23px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #d88f32;
+}
+
+p.body-copy {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+line-height: 23px;
+margin-left: 40px;
+}
+
+p.toc-footer {
+font-family: "Lato-Light";
+font-weight: normal;
+font-style: normal;
+font-size: 11px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+margin-left: 25px;
+}
+
+p.profile-answer {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 15px;
+line-height: 23px;
+text-decoration: none;
+font-variant: normal;
+margin-left: 60px;
+text-align: left;
+color: #363C46;
+}
+
+p.how-to-header {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 30px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-banner {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 35px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-banner :active {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 35px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #d88f32;
+text-shadow: 0px 1px 0px #fff;
+}
+
+p.how-to-lead-para {
+font-family: "Kreon-Regular";
+font-weight: normal;
+font-style: normal;
+font-size: 20px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+line-height: 24px;
+}
+
+p.make-sure-to {
+font-family: "Droid Sans";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+}
+
+p.how-to-details {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-align: left;
+color: #363C46;
+margin: 0em;
+}
+
+p.how-to-body-copy {
+font-family: "Droid Serif";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+text-decoration: none;
+font-variant: normal;
+text-indent: -19px;
+text-align: left;
+color: #363C46;
+margin: 0 0 0 120px;
+}
+
+span.header-text-yellow {
+color: #d88f32;
+}
+
+span.yellow-left-justified {
+color: #d88f32;
+}
+
+span.detail-script {
+font-family: "Grace";
+font-weight: normal;
+font-style: normal;
+font-size: 16px;
+color: #363C46;
+}
+
+.viewandshare-tab {
+position: absolute;
+z-index:4;
+padding-left: 75px;
+padding-bottom: 25px;
+margin: 0 auto;	
+}

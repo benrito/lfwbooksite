@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags.
+These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation.
+Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation
+will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.
+You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link.
+These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular
+part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would
+change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David
+Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br></dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+<!--  Webcraft - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Start A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+<!-- This is the beginning of the formatting or the articles. As you can see, we have reserved the top level of typographic hierarchy for the broad sections found within the navigation (i.e. "Freedom x Web"). -->
+
+<!-- Freedom x the Web -->
+
+<!-- As you can see in the following line of code, there is, "<a name="lfw_29">". This is what the javascript is looking for to achieve our scroll-to animation through the navigation. The number 29 can be found in the code for navigation like this: "<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>" -->
+
+<a name="lfw_29"><br></a>
+<p class="article-header">FREEDOM x WEB: </p>
+
+<br>
+<br>
+
+<!-- We used the same lead-paragraph style for the beginning of the over-arching sections of the book as the start of the chapters and subsections of the articles. -->
+
+<p class="article-lead-para">The public, open, participatory, transparent, remixable nature of the web has been integral to its growth and must be revealed, defended, celebrated. If it’s not open all the way down, it’s not the web.</p>
+<p class="article-lead-para">“We have learned that essentially you need to teach people by making them play very quickly.”
+<br>
+<p class="author">–Massimo Banzi of Arduino</p>
+
+<br>
+
+<!-- Hacking -->
+
+<a name="lfw_30"><br></a>
+
+<!-- This is an example of a chapter heading with a subheader -->
+
+<p class="article-header">Hacking</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">What does hacking have to do with learning, freedom, and the web?</p>
+
+<br>
+<br>
+
+<p class="body-copy">Using your hands is one of the best ways to learn by doing. It taps into a part of our brains that gets undernourished when we spend too much time in front of screens, and helps reach people with different learning styles. Hacking at the level of hardware is essential if we’re to keep the creation and use of the Internet truly free, as mass-produced devices necessarily limit creation in favor of consumption. Plus, it builds community, develops problem-solving skills, is creative, and fun!</p>
+
+<br>
+
+<!-- Instance of video-js plugin -->
+
+<!-- Here you can see the Heading of a video, "Check-out Arduino". I added the default mark-up found at http://videojs.com/embed-builder/. You can then encode your videos using Miro Video Converter and change the sources to the videos within your ebook file structure. Word to the wise, this plugin is promoted as a way to stabilize your video to work cross-platform/cross-browser. After you've made all the appropriate file conversions, the video will play in Safari, Chrome, and Opera. For the video to work properly in Firefox you'll have to add an .htaccess to the top level of your ebook file structure on the server space. The code that I found online to make this happen was on GitHub: https://github.com/paulirish/html5-boilerplate/blob/master/.htaccess -->
+
+<p class="article-lead-para">Check-out Arduino</p>
+
+<div class="video-js-box vim-css">
+
+<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+
+	    <video class="video-js" width="471" height="265" controls preload poster="vthumbs/arduino.png">
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//arduino.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//arduino.webm" type='video/webm; codecs="vp8, vorbis"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//arduino.theora.ogg" type='video/ogg; codecs="theora, vorbis"' />
+	
+	      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+	
+	      <object class="vjs-flash-fallback" width="471" height="264" type="application/x-shockwave-flash"
+	        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+	        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+	        <param name="allowfullscreen" value="true" />
+	        <param name="flashvars" value='config={"playlist":["vthumbs/arduino.png", {"url": "videos/arduino.iphone.mp4","autoPlay":false,"autoBuffering":true}]}' />
+	
+	        <!-- Image Fallback. Typically the same as the poster image. -->
+	
+	        <img src="vthumbs/arduino.png" width="640" height="264" alt="Poster Image"
+	          title="No video playback capabilities." />
+	      </object>
+
+	    </video>
+
+	    <!-- Download links provided for devices that can't play video in the browser. -->
+
+	    <p class="v-note">No video in your browser? Download it:
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/arduino.iphone.mp4">MP4</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/arduino.webm">WebM</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/arduino.theora.ogg">Ogg</a><br>
+	    </p>
+
+	  </div>
+
+<!-- End VideoJS -->
+
+<br>
+<br>
+
+<!-- Extended Quote Example -->
+
+<!-- Here you can see how longer quotes have been styled within the text. -->
+
+<p class="body-copy">As Johannes Grenzfurthner, proprietor of the Hackbus, put it:</p>
+
+<p class="pull-quote">The main problem with technology nowadays is that the means of production are still very centralized. You have all the freedom of information you want on your iPhone, you can blog and tweet and do whatever you like, but somebody had to build this thing somewhere in China in extremely bad working conditions. As long as we cannot download our iPhones for free, there’s a problem.</p>
+
+<p class="body-copy">At the Festival, DIY hacktivists from Europe and the U.S. showed how programming can escape the screen and move into the public square. Membership on Hacker Planet included Monochrom’s Hackbus from Berlin, the Arduino team from Italy, and Alison Lewis’s Switchcraft from California.</p>
+
+<p class="body-copy">Maybe we can’t make our own iPhones yet, but tools like Arduino are the first steps in open-source hardware. Begun about five years ago, <a href="http://www.arduino.cc/"target="_blank"><span class="link">Arduino</span></a>:</p>
+
+<p class="pull-quote">is an open-source electronics prototyping platform based on flexible, easy-to-use hardware and software. It’s intended for artists, designers, hobbyists, and anyone interested in creating interactive objects or environments.</p>
+
+<p class="body-copy">Arduino can sense the environment by receiving input from a variety of sensors and can affect its surroundings by controlling lights, motors, and other actuators. The microcontroller on the board is programmed using the Arduino programming language (based on Wiring) and the Arduino development environment (based on Processing). Arduino projects can be stand-alone or they can communicate with software on running on a computer (e.g. Flash, Processing, MaxMSP).”</p>
+
+<p class="body-copy">New applications of Arduino are being invented all the time—that’s the beauty of an open platform. A short list of what people have come up with so far includes: the Cupcake CNC (an affordable 3-D printer by Makerbot), a programmable coffee machine, a wearable micro-controller called the Lilypad, and a DIY Segway (a self-balancing personal transportation device).</p>
+
+<p class="body-copy">Massimo Banzi, a founder of Arduino, gave a funny keynote with elegant slides, about how he developed Arduino as “a tool for teaching electronics to designers.” His little box emerged as a great metaphor and case study for all kinds of teaching that leads people gently outside of their established comfort zones.</p>
+
+<!-- Instance of Fancybox Plugin -->
+
+<!-- Here you can see the first instance of an image embedded in this article. I loaded the Fancybox plugin in the head tag of each file so that if the user wants to see an uncropped version, or get a closer look at an image, they can tap the photo and get the full resolution version. Also, when the user taps on the image, they get a caption stating who/what is in the image and where the image was sourced online. This caption can be added in the "title" attribute of the tag (i.e. title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."). Just link the thumb in the <img src=> and place the full-res image in the "href" proceeding. I admit, these images could open up to be a lot bigger to maximize the potential of this plugin. -->
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/arduino2.png"><img src="images/arduino2-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<p class="body-copy">Banzi explains: </p>
+
+<p class="pull-quote">Essentially I’m a geek. I studied electrical engineering. Designers don’t have electronics backgrounds—they think visually. We wanted to turn electronics and software into a creative medium available to anybody. The Arduino came from five years of experimentation. We figured that we could teach programming with this thing very quickly, by using hardware, instead of just pushing pixels on the screen. It’s the first piece of practical open source hardware.</p>
+
+<p class="pull-quote">It’s a hands-on teaching methodology. In graduate school, I had the advantage over my friends because I knew how the story ends! I learned by plugging wrires: no explosion? no fire? no smoke? Good, I learned something. So I started teaching like I learn as a kid. We bring people a child’s open mind and exploration. And our community is incredibly important in the process. Our Wiki we call the Playground:<a href="http://www.arduino.cc/playground/"target="_blank"><span class="link"> http://www.arduino.cc/playground/</span></a></p>
+
+<p class="pull-quote">And we teach workshops in the weirdest places. We discovered that people come to our workshops to find 10 or 20 like-minded people. They learn more from each other than from us.” Arduino has held workshops everywhere from community hackerspaces like Budapest’s Kitchen and NYC Resistor, to university programs like NYU’s ITP, to companies like Apple, IDEO and Panasonic.</p>
+
+<p class="pull-quote">We found that if you put young engineers and artists in the same place and shake, you get weird outcomes. You come spend some time there, they look at you see if you fit into the whole system—If you’re a nice person who understands how to interact with other people. Then you’re in.</p>
+
+<p class="pull-quote">OWN YOUR OWN
+
+<br>
+IF YOU CAN’T OPEN IT<br>
+YOU DON’T OWN IT</p>
+<br>
+
+<!-- Hyperlinks -->
+
+<!-- Here's an example of how hyperlinks have been handled in the markup. There were different span classes for hyperlinks that were placed in different paragraph styles(p. class). -->
+
+<p class="body-copy">As they explained on their blog, <a href="http://arduino.cc/blog/2010/11/09/mozduino/"target="_blank"><span class="link">the Arduino crew built a robot at Drumbeat:</span></a></p>
+
+<!-- Blog Header -->
+
+<!-- This is the styling for blog entries found within the book. Within the "blog-header" div class, I've placed and positioned the icon for blog entries within the print publication. The blog-meta-data is styled to mirror the print publication as well. -->
+
+<div class="blog-header">Mozilla Drumbeat Festival – Mozduino Reaches MACBA Square
+<br><span class="blog-meta">d.gomba@arduino.cc | November 9, 2010</span></div>
+
+<p class="blog-para">We wanted to give back to the community what we’ve been doing in the Arduino Playground: Mozduino! We worked on a robot that was able to avoid the obstacles. The first version was based on the sensing obstacles with light (using LDR) the second using ultrasounds (using PING), the DC motors are driven with Mosfet Modules. We could control the number of rounds of the wheel (and so its direction) by using an HALL sensor with a magnet.</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/arduino3.png"><img src="images/arduino3-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<br>
+<br>
+
+<!-- Hackbus -->
+
+<br>
+
+<a name="lfw_31"><br></a>
+<p class="article-subheader">PROJECT:</span>
+<p class="article-header">HACKBUS</p>
+
+<br>
+<br>
+<br>
+
+<p class="article-lead-para"><a href="http://www.drumbeat.org/content/hackbus-migratory-learning-and-teaching-units"target="_blank">“<span class="link">Hackbuses</span></a> (or mobile hacklabs or hack vehicles) are a low-threshold way of bringing the culture of hacking to the people. They are migratory learning and teaching units, taking the talented hackers and their ideas out of middle-class urban centers and bringing them to people who might not otherwise be aware of the possibilities available to them.”</p>
+
+<br>
+<br>
+
+<p class="body-copy">Hackbus grew out of monochrom, a European art-tech collective interested in DIY, hacking, art, counter-culture, and guerilla communication. The monochrom collective, the founders of hackbus.info, believes a new hardware DIY movement needs to be started, and other approaches on education are possible. Direct,non-hierarchical education. Interchange. Exchange. Classic educational approaches are always top-down and have a strong feeling of authority. What we need is open community labs where interested folks can come together to share resources and knowledge to build and make things. We need a root movement of doing strange things with hardware which was not intended (aka &ldquo;hacking&rdquo;) because only when we use things in ways other than they were planned can something new arise. We follow a long tradition of this nomadic approach to bring self-empowerment to the people. These units can be everywhere. And they should be everywhere. Start one yourself!</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/hackbus.png"><img src="images/hackbus-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." style="margin-top: 10px"></a>
+
+<p class="body-copy">Hackbus events during the festival included making wearable LED s, a Sculpture Mob (complete with faux police raid), and a Massively Multiplayer Thumb War.</p>
+
+<p class="article-section-and-question">The Sculpture Mob:</p>
+
+<p class="pull-quote">Even art hackers are often helpless against official &ldquo;art in public space!&rdquo; Oh, the horror! Those endless atrocities! All of them labeled &ldquo;sculpture in public space!&rdquo; Ah! Monstrous &ldquo;public art installations&rdquo; on roundabouts, on main streets, in shopping malls! It is time to reclaim the street art! It is time to create your own public art! Get your hammers! Get your welding equipment! It’s time for Sculpture Mobs!</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/sculpturemob.png"><img src="images/sculpturemob-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." style="margin-top: 10px"></a>
+
+<br>
+<br>
+
+<p class="article-lead-para">Check-out Scratch</p>
+
+<div class="video-js-box vim-css">
+
+<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+
+	    <video class="video-js" width="471" height="265" controls preload poster="vthumbs/scratch.png">
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//scratch.iphone.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//scratch.webm" type='video/webm; codecs="vp8, vorbis"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//scratch.theora.ogg" type='video/ogg; codecs="theora, vorbis"' />
+
+	      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+
+	      <object class="vjs-flash-fallback" width="471" height="264" type="application/x-shockwave-flash"
+	        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+	        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+	        <param name="allowfullscreen" value="true" />
+	        <param name="flashvars" value='config={"playlist":["vthumbs/scratch.png", {"url": "videos/scratch.iphone.mp4","autoPlay":false,"autoBuffering":true}]}' />
+
+	        <!-- Image Fallback. Typically the same as the poster image. -->
+
+	        <img src="vthumbs/scratch.png" width="640" height="264" alt="Poster Image"
+	          title="No video playback capabilities." />
+	      </object>
+
+	    </video>
+
+	    <!-- Download links provided for devices that can't play video in the browser. -->
+
+	    <p class="v-note">No video in your browser? Download it:
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/scratch.iphone.mp4">MP4</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/scratch.webm">WebM</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/scratch.ogg">Ogg</a><br>
+	    </p>
+
+	  </div>
+
+<!-- End VideoJS -->
+
+<br>
+<br>
+<br>
+
+<!-- Profile Johannes Grenzfurthner -->
+
+<!-- Here is the styling for a Profile/Interview found within the ebook. This consisted of similar tiny-flag and header bar found on the How-to's within the articles(not the featured how-to's), a lead-paragraph, and styling to separate the questions and answers of the interview. -->
+
+<a name="lfw_32"><br>
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">FREEDOM X THE WEB</span> /
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Johannes<br>Grenzfurthner<a id="single_image" title="Johannes Grenzfurthner. Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/johannesgrenzfurthner.png"><img src="images/johannesgrenzfurthner-icon.png" alt="Johannes Grenzfurthner. Photo from mozillaeu's Flickrstream, Aug. 20, 2011."/ style="float: right" "margin-right: 15px"></p></a>
+
+<br>
+<br>
+
+<p class="article-lead-para">The fedora-clad Johannes Grenzfurthner and his compatriots brought a certain outlaw spirit to the Festival (it didn’t hurt that the police wound up towing their vehicle). From the graffitti-covered bus, which brought them all the way from Berlin and back, to extralegal “sculpture mobs” and a massively multiplayer thumb war, the Hackbus crew was there to remind the group that hacking is supposed to be fun. Yet Johannes brings some very serious theory to all this playing around: “We’re classic European leftists. A little bit melancholic, but you can count on us.”</p>
+
+<br>
+<br>
+
+<p class="profile-question">So who is the hackbus crew, really?</p>
+
+<p class="profile-answer">We are part of this art and technology collective called monochrom <a href="http://www.monochrom.at/english/"target="_blank"><span class="link">http://www.monochrom.at/english/</span></a> which started a long, long time ago in 1993, before the web revolution actually started. There was the Internet, but no World Wide Web. Even in universities, only nerds were using this tool.</p>
+
+<p class="profile-answer">We started monochrom with a fanzine of cyber culture and cyber politics, to share the stuff we find interesting and help people find more interesting stuff.</p>
+
+<p class="profile-question">Okay, so you have a hidden agenda. How does hacking fit in?</p>
+
+<p class="profile-answer">With a friend, I co-authored a small pamphlet on hacking spaces as a reaction to this Cambrian explosion of hackerspaces. The basic concept is pretty old—the first were in the 60s or early 70s, more like workshops. Because of the economic crash two or three years ago, many people who used to work in tech companies were freed from their boring jobs sitting behind a desktop, so they ended up founding hackerspaces for tinkering around and building interesting things.</p>
+
+<p class="profile-answer">Some places are just like breeding grounds for Google, full of white guys, which is a little bit sad. So the idea with the Hackbus is to lower participation barriers by going into rural areas and inviting more diversity. 
+
+<p class="profile-answer">We started like a year ago in Austria. We also started the hackbus.info, which is a Wiki open platform community tool.</p>
+
+<p class="profile-question">What kinds of projects specifically can you do with people with the hackbus?</p>
+
+<p class="profile-answer">We focus on things you can do, where you can actually build stuff in under five minutes, like LED throwies and Arduino kits.</p>
+
+<p class="profile-answer">We’ll show people how to do their own documentation. It’s cool if you build your own gadget but it’s better if people can actually see how it works.</p>
+
+<p class="profile-question">So what are your thoughts on how this all relates to education?</p>
+
+<p class="profile-answer">Education, especially in the Western world, has almost always a negative connotation. Especially if you talk to normal everyday people, nobody is super excited about going to school. It’s there, it’s something the state provides, but most of the time it’s pretty bad. Yet people inform themselves on the Internet constantly, every day. There are videos on YouTube where people show this is what you do, and then you do that. With our hackbus projects, we take people to the next level of not buying a kit and building it but learning the grammar of doing something yourself by watching someone else do it. So the basic way you teach stuff changes. So the basic way you teach stuff changes.</p>
+
+<br>
+<br>
+
+<p class="body-copy">Bringing hacking “to the people” also means reaching populations who haven’t historically felt empowered by technology—like women, for example.</p>
+
+<p class="body-copy">That’s Alison Lewis’ life’s work. Alison is a designer with a degree from Parsons School of Design, where she also teaches fashion technology and fashion communication. She’s the proprietor of <a href="http://www.iheartswitch.com/blog/drumbeat-festival-part-1-lets-play-together"target="_blank"><span class="link">Switch</span></a>, “a technology life and style blog which showcases innovative design, fashion and topics from a female perspective. Switch is not just another tech blog about gadgets or digital design, but rather a social look at technology through the genres of fashion, beauty, design, and craft.”</p>
+
+<br>
+
+<p class="article-lead-para">Check-out Crash Space</p>
+
+<div class="video-js-box vim-css">
+
+	    <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+
+	    <video class="video-js" width="471" height="265" controls preload poster="vthumbs/crashspace.png">
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//crashspace.iphone.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//crashspace.webm" type='video/webm; codecs="vp8, vorbis"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//crashspace.theora.ogg" type='video/ogg; codecs="theora, vorbis"' />
+
+	      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+
+	      <object class="vjs-flash-fallback" width="471" height="264" type="application/x-shockwave-flash"
+	        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+	        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+	        <param name="allowfullscreen" value="true" />
+	        <param name="flashvars" value='config={"playlist":["vthumbs/crashspace.png", {"url": "videos/crashspace.iphone.mp4","autoPlay":false,"autoBuffering":true}]}' />
+
+	        <!-- Image Fallback. Typically the same as the poster image. -->
+
+	        <img src="vthumbs/crashspace.png" width="640" height="264" alt="Poster Image"
+	          title="No video playback capabilities." />
+	      </object>
+
+	    </video>
+
+	    <!-- Download links provided for devices that can't play video in the browser. -->
+
+	    <p class="v-note">No video in your browser? Download it:
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/crashspace.iphone.mp4">MP4</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/crashspace.webm">WebM</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/crashspace.theora.ogg">Ogg</a><br>
+	    </p>
+
+	  </div>
+
+<!-- End VideoJS -->
+
+<br>
+<br>
+<br>
+
+<!-- Let's Play Together -->
+
+<div class="blog-header">Drumbeat Festival: Part 1 - Let's Play Together!
+<br><span class="blog-meta">Alison Lewis | November 21, 2010</span></div>
+
+<p class="blog-para">Let’s All Play Together! Wednesday was opening night and I set up my examples from Switch Craft at the Science Fair and demonstrated how to make them. The participants were inquisitive and encouraging. Each question of how and why was followed by a statement of confirmation that we do indeed need more women in technology who love fashion.</p>
+
+<p class="blog-para">About an hour in, it died down and people went inside to hear Joi Ito, CEO of Creative Commons. I went for the free snacks and wine. It was there that I made a friend. His name is Massimo, one of the creators of Arduino. If you don't know it already, Arduino is an open-source hardware platform that is used around the world by artists, designers, architects, teachers, scholars, and just about anyone who wants to create an experience with the physical world. He’s famous among the DIYers, such as myself, though admittedly I did not recognize him and one of his entourage was kind enough to remind me.</p>
+
+<p class="blog-para">We talked and the Arduino crew was very complimentary and supportive. I was honored to talk to them as this is a community I haven’t been a part of in awhile because it involves programming and hardware wiring which are a level two for my readers. I tend to stick with level one. At least I did, but after hanging with Massimo, I think I am ready to graduate Switch readers to another level of learning.</p>
+
+<p class="blog-para">I learned that the Arduino platform was created in Italy in a creative design program at the Interaction Design Institute Ivrea. I had known about this school years ago, but it was shut down in 2005 for no apparent reason, just as it was gaining success.</p>
+
+<p class="blog-para">He smiled as I explained my passion to get fashion designers, craftsman, and artists into creating with technology. Then he gave me a cute purple Arduino pin with a heart on it and pointed at one of my pins and said, &ldquo;I’ll trade you one of mine for yours. I really like what you are doing here, please feel free to come and hang out with us in the hacker space tomorrow.&rdquo;</p>
+
+<p class="blog-para">His smile made me smile, and that is how friendships are born.</p>
+
+<br>
+
+<p class="article-lead-para">Check-out Tangible K</p>
+
+<div class="video-js-box vim-css">
+
+<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+
+		    <video class="video-js" width="471" height="265" controls preload poster="vthumbs/tangiblek.png">
+		      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//tangiblek.iphone.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+		      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//tangiblek.webm" type='video/webm; codecs="vp8, vorbis"' />
+		      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//tangiblek.theora.ogg" type='video/ogg; codecs="theora, vorbis"' />
+
+		      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+
+		      <object class="vjs-flash-fallback" width="471" height="264" type="application/x-shockwave-flash"
+		        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+		        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		        <param name="allowfullscreen" value="true" />
+		        <param name="flashvars" value='config={"playlist":["vthumbs/tangiblek.png", {"url": "videos/tangiblek.iphone.mp4","autoPlay":false,"autoBuffering":true}]}' />
+
+		        <!-- Image Fallback. Typically the same as the poster image. -->
+
+		        <img src="vthumbs/tangiblek.png" width="640" height="264" alt="Poster Image"
+		          title="No video playback capabilities." />
+		      </object>
+
+		    </video>
+
+		    <!-- Download links provided for devices that can't play video in the browser. -->
+
+		    <p class="v-note">No video in your browser? Download it:
+		      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/tangiblek.iphone.mp4">MP4</a>,
+		      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/tangiblek.webm">WebM</a>,
+		      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/tangiblek.theora.ogg">Ogg</a><br>
+		    </p>
+
+		  </div>
+
+<!-- End VideoJS -->
+
+<br>
+
+<a name="lfw_33"><br></a>
+
+<br>
+<br>
+
+<!-- Featured How-to's Within Articles -->
+
+<!-- Here's the markup for the Featured How-to's found within the articles. We used the customized lightbox plugin by Allen Pike to open up the 'howtoarduino.html' file on click. We have the styled Featured How-to Header within the banner, the images for the background, button-icon found within the printed text, and Amy Wang's illustrations to signify content found within the interactive how-to. -->
+
+<!-- How-to Learn and Play With Arduino -->
+
+<br>
+          <a href="#" onclick="LFW.lightbox('howtoarduino.html')">
+          <div class="feature-box">click or tap this bar for feature
+            <div class="feature-title-box"><div class="feature-flag">HOW TO</div>Learn &amp; play with Arduino
+              <div id="feature-icon"><img src="images/button-icon.png"><img></div>
+              <div id="arduino-feature-image"><img src="images/button-arduino.png"><img></div>
+              </div>
+              <div class="feature-bottom-bar"></div>
+            </div></a>
+
+
+<br>
+<br>
+
+
+<div class="clear"></div>
+
+<a href="openvideo.html"><div class="next-page-button"><div class="next-page-button-text">tap to continue</div><img src="images/next-page-button.png"/></div></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+            </div>
+      </article>
+    </body>
+  </html>

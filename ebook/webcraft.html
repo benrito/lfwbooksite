@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags.
+These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation.
+Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation
+will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.
+You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link.
+These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular
+part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would
+change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br>
+</dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+
+<!--  Webcraft - -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Start A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+<!-- Webcraft -->
+
+<a name="lfw_25"><br></a>
+<p class="article-header">Webcraft</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">What if web education worked like the web? Web-building skills (or webcraft) constitute a new, critical form of literacy that is lacked by far more people than good old reading and writing. Can you use the practices of the open web to spread webcraft farther and wider? It’s worth a shot.</p>
+
+<br>
+<br>
+
+<p class="body-copy">An eviscerating keynote presentation from a 20-year-old self-taught British programmer left no doubt in attendees’ minds as to the sorry state of web education.</p>
+
+<p class="pull-quote">I got into this industry when I was about 13 by playing games, NeoPets, then Myspace pages,” said Anna Debenham, who founded “Scrunchup,” a web magazine for young developers. When I started studying design in school, the course material was hugely out of date.</p>
+
+<p class="body-copy">She gave several examples in her slides: British college-prep test questions specifying the use of tables (a slow, inflexible method) in websites, instructing people to write code in PowerPoint or Word rather than directly in a working program, giving outdated definitions for HTML.</p>
+
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">The problem:</span> Traditional academia is hard-pressed to move at the speed of technology.</p>
+
+<p class="body-copy">We’re not just talking about universities, were talking about primary schools and secondary schools. By the time you get to university, it’s too late. As Anna pointed out:</p>
+
+<p class="pull-quote">People like me grasp on to technology at such a young age that the schools just can’t keep up.</p>
+
+<p class="body-copy">So, is it possible to make web education work more like the web? 
+Especially the open web? It turns out that there’s an emerging world of people trying to do just that. Chris Mills, founder of the Open Web Education Alliance, says: 
+
+<p class="pull-quote">So many institutions out there are teaching either no web design or teaching it in a really outdated crappy way. A community-led approach can cover more ground a lot quicker.</p>
+
+<br>
+<br>
+<br>
+
+<!-- Profile Chris Mills -->
+
+<a name="lfw_26"><br></a>
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">WEB X LEARNING</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Chris Mills<a id="single_image" title="Chris Mills. Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/chrismills.png"><img src="images/chrismills-icon.png" alt="Chris Mills. Photo from mozillaeu's Flickrstream, Aug. 20, 2011."/ style="float: right" "margin-right: 15px"></p></a>
+
+<br>
+<br>
+
+<p class="article-lead-para">Chris Mills looks like a typical metalhead. At over six feet tall with long hair, a goatee, a black T-shirt, and the Skype name “dark satanic mills,” he doesn’t do anything to dispel the aura of gloom. But far from worshiping Satan, the U.K. native is actually dedicated to ideals of inclusion and accessibility, especially in webcraft. He works for Opera, an open-source software company as the chief creator of its Web Standards Curriculum. It’s a “course designed to give anyone a solid grounding in web design/ development, no matter who they are—it is completely free to use, accessible, and assumes no previous knowledge.”</p>
+
+<br>
+<br>
+
+<p class="profile-question">How did you get interested in the connection between free 
+software and open education?</p>
+
+<p class="profile-answer">It’s been a passion of mine since I first started using the Internet. I did biochemistry for a degree—most webby people never do anything for official qualification that has to do with what they do for a living. I’ve never been a massive tech person although I am good at HTML. I’m interested in the social and educational applications. I think the Internet is an amazing invention as a universal communication mechanism.</p>
+
+<p class="profile-question">And how did you come to write Opera’s web standards 
+curriculum?</p>
+
+<p class="profile-answer">I worked for about a decade at various publishing houses, and I kept going to publishing companies saying, why don’t we produce an amazing free resource to allow anybody to learn this stuff even if they can’t buy our books? I can understand a company having a slight business conflict over this. But Opera, from a purely business perspective, saw it as a good public relations strategy to spread the world of open standards and best practices.</p>
+
+<p class="profile-answer">So I got together the people who I thought would be good for the job and signed them up to write the course. It took me a year to <a href="http://www.opera.com/company/education/curriculum/"target="_blank"><span class="link">design the curriculum.</span></a></p>
+
+<p class="profile-answer">Now it’s at a pretty good stage and it’s been translated into 10 different languages. I’ve had good feedback from people around the world who found it useful, ranging from teachers at colleges and universities as far away as Indonesia, China and Japan, to an 80-year-old guy from Australia that learned how to make websites and put up photos of his grandchildren.</p>
+
+<p class="profile-question">And this has connected you to a broader learning, freedom and the web community?</p>
+
+<p class="profile-answer">In 2007, at South by Southwest. I bumped into some like-minded people, like Aarron Walter, the lead U.S. designer for MAILchimp, an Atlanta-based company. He was producing something at the time called <a href="http://interact.webstandards.org"target="_blank"><span class="link">WaSP inteRACT</span></a>, another really cool educational resource that provides core structures and sample exam questions and rubrics for assessment—not the tutorial itself but the other stuff to go along with that to put together a curriculum.</p>
+
+<p class="profile-answer">And so, even though we’d started those projects totally separately, they worked together really nicely. And they’ve listed all the OPERA web standards curriculum as recommended reading.</p>
+
+<p class="profile-answer">Aaron and I also worked together on a book, InterACT with Web Standards: A Holistic Approach to Web Design, which came out in May of this year. What we wanted to do was to produce the perfect basic textbook for people who want to get into web design. It doesn’t cover a lot of JavaScript, just information architecture and HTML.</p>
+
+<p class="profile-question">Cool! So tell me about the Open Web Education Alliance.</p>
+
+<p class="profile-answer">OWEA is meant to act as a kind of governing body that will be able to regulate all this stuff and show that curricula are kept up to date and in good quality, and that this stuff is actually getting to the educators who need it.</p>
+
+<p class="profile-question">And how does this connect with the accessibility work you’ve been doing?</p>
+
+<p class="profile-answer">I’ve been working with the U.K. government to try to actually get proper government legislation. There’s nothing to force educators to update their material and teach it properly, so we want to make that a bit more enforceable. One big dream I have, if this kind of legislation is successful in the U.K., would be to use that template to work in other countries as well.</p>
+
+<p class="profile-question">Isn’t it a bit strange for a self-taught web designer who’s pioneered in the field of open education, to get so immersed in government mandates this way?</p>
+
+<p class="profile-answer">Well, I don’t think there’s anything wrong with web design being self-taught. I know some hideously talented people who’ve been working since the age of seventeen. But it’s good to have proper courses available for people who want to go down that path equally as well as self-learning. We should make it so the option is available in a more effective way.</p>
+
+<p class="profile-answer">The other thing it’s about is getting the university structure and industries in general to take web development and web design more seriously. It’s talked about a lot in OWEA. Web design at the university level is an orphan. It doesn’t fit well into any existing subject area. In computer science it’s seen as a wussy lightweight copout thing to do because it’s not programming. Graphic designers are scared of it because it involves code. I’m trying to get the slight chaos of self learning more into official courses—to make education courses work more how the web works.</p>
+
+<br>
+<br>
+ 
+<!-- Webcraft Toolshed -->
+
+<p class="body-copy">&ldquo;Learning, Freedom and the Web&rdquo; was a scene for publicizing and further developing the idea of a community-led approach to teaching web development, through an emerging network of organizations including the Open Web Education Alliance, Peer 2 Peer University, and its School of Webcraft  (in partnership with the Mozilla Developer Network).</p>
+
+<p class="body-copy">The Webcraft Toolshed: bringing together interdisciplinary web professionals across design, development and marketing, students, university and college web educators, informal trainers, advocates, and anyone who wants the core values of openness and inclusion to form the foundation for the web’s vibrant future. Together, the School of Webcraft and OWEA want to establish open collaboration on projects that share the common goal of standards-based web education.</p>
+
+<br>
+
+<p class="body-copy">The Webcraft Toolshed</span> aims to achieve this by:</p>
+
+<p class="ts-points">1. Mapping the necessary skills you need to practice web craft and describing the overarching principles that guide web professionals.</p>
+
+<p class="ts-points">2. Building concrete strategies to connect the organizations, methods and resources that learners turn to for web education.</p>
+
+<p class="ts-points">3. Remixing and repurposing existing web learning resources for new learning forms and channels.</p>
+
+<br>
+
+<p class="body-copy">Hosted by School of Webcraft (powered by P2PU and Mozilla), Mozilla Developer Network (MDN), and the Open Web Education Alliance (OWEA).
+
+<p class="body-copy">The Peer 2 Peer University <a href="http://interact.webstandards.org"target="_blank"><span class="link">http://p2pu.org/</span></a>, with the tagline, &ldquo;learning for everyone, by everyone, about almost everything,&rdquo; is, &ldquo;{an online community of open study groups for short university-level courses. Think of it as online book clubs for open educational resources. P2PU helps you navigate the wealth of open education materials that are out there, creates small groups of motivated learners, and supports the design and facilitation of courses. Students and tutors get recognition for their work, and we are building pathways to formal credit as well.&rdquo;}</p>
+
+<p class="body-copy">Though less than three years old, P2PU is one of the most well-established and best recognized experiments in peer-led learning. It began when Harvard graduate student Neeru Paharia met Jan Philipp Schmidt, a German computer scientist working on open courseware in South Africa, at a conference in Croatia. They formed a team together with a Norwegian, Stian Haklev, and an Australian, Delia Browne, and got a $70,000 seed grant from the Hewlett Foundation to launch their first pilot of 10 courses in 2009. True to the peer learning spirit, P2PU has to give the public what they want—courses got going in subjects that already had online audiences of self-motivated learners, like writing, behavioral economics, and Wikipedia visualization.</p>
+
+<p class="body-copy">P2PU is trying many different technologies, from video chat to EtherPads, Google docs, and plain old email. Class facilitators are experimenting with ways to put assessment in the hands of peers to take the pressure off the facilitator as the “single point of failure”—which is key to getting a model that can attain scalability.</p>
+
+<p class="body-copy">To do this, they need to innovate the practices of both teaching and learning. They don’t use the term “teaching,” rather, facilitating, with the idea that learners will identify their own goals and reasons for being there. It’s very much a work in progress.</p>
+
+<br>
+
+<p class="body-copy"><a href="http://wiki.p2pu.org/w/page/27905271/Course-Design-Handbook" target="_blank"><span class="y-link">From the P2PU Course Design Handbook</span></a></span>, a community-generated wiki:</p>
+
+<p class="profile-answer">1. Course organizers identify basic learning objectives. Developing learning objectives are a necessary component of P2PU courses. Learning objectives are a broad generalization of the purpose of the course and include the acquisition, retention, application, and adaptability of knowledge and skills acquired through participation. What skill or sum of knowledge will a participant gain? Where will they be able to apply it?</p>
+
+<p class="profile-answer">2. Participants identify their personal learning goals. You’ll find that P2PU participants have differing motives for taking a course. Often participants work on a range of projects within the same course. Therefore, participants should identify their personal learning goals when they sign up for the course and revisit them when course begins. Ask participants to share their personal learning goals with the group to promote discussion and cross-pollination of ideas.</p>
+
+<p class="body-copy">In the fall of 2010, P2PU teamed up with Mozilla to launch the School of Webcraft, with the goal of creating “a peer-led system that helps people around the world easily gain skills and build careers on open web technology.”</p>
+
+<p class="body-copy">Pippa Buchanan, who started her journey into the world of self-learning by <a href="http://p2pu.org/en/schools/school-of-webcraft/"target="_blank"><span class="link">blogging about a DIY Master’s degree</span></a>, now works for P2PU. She says:</p>
+
+<p class="pull-quote">The original idea for the School of Webcraft arose when John Britton taught a course on P2PU about ’Mashing Up The Open Web.’ That sparked a conversation between Mozilla and P2PU on the idea of a partnership based around web developer education. Mozilla would provide the brand recognition and focus on the open web, and P2PU would bring a lively community of peer learners to incubate the <a href="http://www.drumbeat.org/p2pu-webcraft"target="_blank"><span class="link">School of Webcraft.</span></a></p>
+
+<p class="pull-quote">Fall of 2010 saw the creation of 12 initial School of Webcraft courses. Over 500 people applied to take part in the free peer-led classes and 345 were accepted. There were a range of people, from those wanting to build a career in web development, to teachers and designers. And there was a great range of participants from people in their late to those in their fifties who are both updating their skills and building their first ever website.</p>
+
+<p class="body-copy">Some people are aiming to build educational tools, others are testing HTML 5 support across different browsers and other people are learning the skills that help them to read software source code better.</p>
+
+<p class="body-copy">“We’ve got 15-year-olds from Bangalore, and retired librarians, and everything in-between,” says Stian Haklev, a PhD student originally from Norway and another P2PU founder. “Many organizations like Opera, Adobe, Yahoo, WOW, and WaSP InterAct have been diligently working to develop curricula and outreach programs to help schools better prepare their students for a career on the Web. The Open Web Education Alliance (OWEA) will bring many education initiatives together in a broad collaborative. Its mission is to bring together companies, schools, and organizations involved in shaping the education of Web professionals to explore the issues around the topic of Web development education and create solutions for improving it.”</p>
+
+<br>
+
+<p class="body-copy"><a href="http://www.w3.org/2005/Incubator/owea/wiki/Web_Craft"target="_blank"><span class="link">The School of Webcraft</span></a> borrowed the term “webcraft” from the <a href="http://www.w3.org/2005/Incubator/owea/"target="_blank"><span class="link">Open Web Education Alliance</span></a>, which defines it as:</p>
+
+<p class="pull-quote">Web Craft is a systematic approach to Web development and design education. Web Craft emphasizes the fundamentals of Web technologies, including markup, styling, accessibility, internationalization, client-side, and server-side scripting, Web architecture, webapp development, user experience, and other considerations, in a manner beyond that acquired by using WYSIWYG [What You See Is What You Get] authoring tools [such as blogging interfaces]. Web Craft also concentrates on a pragmatic investment in skills that meet market needs, and solve problems for potential employers. Professionalism and self-training is a key aspect of practicing Web Craft.</p>
+
+<br>
+<br>
+<br>
+
+<!-- Profile Pippa Buchanan -->
+
+<a name="lfw_27"><br></a>
+<div class="section-flag">PROFILE</div></a><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">WEB X LEARNING</span> /</div>
+<br>
+<br>
+<br>
+<br>
+
+<p class="article-header">Pippa Buchanan<a id="single_image" title="Pippa Buchanan. Photo from Timothy Vollmer's Flickrstream, Aug. 20, 2011." href="images/pippabuchanan.png"><img src="images/pippabuchanan-icon.png" alt="Pippa Buchanan. Photo from Timothy Vollmer's Flickrstream, Aug. 20, 2011." style="float: right" "margin-right: 15px"></p></a>
+
+<br>
+<br>
+
+<p class="article-lead-para">Pippa Buchanan found her way into open education by blogging about her attempt to do a DIY Master’s degree. In the fall of 2010 she came on officially as coordinator of P2PU and Mozilla’s joint venture, the School of Webcraft. Pippa is a childhood nickname that really fits her wide eyes, blunt-cut bangs, and boundless enthusiasm. Over a cup of tea, she freely declares: “I just love learning!”</p>
+
+<br>
+<br>
+
+<p class="profile-question">What is your background and why are you interested in open education, free sharing, and reuse of knowledge?</p>
+
+<p class="profile-answer">I drifted into the dark arts of computer science and then games development for several years in my twenties. After traveling the world, and not sure how to reconcile my technical training with my creative impulses, I realized that I was interested in learning almost everything. At the end of 2008 I wrote a blog post called the <a href="http://diymasters.battlecat.net/2008/12/19/studying-at-the-academy-of-diy/"target="_blank"><span class="link">Academy of DIY</span></a> in which I speculated on how I could organize my own Master’s degree by gathering resources, people, and mentors around media art and friendship.</p>
+
+<p class="profile-answer">I ended up working in a design school as an educator and web developer and was incredibly frustrated by the hierarchy and bureaucracy involved in making changes in the way people learned. Luckily, I then fell into the Mozilla project, heard about the School of Webcraft, and ended up working as the coordinator. It’s my dream job. It satisfies my geek and teaching backgrounds and most importantly, allows me to shape the way people will learn in the future.</p>
+
+<p class="profile-question">What would you say is your main motivation for working on free and open education? Why is this important to the world?</p>
+
+<p class="profile-answer">I think the most important thing about free and open education is that it offers learning choices to people. It’s not just about helping people from Detroit learn web development so that they can find a better job, it’s about putting learners of niche subjects such as cyberpunk literature together. I think of it as the long tail of learning.</p>
+
+<p class="profile-answer">Open educational resources have given people access to information about learning, but as we develop better ways of having people freely learn together (and shape their learning) we’re going to have people’s minds meeting and growing together. That’s really exciting, I’m looking forward to the serendipitous and innovative ideas that will grow from this learning crucible.</p>
+
+<p class="profile-question">What do you think is the relationship between free software and open education?</p>
+
+<p class="profile-answer">The relationship between the free software movement and open education is so much more than licenses. It is about providing access to experiences that would otherwise be restricted by price, where anyone is welcome to become a part of the community and drive forward with an idea and share their knowledge. A lot of people get involved with a free software project because they report a bug, end up fixing it and then get welcomed into the community. If we could get a similar model to lead to a new way to learn philosophy that would be great!</p>
+
+<p class="profile-question">Why is it that so many people who are interested in one, are working on building the other?</p>
+
+<p class="profile-answer">I can’t help but use a Matrix reference and call this the Red Pill of Openness. Once you ’get’ openness in one context such as software, you can’t help but realize that those same principles of sharing, collaboration, remixing, and innovation are incredibly relevant to many other contexts such as design, music, and education. The success of certain FLOSS projects has given people a language and methodology to apply to new (and old) problems.</p>
+
+<p class="profile-question">What are the main obstacles standing in the way of an entirely free and open world of higher education? Are they technological, social, matters of government policy or the conduct and structure of institutions?</p>
+
+<p class="profile-answer">I feel that technological challenges are really going to prevent many people from having access to freer learning opportunities for a long time to come. This affects people living in remote rural communities, and disenfranchised urban areas even in the most developed nations.</p>
+
+<p class="profile-answer">There are also going to have to be significant social changes in the way people learn to approach ideas of sharing and collaboration before open educational movements can really thrive. Learners in this new environment have to understand that they are as responsible for everyone else’s learning as they are for their own.</p>
+
+<p class="profile-question">Do you think institutions will adapt to the new reality or will educational innovators have to find workarounds?</p>
+
+<p class="profile-answer">I think that many formal learning institutions will find themselves changed by radical innovation from within and will eventually have to adapt. The true revolution will take place outside of the system and sit in the cracks of existing institutions—there’s no way that the universities and colleges of today can truly respond to the desire for learning from the global population.</p>
+
+<p class="profile-question">There are concerns about participation in open education by traditionally disadvantaged student populations. What is the best way to reach these students?</p>
+
+<p class="profile-answer">I’m hoping that a “pay it forward” attitude will be sown in communities such as P2PU. Within disadvantaged communities there are often lucky people who can access resources like our community. I’m hoping that after a peer-led experience within P2PU, many people will feel confident enough to take their own experience and to facilitate a face-to-face learning experience for other people.</p>
+
+<p class="profile-question">Anything else you’d like to say about the future of education? What will education look like in 2020?</p>
+
+<p class="profile-answer">In 2020, we’ll be seeing the longer term results of the financial crisis. I don’t want to be a pessimist, but I think we’ll also start seeing the first significant effects of climate change. On the bright side, these new and challenging situations will meant that people are going to have to become more responsive in the way that they learn to deal with the world.</p>
+
+<p class="profile-answer">This responsiveness is going to call for a change to the way ideas are shared, education is going to have be faster in its development and delivery and it’s going to have to be able to update to new conditions. Learning and sharing your learning will become a quality of resilient communities.</p>
+
+<p class="profile-answer">I also think that we’ll be seeing a really drastic swing away from formal degrees as the focus of tertiary education. The idea of curating a lifelong learning experience that has timely bursts of learning is going to become more of a priority for individuals who don’t know what their future will be like.</p>
+
+<br>
+<br>
+
+<p class="body-copy">Rather than replace the existing informal, self-organizing learning practices with formal codification and professionalization through institutions, the Webcraft community is trying to pull off something much trickier: Learn the way they’ve always learned, but more so. Open the doors so that every frustrated Anna Debenham can find the mentors and information she needs. This requires a constant commitment on the part of those within the developer community to embrace and welcome newcomers, without placing an undue burden on established members of networks.</p>
+
+<p class="body-copy">The Webcraft experiment, which includes the creation of free online curricula, informal conversations in online forums, networks like Github, and attempts like the ones at Seneca College to get students involved in open-source projects, is an important case study in designing the future of education. Allied disciplines like graphic design and illustration, game design, and video are proceeding down this path as well. How much of education could be transformed to work more like the Web? How important will P2PU models get?</p>
+
+<p class="body-copy">After the Festival, P2PU’s email list exploded, and dozens of new courses were created, including many in Spanish from those who had seen an article in Spain’s El País. Clearly the appetite is out there.</p>
+
+<br>
+<br>
+
+<p class="article-subheader-b">Session Notes:</p>
+
+<br>
+
+<p class="article-lead-para">After two days of brainstorming and many, many Post-it notes, here’s some of what the Webcraft Toolshed came up with:</p>
+
+<br>
+
+<p class="article-subheader-a">P2PU Webcraft main ideas and values:</p>
+
+  <p class="pull-quote">• Interoperability</p>
+  <p class="pull-quote">• CSS3 Media query</p>
+  <p class="pull-quote">• Standards are a promise of web media future</p>
+  <p class="pull-quote">• Aware of user goals</p>
+  <p class="pull-quote">• Adaptability</p>
+  <p class="pull-quote">• View Source</p>
+  <p class="pull-quote">• Collaboration &amp; sharing</p>
+  <p class="pull-quote">• Less SEO less ranking + new markets</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/p2pu.png"><img src="images/p2pu-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<p class="body-copy">There were also many discussions of best practices. This is an informal community and culture trying to codify some standards to help newbies along.</p>
+
+<!-- What The Pros Need! -->
+
+<br>
+
+<p class="article-subheader-a">What are the soft skills that web professionals need?</p>
+
+<br>
+
+<p class="body-copy"><span class="yellow-left-justified">Basic sysadmin skills:</span> Knowing how your website will be run on the server is very important. If your application will run on Apache or nginx, you’ll need to install locally and be sure that your code runs on the live site. You also need to understand performance issues that could arise from your servers specific setup and learn to circumnavigate these potentially problems with your code.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Usability: </span>Unless something goes terribly wrong, a website will be used by somebody. A web professional needs to identify and research who those users will be and make the site usable accordingly.</p>
+
+<p class="body-copy"><span class="yellow-left-justified">Planning: </span>Web Professionals of all sorts need planning skills.</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/webskills.png"><img src="images/webskills-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<br>
+<br>
+<br>
+
+<!-- How-to Start A P2PU Course -->
+
+<a name="lfw_28"><br></a>
+<div class="how-to-bg"><div class="section-flag">HOW TO</div><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">WEB X LEARNING</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="how-to-header">Start a P2PU course<img src="images/wxl-howto.png" style="float: right"></p>
+
+<br>
+<br>
+
+<p class="how-to-lead-para">P2PU is a platform that makes it easy to join together with other learners and explore any topic you choose.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Difficulty: </span>Moderate.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Time:</span> 6-12 weeks.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Materials:</span> A computer with Internet access, passion and a topic you’re interested in!</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Who: </span>Many + one facilitator.</p>
+<br>
+
+<p class="how-to-body-copy"><span class="yellow-left-justified">Steps:</span></p>
+
+<br>
+
+<p class="how-to-body-copy">1. Identify what it is you want to learn.</p>
+<br>
+<p class="how-to-body-copy">&nbsp;&nbsp;&nbsp;&nbsp;Tip: You can be a total beginner, or you might want to improve your knowledge about a topic.</p>
+<br>
+<p class="how-to-body-copy">2. </span> Visit <a href="http://p2pu.org"target="_blank"><span class="link">http://p2pu.org</span></a> and read the Course Design handbook. We also recommend signing up for the Course Design Orientation.</p>
+<br>
+<p class="how-to-body-copy">3. Create a course plan based on open educational resources from sources such as the <a href="http://discovered.creativecommons.org/search/"target="_blank"><span class="link">Creative Commons DiscoverEd</span></a> search engine:</p>
+<br>
+<p class="how-to-body-copy">4. Include collaborative activities and a balanced workload—this means choosing an appropriate length. P2PU recommends 6-9 week courses. Some comprehensive courses spread out over 12 weeks.</p>
+<br>
+<p class="how-to-body-copy">5. Register, create a draft of your course on P2PU.org, and share your course draft with other community members. They’ll give you feedback on your idea and help you facilitate your course.</p>
+<br>
+<p class="how-to-body-copy">6. Invite people to sign up for the course. Encourage each participant to define his or her own learning objectives and metrics for success.</p>
+<br>
+<p class="how-to-body-copy">7. Begin your adventure in open, social learning!</p></div>
+
+<br>
+
+<div class="clear"></div>
+
+<a href="hacking.html"><div class="next-page-button"><div class="next-page-button-text">tap to continue</div><img src="images/next-page-button.png"/></div></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+          </div>
+    </article>
+  </body>
+</html>

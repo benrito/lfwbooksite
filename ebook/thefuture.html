@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags.
+These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation.
+Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation
+will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.
+You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link.
+These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular
+part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would
+change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br>
+</dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+
+<!--  Webcraft - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Start A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+<!-- Looking Back -->
+
+
+<!-- Learning x Freedom x The Web : The Future -->
+
+
+<a name="lfw_44"><br></a>
+<p class="article-header">The Future</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">What is the future of learning, freedom, and the web? It’s a slate of ongoing projects. It’s a percolating of new ideas. It’s a crossbreeding of old categories. It’s a building of new relationships. It’s a founding of new organizations. It’s the construction of new systems. It’s the coining of new words. It’s the creation of a new reality. Together.</p>
+
+<br>
+<br>
+
+<p class="body-copy">What really keeps a community going? Shared work, shared goals, shared fun, shared vocabulary, and shared rituals. There doesn’t have to be one ultimate unified vision. The idea of what learning will mostly look like in ten years, 50 years, or 100 years remains fuzzy, and that’s by design, because one definition of an improved future is one that has a greater diversity of choices than in the past.</p>
+
+<p class="body-copy">In many ways, the medium speaks louder than the message. The Festival worked the way we want learning to work with the help of the web and in the context of freedom.</p>
+
+<p class="body-copy">Convene a group that finds strength in difference. Make room for all kinds of constructive debate while keeping an eye on shared values and goals. Keep a bias toward action—there’s nothing better for collaboration and camaraderie.</p>
+
+<p class="body-copy">There were mistakes along the way, grand ideas that didn’t quite materialize or got bogged down in the details. There were difficulties in communicating and building bridges amongst people with very different backgrounds, skill sets, and languages. (The lack of translators for sessions, which were held exclusively in English, came in for a fair amount of criticism.)</p>
+
+<p class="body-copy">There are ongoing concerns about the future—keeping momentum going for projects and finding funding models that work. All of these issues are part of the process.</p>
+
+<p class="body-copy">At the end of two days, on a rooftop in Barcelona at three o’clock in the morning, there was dancing and there was singing. And there were plans for the future.</p>
+
+<br>
+
+<p class="article-lead-para">“I’m a college dropout. I dropped out twice—I completely failed formal education—but I survived because of the Internet. The Internet saved my life. The Internet presents an amazing opportunity for us to enable informal learning. Until we figure out how to change education into learning we’re not going to reach the final potential of the Internet. We trust the Internet not to be centrally controlled. We have learned that abundance and redundancy and resilience works. Education still believes in scarcity—you had to dish out education to people who deserved it. We’re going to a world of abundance. When we have abundance and we act like we have scarcity, we get things like obesity.”</p>
+
+<p class="author">—Joi Ito, opening night remarks</p>
+
+<br>
+<br>
+
+<p class="body-copy">Monica Resendes, a PhD student at the University of Toronto: “studying how the development and integration of collaborative online learning technologies can enhance the teaching and learning of history in schools,” mused in an email:</p>
+
+<p class="pull-quote">The one question that I have come away with, when we say we want to open up the great wide world of open education for whoever is willing, able, and excited to dive into it, what kind of learning do we hope to encourage? Is it to impart specific knowledge, to improve a certain skill, to facilitate communication and investigation, to inspire creativity? The answer is all of those things and more, of course. And there is a myriad of amazing and innovative learning resources out there designed to do these very things.</p>
+
+<p class="pull-quote">All these initiatives strive to provide free, cutting edge and robust educational resources. What sets these projects apart is their shared objective to create connected and committed communities around them as an integral component of the platforms themselves.</p>
+
+<p class="pull-quote">It is the community-building aspect underlying the technology which I feel is really at the heart of the new movement that we—those who attended the Festival, those working in the field of Open Ed, those reading this document—need to keep pushing and working for.</p>
+
+<br>
+<br>
+
+<p class="article-subheader-b">(From Drumbeat participant evaluations)</p>
+<p class="article-subheader-a">How do you want learning to be different in the future?</p>
+
+<p class="profile-answer">• Self and community based learning.</p>
+<p class="profile-answer">• Widespread OER and culture of openness.</p>
+<p class="profile-answer">• Rapid iteration of learning models and environments.</p>
+<p class="profile-answer">• Everybody should be a teacher and a learner.</p>
+<p class="profile-answer">• The supporting material and software should be made by and for teachers and learners (people who identify themselves as such).</p>
+<p class="profile-answer">• Many school systems will abandon the single teacher classroom model when possible.</p>
+<p class="profile-answer">• Subject based &amp; grade based models will be increasingly rejected by many more middle &amp; high schools.</p>
+<p class="profile-answer">• Math education will become integrated &amp; authentic/group-based learning opportunities will increase.</p>
+<p class="profile-answer">• Less textbook knowledge, more hands-on/real world pedagogy.</p>
+<p class="profile-answer">• Tech should be actually integrated into curricula instead of being a simple complement to traditional approaches.</p>
+<p class="profile-answer">• Let people be people—not a set of grades or evaluation standards.</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">You have a common ethos of openness—sharing power, decision making and, participation. An ethos of DIY—learning-by-doing, making. That’s what’s exciting about the potential of this group—for the next two days and beyond. A common ethos and passion for innovating can be incredibly powerful. So I have an invitation for you guys to reflect on the poetry and the pragmatics of what that means. It’s Powerful. And if we just share that and become more articulate at it there’s power in that. More importantly, we have to work together.
+
+<p class="author">—Mark Surman, opening night of “Learning, Freedom and the Web”</p>
+
+<br>
+
+<p class="body-copy">Fred Mednick, the founder of Teachers without Borders, a nonprofit “global community of teachers who are working to enhance education and human welfare,” wrote afterwards:</p>
+
+<div class="blog-header">Mozilla Drumbeat Festival: An Elder’s Perspective
+<br><span class="blog-meta">Fred Mednick | November 6, 2010</span></div>
+
+<p class="blog-para">Here are a few words of wisdom extracted from my steno, turned into sentence form, transferred to EtherPad, backtracked to my blog, and flicked over to my Kindle and Touch (I feel a need to add all of these references to technical gadgets so that I would not be dismissed as a Luddite—a word, by the way, referring to bands of English workers who destroyed machinery they felt was threatening their jobs).</p>
+
+<p class="blog-para">Here goes: Stand on the shoulders of giants and validate the contributions made by generations that were, themselves, also restless, undaunted, dissatisfied with the status quo, exploratory, and driven to make something happen overnight. Remember that tweets were once haikus. Symbols first appeared on the walls of caves. Moveable type helped make classics accessible. P2P was once a form of basic trading in the village marketplace. Be careful not to build a digital form of the very institutions you find so distasteful, even the online ones. Words bandied about or overheard in sessions: ‘institutional inaccessibility, ‘Blackboard-dominating,’ ‘frontal teaching,’ ‘corporate machines,’ ‘colonial,’ ‘exclusive.’</p>
+
+<p class="blog-para">Several demos focused on building global repositories of social media for teachers made viable only if the community of users is large enough, resources plentiful enough, and bandwidth ubiquitous enough. I now have a stack of business cards and brochures and URLs and photographs of Post-it notes.</p>
+
+<p class="blog-para">Sure, today’s classrooms can be stifling and anachronistic. At the same time, classrooms can, by their very existence, also be a form of liberation and the ultimate expression of human rights. 70+ million children do not go to school at all. Most of them only dream of putting on a uniform, carrying books, and learning from each other. Figure out how your application (and your motive for building it) can work even if the electricity is off, then build it because its effectiveness can scale.</p>
+
+<p class="blog-para">Challenge yourself at the level of the worst-case scenario. In South Africa, for example, there are some classrooms of 60+ children who, in alternating rows, bend over so that the children behind them can use their backs as a desk. Can your app work there? Watch your grammar when you’re in a foreign land. Though it is true that the best meetings are impromptu and largely unscripted, seek diversity as a natural starting point. Try not to convene a group of hackers in a basement unless educators know where the stairs are and can find you (literally and figuratively). I promise, we won’t slow you down. Similarly, to educators: don’t convene a private cabal without corralling an equal number of Red-Bull hackers who, indeed, are your friends if you just let them dream with you after class or in the faculty lounge. Really, lighten up.</p>
+
+<p class="blog-para">At the Festival, I learned two important things that challenged and changed me. First, my insistent, and somewhat obnoxious, drive for instant practicality can obscure and squash creativity. While I may have often felt that many creations were solutions looking for problems, I also realized that innovation does not need a rationale in order to flourish. The rough and inaccessible could, indeed, be made smooth and useful if only given a chance. The innovator should not feel the need to justify pure creation. Art does not need a reason to exist. There is a reason we all carry within us a certain measure of arrogance; it’s motivating, as long as it’s not foisted on me. I learned to let it all be and to pay attention.</p>
+
+<p class="blog-para">Second, I realized that the Mozilla Festival may have used somewhat hackneyed, manic Marxist rhetoric and caffeine to fuel itself, but so what? My organization, Teachers Without Borders, needs you. We need your repositories and platforms, your XML and HTML 5, your acronyms and hash-tags and @-signs and mashups. We need your conviction and drive for social justice, provided you’re open enough to embrace the courage of your contradictions and give it to us for free so that we can focus on giving away our own assets, too. Together, let’s continue to ask both difficult and playful questions and honor each other. I know that I will do my best to connect it all to a human narrative, to solving problems, and to the pressing and emerging issues facing those who work in classrooms far away from our three-day festival at a gorgeous Museum of Modern Art in Europe. To the conference organizers, fellow volunteers, and fellow travelers at the Mozilla Festival: Freedom, Learning, and the Web, as well as for those who are connected through those tiny internet traffic controllers, I am truly grateful.</p>
+
+<br>
+
+<p class="body-copy">Alex Halavais, a professor at Quinnipiac College in Connecticut, wrote:</p>
+<div class="blog-header">Mozilla: Enter the Lizard
+<br><span class="blog-meta">Alex Halavais | November 16, 2010</span></div>
+
+<p class="blog-para">It seemed to me that there was a great charge of revolution in the room at a number of moments, with the traditional school and university structures firmly in the crosshairs. Two of the plenary speakers were proud dropouts of traditional educational institutions, and there was a general feeling that we can do it better ourselves. As Cathy Davidson noted in one of the early talks, we needed to find the “joy in insurgency&rdquo;.</p>
+
+<p class="blog-para">And you will find no one more responsive to that general feeling than I am. But I think it is worth tempering.</p>
+
+<p class="blog-para">After all, I am a high school dropout with a PhD–a condition that probably reflects my intermediate position on the issue fairly well. Are schools and universities broken? Of course they are, always have been, and always will be. Internet Explorer is broken too. The solution, however, was not to throw the browser out with the bathwater, it was to make a better browser. (Oh, and btw, Firefox is broken; there is nothing fundamentally wrong with brokenness, as long as you are also always in the process of fixing, and the ability to fix is not impeded.)</p>
+
+<p class="blog-para">I think that a hard stance against the university is strategically the wrong way to go. As Mitchell Baker noted in her brief introduction, one of the successes of openness is that it kills with kindness.</p>
+<br>
+
+<p class="body-copy">The members of Nois3lab, an open-source digital media agency in Rome, put the best spin on things of all:</p>
+
+<div class="blog-header"><span class="link"><a href="http://blog.nois3lab.it/archive/2010-11-21/barcelona-drumbeat-festival"target="_blank">Barcelona Drumbeat Festival</a>
+<br><span class="blog-meta">Nois3lab | November 21, 2010</span></div>
+
+<p class="blog-para">The Barcelona Mozilla Festival was about Learning, Freedom, and the Web. It was about projects and initiatives, ideas and missions, but above all it was about PEOPLE—yes, people like you and us, people seeking an alternative way for learning, sharing and teaching knowledge, people caring about the web and the freedom to express themselves, people trying to safeguard a critical approach toward social changes and willing to find a new evaluation system in order to give &ldquo;credit&rdquo; to alternative learning and teaching methods.</p>
+
+<p class="blog-para">Thus, the Learning, Freedom and the Web Festival was about how all of us could contribute to create a better and more conscious future. The goal is to build a new and open learning model using the web as an opportunity in order to get access to projects and contents and to reach and meet as much people as possible. People are precious resources, they are full of experiences and knowledge to share.</p>
+
+<p class="blog-para">The web is our venue to come together even if we are far away, the web is our tool to learn and get things done/teach things even if, in the beginning, we don’t know how to do it, the web is our opportunity to change the thinking of tomorrow...and this is exactly why it is so important to ensure the openness of the web.</p>
+
+<p class="blog-para">All of us must have the possibility to choose when, where, and how to learn new things, all of us must have the opportunity to gain access to the large variety of information that people share in the web. So, keep it open, share, and you will see that you are not alone out there.</p>
+<br>
+<br>
+<br>
+
+<!-- How-to Create Your Own How-to -->
+
+<a name="lfw_45"><br></a>
+<div class="how-to-bg"><div class="section-flag">HOW TO</div><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM X WEB</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="how-to-header">Create your own how-to<img src="images/lfw-howto.png" style="float: right"></a></p>
+
+<br>
+<br>
+
+<p class="how-to-lead-para">Share your knowledge in an easily understood format that allows others to try it and learn too! Also helpful for exploring your own knowledge.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Difficulty:</span> Medium.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Time:</span> 5 minutes.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Who:</span> 1 or many.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Materials:</span> Pencil and paper, or computer.</p>
+
+<br>
+
+<p class="how-to-body-copy"><span class="yellow-left-justified">Steps:</span></p>
+
+<br>
+
+<p class="how-to-body-copy">1. Decide on a topic. It should be something you know well that is not too broad. “How to identify chanterelles” is better than “how to identify edible mushrooms.”</p>
+
+<br>
+
+<p class="how-to-body-copy">2. Identify the purpose of the exercise, the level of difficulty, the materials, and whether it is for one person or a group.</p>
+
+<br>
+
+<p class="how-to-body-copy">3. Break down the process into steps. Use simple, unambiguous language. Five to eight steps should be enough, otherwise your how-to may be too broad.</p>
+
+<br>
+
+<p class="how-to-body-copy">4. Add any tips you’ve come across, and links to where people can get more information.</p>
+
+<br>
+
+<p class="how-to-body-copy"><span class="yellow-left-justified">Tip:</span> Visual aids are often helpful. Photos of each step in the process, or a video of the whole process are both great.</p>
+
+<br>
+
+<p class="how-to-body-copy">5. Share your how-to on your blog, website, Twitter, a wiki, or anywhere else you like!</p>
+
+<br>
+<br>
+<br>
+
+<!-- How-to Create Your Own ebook -->
+
+<a name="lfw_46"><br></a>
+<div class="section-flag">HOW TO</div><div class="floating-header">LEARNING, FREEDOM AND THE WEB / <span class="header-text-yellow">LEARNING X FREEDOM X WEB</span> /</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<p class="how-to-header">Create your own ebook<img src="images/lfw-howto.png" style="float: right"></a></p>
+
+<br>
+<br>
+
+<p class="how-to-lead-para">You don't need to carry a stack of books. This is an opportunity to get inspired and connect with the people around you. Explore the possibilities of epublishing by making content interactive, dynamic, and social.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Difficulty:</span> Easy or difficult. Imagination is your limit!</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Time:</span> 1 to 5 Months.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Who:</span> 1-5 people; A mix of authors/content creators, developers, artists, and designers.</p>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Materials:</span> A book you want to share, Post-it notes, sketchbooks, white boards, laptops, coffee, a web server and alcohol.</p>
+
+<br>
+
+<p class="how-to-body-copy"><span class="yellow-left-justified">Steps:</span></p>
+
+<br>
+
+<p class="how-to-body-copy">1. Choose a book you want to transform into an interactive reading experience, or a collection of materials (blog posts, articles, photos, videos) that you want to turn into a book.</p>
+
+<br>
+
+<p class="how-to-body-copy">2. Look at a variety of ebooks to get inspiration about different kinds of design or features that you might want to riff on as you create your own book.</p>
+
+<br>
+
+<p class="how-to-body-copy">3. Start dreaming. Sketch new ways people can engage your book. Keep it loose; have fun; envision new ways to navigate a book and the different kinds of media you will integrate.</p>
+
+<br>
+
+<p class="how-to-body-copy">4. Meet with people and get feedback on your ideas. This feedback is essential so you can move forward with the right plan.</p>
+
+<br>
+
+<p class="how-to-body-copy">5. Once you've settled on a design, decide on the tools you will use to build it -- or follow our lead and build an open, cross-platform ebook using HTML5, CSS3 and Javascript.</p>
+
+<br>
+
+<p class="how-to-body-copy">6. Test out different layouts and functionality (if you're using the HTML5 approach, that means testing out jQuery plugins and different layouts in HTML and CSS. ) Pay particular attention to the way people will navigate your book: will they have a navigation sidebar? Flip pages to move between sections?</p>
+
+<br>
+
+<p class="how-to-body-copy">7. Load the content into the container you have built. Don't limit yourself to text: images, audio, video and animation can all help to make a new kind of reading experience.</p>
+
+<br>
+
+<p class="how-to-body-copy">8. Test your ebook on a range of devices (phones, tablets, desktops/laptops) and browsers to make sure it's accessible on any browser or device.</p>
+
+<br>
+
+<p class="how-to-body-copy">9. Finalize your text and design by sitting down as a full team to do a final edit. Get your content creators to make sure that each section of text is formatted in a way that works for that content. Look for any inconsistencies in the layout or glitches in the navigation, and get your designers and techies to fix them on the spot.</p>
+
+<br>
+
+<p class="how-to-body-copy">10. When you are done, upload the book to your server space and post the URL on your blog and social networks.</p>
+
+<br>
+
+<p class="how-to-body-copy">11. Tell your friends and celebrate learning everywhere!</p>
+
+<br>
+<br>
+</div>
+
+    </article>
+  </body>
+</html>

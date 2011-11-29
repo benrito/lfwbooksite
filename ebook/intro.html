@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learning, Freedom and the Web</title>
+
+<!-- Out style sheets for the structure of the book, the HTML5 video, the Fancybox plugin,
+and shutting down the auto zoom on the iPad nad Android tablets -->
+        
+<link href="main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="video-js/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    
+<!-- JQuery for Accordion Menu / Fancybox Plugin / video-js for HTML5 Video / Custom Script by Allen Pike -->
+
+<script src="jquery.min.js"></script>
+<script src="lfw.js"></script>
+<script src="iscroll.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="video-js/video.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+// Add VideoJS to all video tags on the page when the DOM is ready
+VideoJS.setupAllWhenReady();
+</script>  
+
+</head>
+
+<!-- This is the setup for the macro-layout of the ebook -->
+
+<body>
+<div class="mozilla-tab"><a href="http://www.mozilla.org" target="_blank"><img src="images/Mozilla-tab.png"></a></div>
+<div id="grey"></div>
+<div id="black"></div>
+
+<!-- Side Menu -->
+
+<nav id="side">
+<div class='scroller'>
+<div class="mozilla-logo"><a href="toc.html"><img src="images/lxf-logo.png"></a></div>
+
+<ul id="navigation">
+
+<!--  Foreword. As you can see, the <dt> tag is used in the accodion menu for elements within the flags.
+These elements are clickable but don't have links because we needed them un-linkable for the hierarchy of our navigation.
+Also, the Allen Pike set-up the javascript so when we add "class="open"" after dt in the tag (ex. <dt class="open">), that section of the navigation
+will stay open when a user clicks to that link. -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FOREWORD</span></a></dt>
+
+<!--  All of the <li> tags within the <dd> tag are then the links you find after clicking on a flagged section of the book.
+You can just copy and paste these <li> tags to add more sections to the book. As you can see, there's a '#' and a number after each link.
+These # and numbers enable the user to click on a link (ex. "How-to: create Your Own Festival") and the page will open to that particular
+part of the article. To do this, we just placed the "<a name="lfw_1"> at the start of each sections of the artciles. Of course, you would
+change the "lfw_1" to correspond with the numbers you had set-up in the navigation. -->
+
+<dd>
+<li><a href="foreword.html#0.1"><span class="sidebar-subsection-names-">Foreword</span></a></li>
+<br>
+<li><a href="foreword.html#1"><span class="sidebar-subsection-names-">Learning, the Web <br>&amp; Freedom</span></a></li>
+</dd>
+
+<!--  Introduction  -->
+
+<dt class="open"><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;INTRODUCTION</span></a></dt>
+
+<dd>
+<li><a href="intro.html#2"><span class="sidebar-subsection-names-">Learning, Freedom, &amp; the Web: The Convergence</span></a></li><br>
+<li><a href="intro.html#3"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Festival</span></a></li>
+</dd>
+
+<!--  Learning x Freedom  - -->
+
+<block-section><a href="stormingtheacademy.html#4"><span class="sections">LEARNING x FREEDOM</span></a></block-section>
+
+<!--  Storming the Academy  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;STORMING THE ACADEMY</a></span></dt>
+
+<dd>
+<li><a href="stormingtheacademy.html#5"><span class="sidebar-subsection-names-">Storming the Academy<br></span></a></li><br>
+<li><a href="stormingtheacademy.html#6"><span class="sidebar-subsection-names-">Profile : Cathy Davidson</span></a></li><br>
+<li><a href="stormingtheacademy.html#7"><span class="sidebar-subsection-names-">How-to : Contract Grading</span></a></li><br>
+<li><a href="stormingtheacademy.html#8"><span class="sidebar-subsection-names-">Profile : David
+Humphrey</span></a></li><br>
+<li><a href="stormingtheacademy.html#9"><span class="sidebar-subsection-names-">Profile : Ismael Peña-López</span></a></li><br></dd>
+
+<!-- Learning Everywhere -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;LEARNING EVERYWHERE</span></a></dt>
+
+<dd>
+<li><a href="learningeverywhere.html#10"><span class="sidebar-subsection-names-">Learning Everywhere</span></a></li><br>
+<li><a href="learningeverywhere.html#11"><span class="sidebar-subsection-names-">Project : Hackasaurus</span></a></li><br>
+<li><a href="learningeverywhere.html#12"><span class="sidebar-subsection-names-">How-to :<br>Hold a Hack Jam for Teens</span></a></li><br>
+<li><a href="learningeverywhere.html#13"><span class="sidebar-subsection-names-">Profile : Jack Martin</span></a></li><br> 
+<li><a href="learningeverywhere.html#14"><span class="sidebar-subsection-names-">How-to :<br>Have A Digital Gymkhana</span></a></li><br>
+<li><a href="learningeverywhere.html#15"><span class="sidebar-subsection-names-">Profile : Carolina Botero</span></a></li>                            
+</dd>
+
+<!--  Web x Learning  - --> 
+
+<block-section><a href="opencontent.html#16"><span class="sections">the WEB x LEARNING</span></a></block-section>
+
+<!--  Open Content  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN CONTENT</span></a></dt>
+
+<dd>
+<li><a href="opencontent.html#17"><span class="sidebar-subsection-names-">Profile : Joi Ito</span></a></li><br>
+<li><a href="opencontent.html#18"><span class="sidebar-subsection-names-">Open Content</span></a></li><br>
+<li><a href="opencontent.html#19"><span class="sidebar-subsection-names-">Profile : Hal Plotkin</span></a></li><br>
+<li><a href="opencontent.html#19.1"><span class="sidebar-subsection-names-">Project: Creative Commons<br>Attribution Tool</span></a></li><br>
+<li><a href="opencontent.html#20"><span class="sidebar-subsection-names-">How-to : Create An<br>Open Educational Resource</span></a></li><br>
+<li><a href="opencontent.html#21"><span class="sidebar-subsection-names-">Profile : Meena Hwang</span></a></li><br>
+<li><a href="opencontent.html#22"><span class="sidebar-subsection-names-">How-to : Teach &amp; Learn With Wikipedia</span></a></li><br>
+<li><a href="opencontent.html#23"><span class="sidebar-subsection-names-">Profile : David Wiley</span></a></li><br>
+<li><a href="opencontent.html#24"><span class="sidebar-subsection-names-">How-to :<br>Adopt An Open Textbook</span></a></li>
+</dd>
+
+<!--  Webcraft - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;WEBCRAFT</span></a></dt>		
+
+<dd>
+<li><a href="webcraft.html#25"><span class="sidebar-subsection-names-">Webcraft</span></a></li><br>
+<li><a href="webcraft.html#26"><span class="sidebar-subsection-names-">Profile : Chris Mills</span></a></li><br>
+<li><a href="webcraft.html#27"><span class="sidebar-subsection-names-">Profile : Pippa Buchanan</span></a></li><br>               
+<li><a href="webcraft.html#28"><span class="sidebar-subsection-names-">How-to : Make A P2PU Course</span></a></li><br>
+</dd>
+
+<!-- Freedom x the Web -->
+
+<block-section><a href="hacking.html#29"><span class="sections">FREEDOM x the WEB</span></a></block-section>
+
+<!-- Hacking -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;HACKING</span></a></dt>
+
+<dd>
+<li><a href="hacking.html#30"><span class="sidebar-subsection-names-">Hacking</span></a></li><br>
+<li><a href="hacking.html#31"><span class="sidebar-subsection-names-">Project : Hackbus</span></a></li><br>
+<li><a href="hacking.html#32"><span class="sidebar-subsection-names-">Profile :<br>Johannes Grenzfurthner</span></a></li><br>
+<li><a href="hacking.html#33"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+</dd>
+
+<!-- Open Video -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;OPEN VIDEO</span></a></dt>
+
+<dd>
+<li><a href="openvideo.html#34"><span class="sidebar-subsection-names-">Open Video</span></a></li><br>
+<li><a href="openvideo.html#35"><span class="sidebar-subsection-names-">Profile : Brett Gaylor</span></a></li><br>
+<li><a href="openvideo.html#36"><span class="sidebar-subsection-names-">Project : The Popcorn Project</span></a></li><br>
+<li><a href="openvideo.html#37"><span class="sidebar-subsection-names-">How-to : Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+</dd>
+
+<!--  Learning x Freedom x the Web  - -->
+
+<block-section-lfw><a href="badges.html#38"><span class="sections">LEARNING<br> x FREEDOM x the WEB</span></a></block-section-lfw>
+
+<!--  Badges - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;BADGES</span></a></dt>
+
+<dd>
+<li><a href="badges.html#39"><span class="sidebar-subsection-names-">Profile :<br>Free Knowledge Institute</span></a></li><br>
+<li><a href="badges.html#40"><span class="sidebar-subsection-names-">Badges</span></a></li><br>
+<li><a href="badges.html#41"><span class="sidebar-subsection-names-">Project : Badge Backpack</span></a></li><br> 
+<li><a href="badges.html#42"><span class="sidebar-subsection-names-">Profile : Philipp Schmidt</span></a></li><br>
+<li><a href="badges.html#43"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li><br>
+</dd>
+
+<!--  The Future  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;THE FUTURE</span></a></dt>
+
+<dd>
+<li><a href="thefuture.html#44"><span class="sidebar-subsection-names-">The Future</span></a></li><br>
+<li><a href="thefuture.html#45"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own How-to</span></a></li><br>
+<li><a href="thefuture.html#46"><span class="sidebar-subsection-names-">How-to :<br>Create Your Own Ebook</span></a></li>
+</dd>
+
+<!--  Features  - -->
+
+<dt><a href="#"><span class="sidebar-chapters">&nbsp;&nbsp;&nbsp;&nbsp;FEATURED HOW-TO's</span></a></dt>
+
+<!--  To integrate the Featured/Interactive How-to's that we designed, we put them in a lightbox that was a fixed 720px wide.  
+We then added "onclick="LFW.lightbox('the_html_file_you_want_to_link_to.html')"" within each of the '<a href' tags (ex. <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">). This enable us to work on the Featured How-to's separately from the macro book design.- -->
+
+<dd>
+<li><a href="#" onclick="LFW.lightbox('howtodrumbeat.html')"><span class="sidebar-subsection-names-">How-to :<br> Create Your Own Festival</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobutter.html')"><span class="sidebar-subsection-names-">How-to :Do A Book Report<br>With Popcorn Maker</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtoarduino.html')"><span class="sidebar-subsection-names-">How-to :<br>Learn &amp; Play With Arduino</span></a></li><br>
+<li><a href="#" onclick="LFW.lightbox('howtobadges.html')"><span class="sidebar-subsection-names-">How-to :<br>Create &amp; Award A Badge</span></a></li>
+</dd>
+
+<!--   Connect Nav Footer -->
+
+<div class="footer">
+
+<!--   About page, contact, and support -->
+
+<a href="about.html"><span class="sidebar-footer-">About&nbsp|</span></a>
+<a href="contact.html"><span class="sidebar-footer-">Contact&nbsp|</span></a>
+<a href="http://www.lulu.com/product/paperback/mozilla-learning-freedom-and-the-web/18596078"target="_blank"><span class="sidebar-footer-">Order</span></a>
+</div>
+
+<!--   Social networking plugin's and links for the iPad. -->
+
+<!--   Image links to social networking pages that work on the iPad. These had to be added because the plugin's 
+you can get from the Facebook and Twitter developer pages don't work on the iPad. -->
+
+<a href="http://www.facebook.com/mozilladrumbeat"target="_blank"><div class="facebook-ipad"></div></a>
+<a href="http://twitter.com/#!/mozilladrumbeat"target="_blank"><div class="twitter-ipad"></div></a>
+<div class="twitter-follow">
+
+<!--   These are the pieces of code you can get from Twitter and Facebook to add social networking to your pages but they only work
+in FF, Chrome, Opera, and Safari. They do not work on the iPad. Interestingly enough, the do appear on the Android tablets. -->
+
+<a href="http://twitter.com/mozilladrumbeat" class="twitter-follow-button" data-show-count="false">Follow @mozilladrumbeat</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="twitter-tweet"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out Mozilla's Learning, Freedom and the Web!" data-count="horizontal" data-via="mozilladrumbeat" data-related="mozilla">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="fb-root"><iframe src="http://www.facebook.com/plugins/like.php?app_id=128165083933815&amp;href=www.mozilla.com&amp;send=false&amp;layout=standard&amp;width=220&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=50" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:195px; height:40px; margin-left: 40px;" allowTransparency="true"></iframe>
+</div>
+<br>
+<br>
+<br>
+</div>
+</nav>
+
+
+<!--   Article Begins  - -->
+
+
+<article id="main">
+<div class='scroller'>
+
+<!-- Learning, Freedom and the Web - Why? Why Now? -->
+
+<br>
+
+<a name="lfw_2"></br></a>
+<p class="article-header">LEARNING, FREEDOM, AND THE WEB:<br> The Convergence</p>
+<p class="article-subheader-intro">Barcelona, Fall 2010:</p>
+
+<br>
+<br>
+
+<p class="article-lead-para">Learning and the Web. Two powerful forces of change converge in a public square. Their dimensions are unpredictable, and many of the outcomes of their convergence will be unintended, but this experiment is not entirely uncontrolled. This group of scholars, hackers, and activists has calculated the likely conditions, wired in all the right connections. When lightning strikes, they’ll be ready.</p>
+
+<br>
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Learning:</span> The natural process of acquiring knowledge and mastery.</p>
+
+<p class="body-copy">As a journalist, I’ve spent the last three years covering a change in the world of education. Seismic waves are rumbling from the basement of the ivory tower and the schoolhouse down your block. The demand for access to both existing and new models of learning is rising as uncontrollably as the average temperature throughout the globe. Our society faces serious existential threats, and the answers aren’t written in books. So there’s a growing urgency to shift toward models of learning that foster natural creativity and innovation to produce new knowledge, new answers. Yet the educational ecosystem is edging toward collapse—50 million university students in 2000 will become an estimated 250 million by 2025, even as educational costs rise at two to three times the rate of inflation. An estimated 400 million children around the world have too little access to formal schooling. No government in the world has a plan to fix this.</p>
+
+<p class="body-copy">Meanwhile, informal learning–the kind we do all day every day, as long as our eyes are open and we’re not in school–is going through a Cambrian explosion in hackerspaces, libraries, museums, basements and garages. “How-to” is one of the top searches on Google. An entire generation of web geeks is functioning more or less self-taught, because traditional curricula can’t keep up with the skills they need.</p>
+
+<p class="body-copy">All of which brings me to the second force, now arcing overhead—an invisible mesh of electrical signals that connect the people in this square not only to each other, but the world.</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/learning.png"><img src="images/learning-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">The Web: </span>A set of building blocks that anyone can use to invent, build, connect, and bend things in the digital world.</p>
+
+<p class="body-copy">Twenty-five years ago, computer engineers Tim Berners-Lee and Robert Caillou first introduced their creation: &ldquo;The World Wide Web was developed to be a pool of human knowledge and human culture, which would allow collaborators in remote sites to share their ideas and all aspects of a common project.&rdquo; Today, the web’s open and interoperable standards make it possible for 1.75 billion people around the world to build, access, connect, and alter 240 million unique sites, not to mention for millions of people to create and upload 35 hours of video to YouTube, the most popular video site, every minute. The web allows for the creation of wealth, beauty, and human connection on an unprecedented scale.</p>
+
+<p class="body-copy">Yet, as more and more of us live, work, create, socialize, shop, bank, and, yes, learn online, the architects of the web are increasingly drawing the parameters of private and public life, and often for corporate profit or political control rather than public benefit.</p>
+
+<p class="body-copy">The very principle that has made the web so vast and so powerful—the open structure, held in common, that allows anyone to access and contribute—is under threat as never before.</p>
+
+<p class="body-copy">The threat is hydra-headed: zealous enforcement of copyright and intellectual property, governments that stifle dissent by disabling servers or censoring keywords, the increasing trade in personal data, legal and illegal infringements on privacy, and public discourse and private relationships that are increasingly funneled through a very small number of commercial web platforms. The response is to assert freedom.</p>
+
+<a id="single_image" title="Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/freeme.png"><img src="images/freeme-thumb.png" alt="Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<br>
+
+<p class="article-section-and-question"><span class="yellow-left-justified">Freedom:</span> to access, remix, copy, and share knowledge — basic to learning, and the basis of the web.</p>
+
+<p class="body-copy">In the stories I’ve been telling about the future of learning and the web, freedom is the missing link. That’s what I started to realize last summer when Philipp Schmidt, of Peer 2 Peer University, put me in touch with Mark Surman, executive director of the Mozilla Foundation. Surman invited me to be a part of the first Mozilla &ldquo;Learning, Freedom, and the Web&rdquo; Festival.</p>
+<p class="body-copy">Mozilla, as I was then dimly aware, is a giant nonprofit open source software project. Together, thousands of people, employees but mostly volunteers, create Firefox (the second biggest web browser by market share), which is used by 400 million people worldwide. This is open source–a new way of organizing creative work with broad participation, all enabled by transparency. And the work has built a worldwide alliance of people dedicated to keeping a part of the web transparent, held in common, and freely remixable by individuals. Oh yeah—and awesome.</p>
+<p class="body-copy">Mitchell Baker, Mozilla's founder and &ldquo;chief lizard wrangler,&rdquo; never takes a stage without thanking the volunteers that make it all possible.</p>
+<a id="single_image" title="Mitchell Baker. Photo from mozillaeu's Flickrstream, Aug. 20, 2011." href="images/mitchellbaker.png"><img src="images/mitchellbaker-thumb.png" alt="Mitchell Baker. Photo from mozillaeu's Flickrstream, Aug. 20, 2011."></a>
+
+<p class="body-copy">As she explained onstage in Barcelona:</p>
+
+<p class="pull-quote">Mozilla is about trying to build a part of the web that allows individuals to move from consumption to creation. We’re nonprofit not because it’s easy, but because it represents what we’re trying to do. The Internet is so important that we believe that part of it should be a public asset.</p>
+
+<p class="body-copy">Their successes in open-source led Mozillians to ask:</p>
+
+<p class="pull-quote">What else can openness do? Beyond the realm of hackers, programmers and developers, who are our natural allies? Who else believes in openness, innovation, sharing, democracy, participation, and preserving culture as a public asset? And who can be convinced to fight for it?</p>
+
+<p class="body-copy">There are many possible answers to that question: journalists, artists, filmmakers, and political activists, to name but a few. The decision to start by rallying the avant-garde of teachers, scholars, and learners was by no means arbitrary. There is alchemy in the meanings and meetings of Learning, Freedom, and the Web:</p>
+<p class="pull-quote"><span class="yellow-left-justified-italic">LearningXFreedom: </span>Learning happens naturally when individuals pursue their passions among peers and guides. Restrictions on learning—red tape, time, place, cost, or others—should be minimized so more people around the world are free to join together to face hard problems and learn new things in new ways.</p>
+
+<p class="pull-quote"><span class="yellow-left-justified-italic">WebXLearning: </span>The web can lower barriers, cut costs, blow open access to knowledge. It enables—and demands—new models of teaching, learning, assessment, and accreditation.</p>
+
+<p class="pull-quote"><span class="yellow-left-justified-italic">FreedomXWeb:</span> The public, open, participatory, transparent, remixable nature of the web has been integral to its growth and must be revealed, defended, celebrated. If it’s not open all the way down, it’s not the web.</p>
+
+<p class="pull-quote"><span class="yellow-left-justified-italic">LearningXFreedomXWeb Learning: </span>will be more agile, more active, more participatory, more like the web. The web will strengthen its public mission and its place in human history. Everyone gets to invent his or her own end to the story.</p>
+
+<p class="body-copy">These overlapping definitions set forth ideals have yet to be fully realized or safely established. Which is fortunate, because working and creating together is, generally speaking, the best way to form relationships, to build communities, and, yes, to learn.</p>
+
+<p class="body-copy">So here’s the Mozilla Festival formula for catching lightning: throw together educators and techies, both committed to innovation in the public interest; guzzle coffee, snarf tapas, chat, and make friends; but also, actually make stuff using open-source technology. The goal is to develop new tools and practices that can supplement, optimize, and/or replace the traditional trappings of the education system, from diplomas and textbooks to lectures and lesson plans–the better to serve learners’ needs.</p>
+
+<p class="body-copy">And amidst the code sprints, why not brainstorm a wish list, too: What tools remain to be developed to allow learners of all ages to form the questions, find or create the answers, build skills, and participate in communities? What allies and teams need to form to make these things happen?</p>
+
+<p class="body-copy">Finally, if successful, the manifesto of two days becomes the manifest of a much longer voyage:</p>
+
+<p class="pull-quote">A call for all those who care to spread webcraft literacy, to play with technology, to learn by making stuff together, to keep the web free by making it ourselves, to shape society through more democratic design, to pull learning out of the 15th or 19th century and into the 21st, to find strength in diversity, and to think critically about–and tell joyful stories about–all this doing and building and learning and making and sharing, all the better to get more people involved.</p>
+
+<a name="lfw_3"></a>
+
+<p class="body-copy">So lightning struck the clock tower, two worldviews faced each other in a public square, and &ldquo;Learning, Freedom and the Web&rdquo; was born.</p>
+
+<p class="body-copy">Or, in the opening-night words of Mark Surman, as he shouted over the crowd, cheeks shining with sweat, in the high, echoey atrium of Barcelona&rsquo;s Museum of Contemporary Art:</p>
+
+<p class="pull-quote">The future of the web and future of learning are intertwining. People here are creating that future.</p>
+
+<p class="body-copy">I came to Barcelona to witness this experiment. I left as a participant. I hope that reading this will make you want to participate, too.</p>
+
+<p class="pull-quote"><span class="yellow-left-justified-italic">Chaordic!:</span> Wikipedia: &ldquo;a system of governance [that is] a harmonious coexistence of chaos and order.&rdquo;</p>
+
+<p class="pull-quote"><span class="yellow-left-justified-italic">Collabtastic!:</span> from a Drumbeat participant evaluation.</p>
+
+<br>
+
+<p class="article-lead-para">Check-out the Mozilla Drumbeat Science Fair</p>
+<div class="video-js-box vim-css">
+
+<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+
+	    <video class="video-js" width="471" height="265" controls preload poster="vthumbs/sciencefair.png">
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//sciencefair.iphone.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//sciencefair.webm" type='video/webm; codecs="vp8, vorbis"' />
+	      <source src="http://videos.mozilla.org/serv/webmademovies/LFW//sciencefair.ogg" type='video/ogg; codecs="theora, vorbis"' />
+	
+	      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+	
+	      <object class="vjs-flash-fallback" width="471" height="264" type="application/x-shockwave-flash"
+	        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+	        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+	        <param name="allowfullscreen" value="true" />
+	        <param name="flashvars" value='config={"playlist":["vthumbs/sciencefair.png", {"url": "videos/sciencefair.iphone.mp4","autoPlay":false,"autoBuffering":true}]}' />
+	
+	        <!-- Image Fallback. Typically the same as the poster image. -->
+	
+	        <img src="vthumbs/sciencefair.png" width="640" height="264" alt="Poster Image"
+	          title="No video playback capabilities." />
+	      </object>
+
+	    </video>
+
+	    <!-- Download links provided for devices that can't play video in the browser. -->
+
+	    <p class="v-note">No video in your browser? Download it:
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/sciencefair.iphone.mp4">MP4</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/sciencefair.webm">WebM</a>,
+	      <a href="http://videos.mozilla.org/serv/webmademovies/LFW/sciencefair.ogg">ogg</a><br>
+	    </p>
+
+	  </div>
+
+<!-- End VideoJS -->
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- How-to Create A Drumbeat Festival -->
+
+          <a href="#" onclick="LFW.lightbox('howtodrumbeat.html')">
+          <div class="feature-box">click or tap this bar for feature
+            <div class="feature-title-box"><div class="feature-flag">HOW TO</div>Create your own festival
+              <div id="feature-icon"><img src="images/button-icon.png"><img></div>
+              <div id="drumbeat-feature-image"><img src="images/button-drumbeat.png"><img></div>
+              </div>
+              <div class="feature-bottom-bar"></div>
+            </div></a>
+<br>
+
+<div class="clear"></div>
+
+<a href="stormingtheacademy.html"><div class="next-page-button"><div class="next-page-button-text">tap to continue</div><img src="images/next-page-button.png"/></div></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+          </div>
+    </article>
+  </body>
+</html>

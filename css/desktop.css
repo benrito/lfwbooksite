@@ -9,7 +9,7 @@ header img {
     margin-top: 20px;
 }
 .info {
-	background: url("../img/Logo-large.png")
+    background: url("../img/Logo-large.png")
     position: absolute;
 }
 .info:before {
@@ -44,18 +44,6 @@ header img {
 .info .n3 {
     background-position: 24px -280px, 46% -417px;
 }
-.line-separator{
-	width: 90%;
-	border-top:1px solid gray;
-	border-bottom:1px solid gray;
-	margin: 0px auto;
-}
-.line-separator2{
-	font-size: 16px;
-	margin-top: 5px; 
-	width: 90%;
-	margin: 0px auto;
-}
 .cta {
     padding-bottom: 0.4em;
 }
@@ -85,7 +73,15 @@ input[type="email"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+/* LSF */
+.mainlogo {
+    float: left;
+    width: 60%;
+}
+.bookbox {
+    float: right;
+    width: 40%;
+}
 .external .col {
     float: left;
     width: 33%;

@@ -59,35 +59,40 @@ header img {
     width: 119px;
 }
 .nice_button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #ffffff 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfdfdf');
-	background-color:#ffffff;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #c7c3c7;
-	display:inline-block;
-	color:#777777;
-	width: 50%;
-	font-family:arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #ffffff;
-	margin-bottom: 5px;
-}.nice_button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ffffff) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ffffff 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ffffff');
-	background-color:#dfdfdf;
-}.nice_button:active {
-	position:relative;
-	top:1px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfdfdf');
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #c7c3c7;
+    display:inline-block;
+    color:#777777;
+    width: 100%;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffffff;
+    margin-bottom: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-sizing-box: border-box;
+    box-sizing: border-box;
+}
+.nice_button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ffffff) );
+    background:-moz-linear-gradient( center top, #dfdfdf 5%, #ffffff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ffffff');
+    background-color:#dfdfdf;
+}
+.nice_button:active {
+    position:relative;
+    top:1px;
 }
 #art {
     display: none;
@@ -95,39 +100,59 @@ header img {
 div[role="main"] {
     background: #71ade9;
 }
+.mainlogo {
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
 .bookbox {
-	width: 40%;
-	min-width: 350px;
-	float: right;
-	position: absolute;
-	right: 1px;
-	top: 15%;
-	background-color:white;
-	-moz-box-shadow: 5px 5px 5px #878787;
-	-webkit-box-shadow: 5px 5px 5px #878787;
-	box-shadow: 5px 5px 5px #878787;
-	-moz-border-radius: 15px;
-	border-radius: 5px;
+    background-color:white;
+    -moz-box-shadow: 5px 5px 5px #878787;
+    -webkit-box-shadow: 5px 5px 5px #878787;
+    box-shadow: 5px 5px 5px #878787;
+    -moz-border-radius: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bookbox .links {
+    padding-left: 130px;
+    position: relative;
+}
+.links .book_link {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .bookbox_inner {
-	align:right;
-	padding: 10px;
-	height: 160px;
-	text-align: center;
+    align:right;
+    min-height: 160px;
+    padding: 10px;
+    text-align: center;
 }
-.mainlogo {
-	position: absolute;
-	top: -25px;
-	overflow: visible;
-	!important; 
-	height: 600px;
+.line-separator,
+.line-separator2 {
+    width: 90%;
+    margin: 0 auto;
 }
+.line-separator{
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+}
+.line-separator2{
+    font-size: 16px;
+    margin-top: 5px; 
+}
+
 .description {
-	float: right;
-	position: absolute;
-	right: 10px;
-	width: 60%;
-	top: 65%;
+    float: right;
+    position: absolute;
+    right: 10px;
+    width: 60%;
+    top: 65%;
+}
+.info {
+    overflow: hidden;
+    padding: 60px 0 4em;
 }
 .info ol {
     list-style-type: none;
@@ -253,6 +278,7 @@ input[type="submit"]:hover {
 }
 .external {
     background: url(../img/css/bg_external.png) repeat-x 0 0 #FFF;
+    overflow: hidden;
 }
 .external h2 {
     padding-top: 40px;

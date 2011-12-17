@@ -98,7 +98,7 @@ header img {
     display: none;
 }
 div[role="main"] {
-    background: #71ade9;
+    background: #fffdec;
 }
 .mainlogo {
     width: 100%;
@@ -277,8 +277,9 @@ input[type="submit"]:hover {
     margin: 0;
 }
 .external {
-    background: url(../img/css/bg_external.png) repeat-x 0 0 #FFF;
+    background: #FFF;
     overflow: hidden;
+    border: 1px solid black;
 }
 .external h2 {
     padding-top: 40px;

@@ -279,12 +279,17 @@ input[type="submit"]:hover {
 .external {
     background: #FFF;
     overflow: hidden;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 .external h2 {
     padding-top: 40px;
     color: #2e2e2d;
     background: url(../img/css/icons.png) no-repeat 0 -440px transparent;
+}
+.ccbysa {
+	margin: 0px auto;
+	width: 100px;
+	height: 50px
 }
 .tweet a {
     font-weight: bold;

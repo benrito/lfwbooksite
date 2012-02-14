@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/device.css" />
     <link rel="stylesheet" href="css/desktop.css" media="all and (min-width:30em)" />
+    <link href="http:///www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet" /> 
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="http://learningfreedomandtheweb.org/css/desktop.css" />
         <script type="text/javascript" src="js/html5.js"></script>
     <![endif]-->
 </head>
 <body>
-        <a class="tab" href="http://www.mozilla.org">mozilla</a>
+<a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
 <div role="main">
     <section class="info">
         <div class="wrapper">
@@ -32,7 +33,7 @@
 <p style="border-top-width: 0px; margin-top: 5px; margin-bottom: 10px;">by <strong>Anya Kamenetz</strong> and the participants of the 2010 <a href="https://mozillafestival.org">Mozilla Festival</a></p>
 </div>
     <div class="line-separator2">
-<p style="margin-top: 15px;"><strong><em>NEW:</em> <a href="http://www.simcentre.ca/events/online-launch-learning-freedom-web-ebook"><A href="http://bit.ly/LFWlaunch">Join us for an online book launch & author chat January&nbsp;25 &raquo;</a></strong></p>
+
 <p>How can the ideas of the open source movement help foster learning? What are the most effective ways to bring learning to everyone? How does openness help the spread of knowledge? Part exhibition catalog, part manifesto, this is a concise, fun-to-read introduction to what Mozilla is doing to support learners everywhere.</p>
 </div>
         <div class="ccbysa"><img src="img/bysas.png" alt="CC-BY-SA"></div>
@@ -76,19 +77,6 @@
     </aside>
 </div>
 <script src="js/livevalidation.js"></script>
-<script>
-(function() {
-    var ignite = {};
-    ignite.set_form = function() {
-        var email, accept;
-        email = new LiveValidation('email', {onlyOnSubmit: true });
-        email.add( Validate.Presence, { failureMessage: 'Please provide us with an email address'});
-        email.add( Validate.Email, { failureMessage: 'Please use a valid email address' } );
-        policy = new LiveValidation('custom-431', {onlyOnSubmit: true});
-        policy.add( Validate.Acceptance, { failureMessage: 'Please accept our privacy policy' });
-    }
-    ignite.set_form();
-})();
-</script>
+<script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script> 
 </body>
 </html>

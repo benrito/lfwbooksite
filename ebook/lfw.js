@@ -195,7 +195,14 @@ LFW.jumpTo = function(anchor, instant) {
   
   var time = instant ? 0 : 500;
   anchor = 'lfw_' + anchor;
-  
+  if (anchor && typeof anchor === "string" ) {
+      anchor = anchor.replace( /&/g, '&amp;' )
+                     .replace( />/g, '&gt;' )
+                     .replace( /</g, '&lt;' )
+                     .replace( /'/g, '&#39;' )
+                     .replace( /"/g, '&#34;' );
+    }
+
   var targetAnchor = $('a[name=' + anchor + ']')[0];
 
   if (mainScroll) {
